@@ -1,34 +1,42 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>About My Programing Languages</title>
-    </head>
-    <body>
-        <style>
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8">
+            <title>About My Programing Languages</title>
+        </head>
+        <body>
+            <style>
             body {
-                background-color: rgb(6, 20, 49);
+                background-color: rgb(38, 25, 60);
+            }
+            .button {
+                font-variant: small-caps;
+                text-align: left;
+                margin: 5px;
+                font-size: large;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                color:rgb(213, 88, 227);
+                background-color: rgba(1, 8, 17, 0.703);
+                padding: 5px;
             }
             #WebHead {
-                background-color: rgba(124, 28, 227, 0.345);
+                background-color: rgba(151, 75, 232, 0.345);
                 text-align: center;
                 font-family: monospace;
                 color:bisque;
                 font-size: xx-large;
-                border: 10px  rgb(230, 48, 217);
-                width: 1200px;
+                border: 10px  rgb(247, 117, 238);
+                width: 1180px;
+                padding-top: 20px;
+                padding:10px;
             }
             #imgID {
-                width: 1200px;
+                width: 1180px;
                 height: 250px;
                 margin-right: 10px;
                 margin-bottom: 10px;
-                border: 10px ridge rgb(96, 12, 242);
+                border: 10px ridge rgb(144, 87, 241);
 
-            }
-            #date {
-                text-align: right;
-                color: aliceblue;
             }
             #developer {
                 color:rgb(244, 92, 92);
@@ -37,96 +45,153 @@
                 font-family: initial;
             }
             #about {
+                margin-top: 20px;
                 margin-left: auto;
                 margin-right: auto;
+                font-size:large;
                 font-style: italic;
-                width: 600px;
+                width: 800px;
                 background-color: rgba(191, 39, 181, 0.555);
                 color:bisque;
                 text-align: left;
                 border: 10px ridge rgb(209, 183, 214);
-                padding: 15px;
-            }
-            #video {
-                margin-left: auto;
-                margin-right: auto;
-                margin-top: .5px;
-                width:560PX;
-                border: 10px ridge rgb(127, 16, 149);
-
+                padding: 20px;
             }
             #song {
+
+                margin-top: 10px;
+                font-size: small;
                 margin-left: auto;
                 margin-right: auto;
                 border: 10px ridge rgb(209, 183, 214);
-                text-align: right;
                 font-style: italic;
+                text-align: center;
                 color: white;
-                background-color: rgb(8, 57, 78);
-                width:600px;
-                padding:25px;
-                position: right;
-            } 
+                background-color: rgb(32, 3, 58);
+                width:400px;
+                padding:20px;
+            }
+            #youtubeLink {
+
+                margin-right: 25%;
+                margin-left: 25%;
+                margin-top: 10px;
+                
+            }
+            #aboutPotatoes {
+                margin: auto;
+                width: 800px;
+                text-align: left;
+                font-style: italic;
+                color: aliceblue;
+                font:large;
+                background-color: rgb(230, 98, 22);
+                border: 10px ridge rgb(209, 183, 214);
+                padding: auto;
+            }
+            #PL {
+                font-style: italic;
+                font-size: xx-large;
+            }
+             
          </style>
          <h1 id="WebHead">!!!HTML, CSS and JavaScript based My First Website!!!</h1>
          <div><img id="imgID" 
-src="https://www.cloudsigma.com/wp-content/uploads/How-To-Set-Up-Your-CSS-and-HTML-Practice-Project-With-a-Code-Editor.jpg"></div>
-        <h4 id="date">6 Oct. 2023</h4>
-        <p id="about">
-                I have learned <em>JavaScript, HTML and CSS</em> Programming Languages by myself.
+            src="https://www.cloudsigma.com/wp-content/uploads/How-To-Set-Up-Your-CSS-and-HTML-Practice-Project-With-a-Code-Editor.jpg"></div>
+         <div class="button">
+            <ul>
+                <li>
+                    <button class="button"><a href="#about"><strong>About</strong></a></button>
+                </li>
+                <li>
+                    <button class="button"><a href="#PL"><strong>My Programing Languages</strong></a></button>
+                </li>
+                <li>
+                    <button class="button"><a href="#aboutPotatoes"><strong>About The Benefit Of Red Potatoes!!!</strong></a></button>
+                </li>
+            </ul>
+        </div>
+                <p id="about">
+                I have learned <em>JavaScript, HTML and CSS.</em><span id="PL">Programming Languages</span> by myself.
                 Now i am going to make my own websites. It seems really awesome to make websites 
-                using HTML and CSS. I also like to make drawings in general and with JavaScript,
-                it seems incredible. And the JavaScript objects are more live and interective.
-                I still dont know how to use JaveScript objects in websites...
+                using <span id="PL">HTML and CSS</span>. I also like to make drawings in general and with JavaScript,
+                it seems incredible. And the <span id="PL">JavaScript</span>span> objects are more live and interective.
+                I still dont know how to use <span id="PL">JaveScript</span> objects in websites...
 
-                I want to add a vedio instead, a song, well i am going to do...<br>
-        </p>
-            <p id="song">
-                "শ্যাম কালিয়া সোনা বন্ধু রে<br>
+                I want to add a vedio instead, a <span id="PL">song,</span> well i am going to do...<br>
+                </p>
+                <p id="song">
+                <span id="PL">"শ্যাম কালিয়া</span> সোনা বন্ধু রে<br>
 
                 বন্ধু, নিরলে তোমারে পাইলাম না<br>
-                শ্যাম কালিয়া সোনা বন্ধু রে<br>
+                শ্যাম কালিয়া <span id="PL">সোনা বন্ধু রে</span><br>
 
 
                 বন্ধু, নিরলে তোমারে পাইলাম না, হায়<br>
-                নিরলে তোমারে পাইলাম না<br>
+                <span id="PL">নিরলে</span> তোমারে পাইলাম না<br>
                 ওরে আমার মনে যত দুঃখ<br>
 
                 আমি কইতে পারলাম না, বন্ধু রে<br>
-                বন্ধু, নিরলে তোমারে পাইলাম না<br>
+                বন্ধু, নিরলে তোমারে <span id="PL">পাইলাম</span> না<br>
 
                 নিরলে তোমারে পাইলাম না<br>
-                ফুলের আসন, ফুলের বসন রে বন্ধু<br>
+                <span id="PL"></span>ফুলের আসন, ফুলের বসন রে বন্ধু<br>
 
 
                 ফুলেরই বিছানা<br>
-                ফুলের আসন, ফুলের বসন রে বন্ধু<br>
+                ফুলের আসন, <span id="PL"></span>ফুলের বসন রে বন্ধু<br>
 
                 ফুলেরই বিছানা<br>
-                ওরে হৃদকমলে সোয়া চন্দন<br>
+                <span id="PL"></span>ওরে হৃদকমলে সোয়া চন্দন<br>
 
                 আমি ছিটাইয়া দিলাম না বন্ধু রে<br>
+                বন্ধু, নিরলে তোমারে <span id="PL"></span>পাইলাম না<br>
+
+                নিরলে তোমায় পাইলাম না<br>
+                ভাইবে <span id="PL">রাধারমণ</span> বলে রে বন্ধু<br>
+
+                মনেতে ভাবিয়া<br>
+                <span id="PL">ভাইবে রাধারমণ</span> বলে রে বন্ধু<br>
+
+                মনেতে ভাবিয়া<br>
+                <span id="PL">“আমার নিভাছিলো</span> মনের আগুন”<br>
+
+                “ওরে কে দিলা <span id="PL">জ্বালাইয়া</span>, বন্ধু রে”<br>
                 বন্ধু, নিরলে তোমারে পাইলাম না<br>
 
                 নিরলে তোমায় পাইলাম না<br>
-                ভাইবে রাধারমণ বলে রে বন্ধু<br>
-
-                মনেতে ভাবিয়া<br>
-                ভাইবে রাধারমণ বলে রে বন্ধু<br>
-
-                মনেতে ভাবিয়া<br>
-                “আমার নিভাছিলো মনের আগুন”<br>
-
-                “ওরে কে দিলা জ্বালাইয়া, বন্ধু রে”<br>
-                বন্ধু, নিরলে তোমারে পাইলাম না<br>
-
-                নিরলে তোমায় পাইলাম না<br>
-                শ্যাম কালিয়া সোনা বন্ধু রে<br>
+                <span id="PL">শ্যাম কালিয়া</span> সোনা বন্ধু রে<br>
 
                 বন্ধু, নিরলে তোমারে পাইলাম না<br>
-                নিরলে তোমারে পাইলাম না"<br>
-        </p>
-<p id="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/u_uWi-E7DGU?si=3_kPCIPSx1YJ3koP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
+                <span id="PL">নিরলে</span> তোমারে পাইলাম না"<br></span>
+                
+                Watch the song <a href="#youtubeLink"><em>"নিরলে তোমায় পাইলাম না"</em></a>
+            </p>
+            <div id="aboutPotatoes">
+            <p>
+                6 Surprising Health Benefits of Sweet Potatoes
+                <ol id="aboutPotatoe">
+                    <li>
+                        <span id="PL">Highly Nutritious</span>
+                    </li>
+                    <li>
+                        Promote <span id="PL">Gut Health</span>
+                    </li>
+                    <li>
+                        May Have <span id="PL">Cancer-Fighting</span> Properties
+                    </li>
+                    <li>
+                        Support <span id="PL">Healthy Vision</span>
+                    </li>
+                    <li>
+                        May Enhance <span id="PL">Brain Function</span>
+                    </li>
+                    <li>
+                        May Support Your <span id="PL">Immune System</span>
+                    </li>
+                </ol>
+            </p></div>
+            <iframe id="youtubeLink" width="560" height="315" src="https://www.youtube.com/embed/u_uWi-E7DGU?si=3_kPCIPSx1YJ3koP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         <h5 id="developer">Developed by:<br><em>Junaed Mustofa Chowdhury</em></h5>
     </body>
 </html>
