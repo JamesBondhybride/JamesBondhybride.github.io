@@ -7,7 +7,7 @@
         <body>
             <style>
             body {
-                background-color:rgb(27, 2, 2);
+                background-color:rgb(245, 211, 211);
                 width: 1060px;
             }
             .button {
@@ -46,17 +46,18 @@
                 font-family: initial;
              }
             #about {
+                overflow: auto;
                 height: 350px;
                 position: absolute;
                 margin-top: 20px;
-                margin-left: 10px;
+                margin-left: 2px;
                 font-size:large;
                 font-style: italic;
                 width: 550px;
-                background-color: rgba(134, 42, 215, 0.363);
+                background-color: rgba(5, 2, 46, 0.815);
                 color:bisque;
                 text-align: left;
-                border: 10px ridge rgba(178, 76, 198, 0.331);
+                border: 3px ridge rgba(28, 3, 33, 0.331);
                 padding: 3px;
                 z-index:4;
             }
@@ -65,21 +66,20 @@
                 height: 350px;
                 width: 550px;
                 position: absolute;
-                margin-left: 620px;
+                margin-left: 640px;
                 margin-top: 20px;
                 text-align: left;
                 font-style: italic;
                 color: aliceblue;
                 font:large;
-                border: 10px ridge rgba(165, 72, 18, 0.639);
+                border: 3px ridge rgba(165, 72, 18, 0.639);
                 padding: 3px;
                 z-index:6;
             }
             #imgPotatos {
-                background-color: transparent;
                 position: auto;
-                margin-left: 630px;
-                margin-top: 30px;
+                margin-left: 640px;
+                margin-top: 20px;
                 width: 560px;
                 height: 360px;
             }
@@ -88,24 +88,37 @@
                 font-size: xx-large;
             }
             #Vlist {
-                margin-top: 80px;
-                width: 1180px;
+                margin-top: 20px;
+                width: 1190px;
                 margin-left: 2px;
                 position: absolute;
-                background-color: rgba(125, 73, 214, 0.854);
+                background-color: rgba(43, 36, 137, 0.689);
                 color: aliceblue;
                 border: 3px solid rgb(166, 142, 206);
-                padding: 10px;
+                padding: 3px;
                 z-index:7;
             }
+            table .tH {
+                background-color: aliceblue;
+                font-size: large;
+                font-style: italic;
+                padding:3px;
+                border: 5px solid rgba(77, 10, 105, 0.406);
+            }
         </style>
-        <h1 id="WebHead"><span id="PL"><em>HTML, CSS</span> and <span id="PL">JavaScript</em></span> Learning Trip<span id="PL"><em>!!!</em></span></h1>
+        <h1 id="WebHead"><span id="PL"><em>Magic of HTML, CSS</span> and <span id="PL">JavaScript!!!</em></span></h1>
         <div><img id="imgID" 
             src="https://www.cloudsigma.com/wp-content/uploads/How-To-Set-Up-Your-CSS-and-HTML-Practice-Project-With-a-Code-Editor.jpg"></div>
         <div>
-            <button class="button"><a href="#about">How I Started Programming</a></button>
-            <button class="button"><a href="#aboutPotatoes">Health Benefits Of Sweet Potatoes!!!</a></button>
-            <button class="button"><a href="#Vlist">Songs I like most!!!</a></button>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="tH"><a href="#about">How I Started Programming</a></th>
+                        <th class="tH"><a href="#aboutPotatoes">Health Benefits Of Sweet Potatoes!!!</a></th>
+                        <th class="tH"><a href="#Vlist">Songs I like most!!!</a></th>
+                    </tr>
+                </thead>
+            </table>
         </div>
         <dev id="about">
                 <h2>How <span id="PL">I</span> Started <span id="PL">Programming:</span></h2>
@@ -115,7 +128,15 @@
                 using <span id="PL">HTML and CSS</span>. I also like to make drawings in general and with <span id="PL">JavaScript</span>,
                 it seems incredible.<span id="PL"><em>JavaScript</em></span> objects are more live and interective.
                 I still dont know how to use <span id="PL">JaveScript</span> objects in websites...
-                </p></dev>
+
+                I am learning <span id="PL">HTML and CSS</span> at Khan Academy. I really liked the step-by-step learning process
+                and it is easy to progress. Anyone with <span id="PL">some coding knowledge</span> can start learning at Khan.
+                I studied <span id="PL">HBO-ICT</span> at Fontys University of Applied Science. Mostly I learned <span id="PL">C# programming</span>
+                at Fontys. There are some similarities in the <span id="PL">programming languages</span>. It appears to me <span id="PL">JavaScript,
+                HTML, and CSS</span> are very useful languages for <span id="PL">web development.</span>
+            
+                </p>
+        </dev>
         <div id="aboutPotatoes">
                 <h2><span id="PL">6 Surprising</span> Health Benefits of <span id="PL">Sweet Potatoes:</span></h2>
                 <ol id="aboutPotatoe">
@@ -149,7 +170,6 @@
                 <iframe width="250" height="300" src="https://www.youtube.com/embed/NVrWV5eE-pA?si=8qkOFgJpji22OTTp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>            
                 <iframe width="250" height="300" src="https://www.youtube.com/embed/soaImu5wpm4?si=fxfCDeASYqJMucmU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 <h5 id="developer">Developed by:<br><span id="PL">J</span>unaed <span id="PL">M</span>ustofa <span id="PL">C</span>howdhury</h5>
-            </div>
-             
+            </div>    
     </body>
 </html>
