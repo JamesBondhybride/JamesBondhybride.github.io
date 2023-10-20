@@ -1,0 +1,15 @@
+h1:hover, h1:active, h1:focus, h2:hover, h2:active, h2:focus, h3:hover, h3:active, h3:focus, h4:hover, h4:active, h4:focus, h5:hover, h5:active, h5:focus {
+    background-color: rgba(228, 15, 231, 0.493);
+  }
+  #bigL {
+    font-style: italic;
+    font-size: xx-large;
+  }
+  h1,h2,h3,h4,h5 { font-family: 'Concert One', sans-serif; color: white; background-color: rgba(1, 6, 16, 0.441)}
+  body {
+    background-image: url(https://img.freepik.com/premium-photo/abstract-background-connecting-lines-dots-with-empty-space-side-dark-blue-background_371307-30.jpg?w=1060);
+  }
+  div p {
+    background-color: white;
+    color: black;
+  }
