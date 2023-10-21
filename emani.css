@@ -11,7 +11,7 @@ body {
     background-image: url(https://wallpaperaccess.com/full/1567679.jpg);
 }
 
-section:hover, section:active, section:focus, h1:hover, h1:active, h1:focus, h2:hover, h2:active, h2:focus {
+section:hover, section:active, section:focus, h1:hover, h1:active, h1:focus, h2:hover, h2:active, h2:focus, a:hover, a:active, a:focus {
     background-color: rgba(170, 85, 133, 0.671);
 }
 section {
