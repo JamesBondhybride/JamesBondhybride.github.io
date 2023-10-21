@@ -1,0 +1,47 @@
+h1 {
+    font-family: 'Tilt Neon', sans-serif;
+    color: aliceblue;
+    text-align: center;
+    background-color: rgba(26, 26, 89, 0.616);
+}
+body {
+    width: auto;
+    color: white;
+    text-align: center;
+    background-image: url(https://wallpaperaccess.com/full/1567679.jpg);
+}
+
+section:hover, section:active, section:focus, h1:hover, h1:active, h1:focus, h2:hover, h2:active, h2:focus {
+    background-color: rgba(170, 85, 133, 0.671);
+}
+section {
+    color: aliceblue;
+    display: inline-block;
+    width: 20%;
+    height: 30%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: rgb(128, 128, 179);
+    padding:20px;
+
+}
+.price {
+    font-family:'Great Vibes', cursive;
+    font-size: x-large;
+}
+
+img {
+    background-color: rgb(128, 128, 179);
+    width: 40%;
+    height: 25%;
+}
+h2 {
+    background-color: rgb(26, 26, 89, 0.616);
+}
+em {
+    font-family:'Great Vibes', cursive; 
+    font-size: xx-large;
+  }
+main p {
+font-size: larger;
+}
