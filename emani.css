@@ -17,8 +17,8 @@ section:hover, section:active, section:focus, h1:hover, h1:active, h1:focus, h2:
 section {
     color: aliceblue;
     display: inline-block;
-    width: 20%;
-    height: 30%;
+    width: 30%;
+    height: 20%;
     margin-right: auto;
     margin-left: auto;
     background-color: rgb(128, 128, 179);
