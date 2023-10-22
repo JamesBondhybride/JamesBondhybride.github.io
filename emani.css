@@ -9,13 +9,13 @@ h1 {
 body {
     font-family: 'Tilt Neon', sans-serif;
     width: auto;
-    color: white;
+    color: #ffffff;
     text-align: center;
-    background-image: url(https://wallpaperaccess.com/full/1567679.jpg);
+    background-image: url(https://wallpapercave.com/wp/wp7043567.jpg);
 }
 
 .price:hover, .price:active, .price:focus, div:hover, div:active, div:focus, h1:hover, h1:active, h1:focus, h2:hover, h2:active, h2:focus, a:hover, a:active, a:focus {
-    background-color: rgba(191, 12, 12, 0.719);
+    background-color: rgba(219, 14, 158, 0.573);
     border: 10px double rgb(2, 2, 54);
 }
 div {
