@@ -3,6 +3,7 @@ h1 {
     color: aliceblue;
     text-align: center;
     background-color: rgba(26, 26, 89, 0.616);
+    padding: 25Px;
 }
 body {
     width: auto;
@@ -17,11 +18,10 @@ section:hover, section:active, section:focus, h1:hover, h1:active, h1:focus, h2:
 section {
     color: aliceblue;
     display: inline-block;
-    width: 30%;
-    height: 20%;
-    margin-right: auto;
-    margin-left: auto;
-    background-color: rgb(128, 128, 179);
+    width: 200px;
+    height: 400px;
+    margin: 20px;
+    background-color: rgba(91, 91, 172, 0.578);
     padding:20px;
 
 }
@@ -44,4 +44,6 @@ em {
   }
 main p {
 font-size: larger;
+font-weight: bold;
+
 }
