@@ -15,8 +15,8 @@ body {
 }
 
 .price:hover, .price:active, .price:focus, div:hover, div:active, div:focus, h1:hover, h1:active, h1:focus, h2:hover, h2:active, h2:focus, a:hover, a:active, a:focus {
-    background-color: rgba(219, 14, 158, 0.573);
     border: 10px double rgb(2, 2, 54);
+    background: linear-gradient(hsl(321, 100%, 30%),hsl(321, 100%, 80%), hsl(321, 100%, 30%), hsl(0, 100%, 10%));
 }
 div {
     color: aliceblue;
