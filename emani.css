@@ -2,30 +2,27 @@ h1 {
     font-family: 'Tilt Neon', sans-serif;
     color: aliceblue;
     text-align: center;
-    background-color: rgba(26, 26, 89, 0.616);
+    background: linear-gradient(hsl(238, 100%, 6%),hsl(240, 90%, 70%), hsl(250, 60%, 30%), hsl(300, 100%, 6%));
     padding: 10Px;
     border: 10px double rgb(2, 2, 54);
 }
 body {
-    font-family: 'Tilt Neon', sans-serif;
-    width: auto;
-    color: #ffffff;
-    text-align: center;
     background-image: url(https://wallpapercave.com/wp/wp7043567.jpg);
 }
 
 .price:hover, .price:active, .price:focus, div:hover, div:active, div:focus, h1:hover, h1:active, h1:focus, h2:hover, h2:active, h2:focus, a:hover, a:active, a:focus {
     border: 10px double rgb(2, 2, 54);
-    background: linear-gradient(hsl(321, 100%, 30%),hsl(321, 100%, 80%), hsl(321, 100%, 30%), hsl(0, 100%, 10%));
+    background: linear-gradient(hsl(238, 100%, 6%),hsl(240, 90%, 70%), hsl(250, 60%, 30%), hsl(300, 100%, 6%));
 }
 div {
     color: aliceblue;
     display: inline-block;
     width: 200px;
-    height: 400px;
-    margin: 20px;
+    height: 350px;
     background-color: rgba(6, 9, 69, 0.559);
     padding:20px;
+    margin: 20px;
+    margin-left: 35px;
 
 }
 .price {
@@ -33,7 +30,7 @@ div {
     font-size: x-large;
 }
 img {
-    
+    margin-left: 25%;
     width: 50%;
     height: 25%;
 }
@@ -43,6 +40,15 @@ em {
     font-size: xx-large;
   }
 .dev {
-font-size: larger;
-font-family: 'Tilt Neon', sans-serif;
+    font-size: larger;
+    font-family: 'Tilt Neon', sans-serif;
+}
+p {
+    font-family: 'Tilt Neon', sans-serif;
+    color: #ffffff;
+    text-align: center;
+}
+h2{
+    text-align: center;
+    font-family: 'Tilt Neon', sans-serif;
 }
