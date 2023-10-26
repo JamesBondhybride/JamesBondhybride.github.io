@@ -2,9 +2,11 @@ h1 {
     font-family: 'Tilt Neon', sans-serif;
     color: aliceblue;
     text-align: center;
-    background: linear-gradient(hsl(238, 100%, 6%),hsl(240, 90%, 70%), hsl(250, 60%, 30%), hsl(300, 100%, 6%));
+    background: linear-gradient(hsl(238, 100%, 6%),hsl(240, 90%, 70%), hsl(250, 60%, 30%), hsl(250, 100%, 6%));
     padding: 10Px;
     border: 10px double rgb(2, 2, 54);
+    border-radius: 40px;
+    box-shadow: 50px 50px 50px rgb(0, 0, 27);
 }
 body {
     background-image: url(https://wallpapercave.com/wp/wp7043567.jpg);
