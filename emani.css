@@ -23,7 +23,8 @@ div {
     height: 350px;
     background-color: rgba(6, 9, 69, 0.559);
     padding:20px;
-    margin-left:30px;
+    margin-left: 2em;
+    margin-top: 10px;
 
 }
 .price {
