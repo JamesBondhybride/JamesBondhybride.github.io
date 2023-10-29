@@ -8,6 +8,7 @@ h1 {
     border: 10px double rgb(2, 2, 54);
     border-radius: 40px;
     box-shadow: 50px 50px 50px rgb(0, 0, 27);
+    letter-spacing: 0.20px;
 }
 body {
     background-image: url(https://wallpapercave.com/wp/wp7043567.jpg);
