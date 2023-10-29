@@ -24,6 +24,9 @@ div {
     background-color: rgba(6, 9, 69, 0.559);
     padding:20px;
     margin: 25px;
+    justify-content: center;
+    align-items: center;
+
 }
 .price {
     font-family:'Great Vibes', cursive;
