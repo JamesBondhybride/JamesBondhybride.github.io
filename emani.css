@@ -1,5 +1,6 @@
 h1 {
     font-family: 'Tilt Neon', sans-serif;
+    font-weight: 800;
     color: aliceblue;
     text-align: center;
     background: linear-gradient(hsl(238, 100%, 6%),hsl(240, 90%, 70%), hsl(250, 60%, 30%), hsl(250, 100%, 6%));
@@ -16,15 +17,13 @@ body {
     background: linear-gradient(hsl(238, 100%, 6%),hsl(240, 90%, 70%), hsl(250, 60%, 30%), hsl(300, 100%, 6%));
 }
 div {
-    display: block;
-    color: aliceblue;
-    width: 200px;
-    height: 350px;
-    background-color: rgba(6, 9, 69, 0.559);
-    padding:15px;
     display: inline-block;
-    margin: 1%;
-    margin-left: 60px;  
+    color: aliceblue;
+    width: 20%;
+    height: 25%;
+    background-color: rgba(6, 9, 69, 0.559);
+    padding:20px;
+    margin: auto 30px;
 }
 .price {
     font-family:'Great Vibes', cursive;
@@ -52,4 +51,7 @@ p {
 h2{
     text-align: center;
     font-family: 'Tilt Neon', sans-serif;
+}
+* {
+    box-sizing: border-box;
 }
