@@ -3,12 +3,14 @@ h1 {
     font-weight: 800;
     color: aliceblue;
     text-align: center;
-    background: linear-gradient(hsl(238, 100%, 6%),hsl(240, 90%, 70%), hsl(250, 60%, 30%), hsl(250, 100%, 6%));
-    border-radius: 75%;
+    background: linear-gradient(hsl(238, 100%, 6%),hsl(240, 80%, 78%), hsl(250, 60%, 30%), hsl(250, 100%, 6%));
+    border-radius: 60%;
     box-shadow: 50px 50px 50px rgb(0, 0, 27);
+    font-size: 20px;
 }
 body {
-    background-image: url(https://wallpapercave.com/wp/wp7043567.jpg);
+    background: linear-gradient(rgba(0, 0, 100, 0.5), rgba(0, 0, 200, 0.5), rgba(0, 0, 20, 0.5)), url(https://wallpapercave.com/wp/wp7043567.jpg);
+
 }
 
 .price:hover, .price:active, .price:focus, div:hover, div:active, div:focus, a:hover, a:active, a:focus {
@@ -17,23 +19,28 @@ body {
 .catalogue {
     display: inline-block;
     color: aliceblue;
-    width: 240px;
-    height: 380px;
+    width: 300px;
+    height: 400px;
     background-color: rgba(6, 9, 69, 0.559);
     padding:20px;
-    margin:0 0 25px 50px;
+    margin:40px 0 0 70px;
     justify-content: center;
     align-items: center;
+    border-radius: 10%;
+    border: 5px solid rgba(1, 1, 15, 0.247);
 
 }
 .price {
     font-family:'Great Vibes', cursive;
     font-size: x-large;
+    border-radius: 70%;
 }
 img {
     margin-left: 25%;
     width: 50%;
-    height: 25%;
+    height: 40%;
+    align-items: center;
+    justify-content: center;
 }
 /* Initial of developer */
 em {
@@ -48,6 +55,9 @@ p {
     font-family: 'Tilt Neon', sans-serif;
     color: #ffffff;
     text-align: center;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 1;
 }
 h2 {
     text-align: center;
@@ -56,4 +66,19 @@ h2 {
 }
 * {
     box-sizing: border-box;
+}
+.pattern1 {
+    background-color: rgba(245, 36, 36, 0.276);
+    border-radius: 50%;
+    height: 10px;
+}
+.pattern2 {
+    background-color: rgba(25, 9, 112, 0.358);
+    border-radius: 50%;
+    height: 20px;
+}
+.pattern3 {
+    background-color: rgba(243, 9, 176, 0.276);
+    border-radius: 50%;
+    height: 20px;
 }
