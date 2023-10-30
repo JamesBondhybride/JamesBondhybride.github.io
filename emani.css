@@ -8,7 +8,6 @@ h1 {
     border: 10px double rgb(2, 2, 54);
     border-radius: 40px;
     box-shadow: 50px 50px 50px rgb(0, 0, 27);
-    letter-spacing: 0.20px;
 }
 body {
     background-image: url(https://wallpapercave.com/wp/wp7043567.jpg);
@@ -20,11 +19,11 @@ body {
 div {
     display: inline-block;
     color: aliceblue;
-    width: 250px;
+    width: 240px;
     height: 350px;
     background-color: rgba(6, 9, 69, 0.559);
     padding:20px;
-    margin: 30px;
+    margin:0 0 25px 50px;
     justify-content: center;
     align-items: center;
 
