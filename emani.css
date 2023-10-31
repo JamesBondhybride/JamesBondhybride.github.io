@@ -3,17 +3,14 @@ h1 {
     font-weight: 800;
     color: aliceblue;
     text-align: center;
-    background: linear-gradient(hsl(238, 100%, 6%),hsl(240, 80%, 78%), hsl(250, 60%, 30%), hsl(250, 100%, 6%));
-    border-radius: 60%;
-    box-shadow: 50px 50px 50px rgb(0, 0, 27);
-    font-size: 20px;
+    font-size: 2em;
 }
 body {
     background: linear-gradient(rgba(0, 0, 100, 0.5), rgba(0, 0, 200, 0.5), rgba(0, 0, 20, 0.5)), url(https://wallpapercave.com/wp/wp7043567.jpg);
 
 }
 
-.price:hover, .price:active, .price:focus, div:hover, div:active, div:focus, a:hover, a:active, a:focus {
+.catalogue:hover, .catalogue:focus, .catalogue:active {
     background: linear-gradient(hsl(238, 100%, 6%),hsl(240, 90%, 70%), hsl(250, 60%, 30%), hsl(300, 100%, 6%));
 }
 .catalogue {
@@ -68,17 +65,18 @@ h2 {
     box-sizing: border-box;
 }
 .pattern1 {
-    background-color: rgba(245, 36, 36, 0.276);
+    background-color: rgba(7, 234, 128, 0.276);
     border-radius: 50%;
-    height: 10px;
+    height: 50px;
+    box-shadow: 50px 50px 50px rgba(0, 0, 14, 0.927);
 }
 .pattern2 {
-    background-color: rgba(25, 9, 112, 0.358);
+    background-color: rgba(47, 17, 220, 0.831);
     border-radius: 50%;
-    height: 20px;
+    height: 35px;
 }
 .pattern3 {
-    background-color: rgba(243, 9, 176, 0.276);
+    background-color: rgba(243, 9, 177, 0.518);
     border-radius: 50%;
     height: 20px;
 }
