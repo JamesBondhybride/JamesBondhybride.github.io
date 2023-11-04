@@ -1,10 +1,4 @@
-h1 {
-    font-family: 'Tilt Neon', sans-serif;
-    font-weight: 800;
-    color: aliceblue;
-    text-align: center;
-    font-size: 2em;
-}
+
 body {
     background: linear-gradient(rgba(0, 0, 100, 0.5), rgba(0, 0, 200, 0.5), rgba(0, 0, 20, 0.5)), url(https://wallpapercave.com/wp/wp7043567.jpg);
 
@@ -23,7 +17,7 @@ body {
     margin:40px 0 0 70px;
     justify-content: center;
     align-items: center;
-    border-radius: 10%;
+    border-radius: 40%;
     border: 5px solid rgba(1, 1, 15, 0.247);
 
 }
@@ -64,19 +58,41 @@ h2 {
 * {
     box-sizing: border-box;
 }
-.pattern1 {
-    background-color: rgba(7, 234, 128, 0.276);
-    border-radius: 50%;
-    height: 50px;
-    box-shadow: 50px 50px 50px rgba(0, 0, 14, 0.927);
+h1 {
+    color: wheat;
+    text-align: left;
+    margin: 0%;
+    letter-spacing: 5px;
+    font-size: 50px;
+    width: 25%;
 }
-.pattern2 {
-    background-color: rgba(47, 17, 220, 0.831);
-    border-radius: 50%;
-    height: 35px;
+.smallText {
+    font-size: small;
 }
-.pattern3 {
-    background-color: rgba(243, 9, 177, 0.518);
-    border-radius: 50%;
-    height: 20px;
+
+nev > ul {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(0, 0, 0, 0.525);
+    padding: 10px;
+    margin: 0;
+}
+nev > ul button {
+    border-radius: 25px;
+    width: 150px;
+    background: linear-gradient(90deg, hsl(238, 100%, 6%),hsl(240, 92%, 75%), hsl(250, 59%, 62%), hsl(300, 100%, 6%));
+    margin: 0;
+}
+
+nev ul:hover, nev ul:focus, nev ul:active, button:hover, button:active, button:focus {
+    background: linear-gradient(90deg, hsl(238, 100%, 6%),hsl(240, 77%, 73%), hsl(250, 63%, 77%), hsl(245, 70%, 30%), hsl(300, 100%, 6%));
+   
+}
+a {
+    font-size: larger;
+    font-style: italic;
+    font-weight: 900;
+}
+hr {
+    width: 500px;
 }
