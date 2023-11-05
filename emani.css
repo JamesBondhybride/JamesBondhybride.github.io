@@ -1,4 +1,10 @@
-
+h1, h2 {
+    color: wheat;
+    text-align: center;
+    margin: auto;
+    letter-spacing: 5px;
+    font-size: 2em;
+}
 body {
     background: linear-gradient(rgba(0, 0, 100, 0.5), rgba(0, 0, 200, 0.5), rgba(0, 0, 20, 0.5)), url(https://wallpapercave.com/wp/wp7043567.jpg);
 
@@ -11,13 +17,13 @@ body {
     display: inline-block;
     color: aliceblue;
     width: 300px;
-    height: 400px;
+    height: 300px;
     background-color: rgba(6, 9, 69, 0.559);
     padding:20px;
     margin:40px 0 0 70px;
     justify-content: center;
     align-items: center;
-    border-radius: 40%;
+    border-radius: 3%;
     border: 5px solid rgba(1, 1, 15, 0.247);
 
 }
@@ -27,11 +33,10 @@ body {
     border-radius: 70%;
 }
 img {
-    margin-left: 25%;
-    width: 50%;
-    height: 40%;
-    align-items: center;
-    justify-content: center;
+    width: 40%;
+    height: 25%;
+    display: flex;
+    margin: auto;
 }
 /* Initial of developer */
 em {
@@ -50,21 +55,9 @@ p {
     font-style: italic;
     font-weight: 1;
 }
-h2 {
-    text-align: center;
-    font-weight: 700;
-    font-family: 'Tilt Neon', sans-serif;
-}
+
 * {
     box-sizing: border-box;
-}
-h1 {
-    color: wheat;
-    text-align: left;
-    margin: 0%;
-    letter-spacing: 5px;
-    font-size: 3em;
-    width: 25%;
 }
 .smallText {
     font-size: small;
@@ -75,10 +68,11 @@ nev > ul {
     justify-content: space-evenly;
     background-color: rgba(0, 0, 0, 0.525);
     padding: 10px;
-    margin: 0;
+    margin: auto;
 }
 nev > ul button {
     border-radius: 25px;
+    width: 150px;
     background: linear-gradient(90deg, hsl(238, 100%, 6%),hsl(240, 92%, 75%), hsl(250, 59%, 62%), hsl(300, 100%, 6%));
     margin: 0;
 }
@@ -91,7 +85,4 @@ a {
     font-size: larger;
     font-style: italic;
     font-weight: 900;
-}
-hr {
-    width: 500px;
 }
