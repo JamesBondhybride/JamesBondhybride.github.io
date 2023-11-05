@@ -1,10 +1,24 @@
 h1, h2 {
     color: wheat;
-    text-align: center;
     margin: auto;
     letter-spacing: 5px;
     font-size: 2em;
+    text-align: center;
 }
+.shed1 {
+    background: linear-gradient(rgba(0, 0, 100, 0.5), rgba(11, 111, 173, 0.5),rgba(12, 131, 228, 0.5));
+    width: 15%;
+}
+.shed2 {
+    background: linear-gradient(rgba(92, 0, 100, 0.5), rgba(166, 7, 206, 0.5), rgba(165, 6, 174, 0.5));
+    width: 85%;
+}
+.shed3 {
+    background: linear-gradient(rgba(0, 0, 100, 0.5), rgba(0, 0, 200, 0.5), rgba(0, 0, 20, 0.5));
+    width: 80%;
+}
+
+
 body {
     background: linear-gradient(rgba(0, 0, 100, 0.5), rgba(0, 0, 200, 0.5), rgba(0, 0, 20, 0.5)), url(https://wallpapercave.com/wp/wp7043567.jpg);
 
@@ -19,12 +33,10 @@ body {
     width: 300px;
     height: 300px;
     background-color: rgba(6, 9, 69, 0.559);
-    padding:20px;
-    margin:40px 0 0 70px;
-    justify-content: center;
-    align-items: center;
     border-radius: 3%;
     border: 5px solid rgba(1, 1, 15, 0.247);
+    margin: 1em 3em 1em 3em;
+    box-sizing: border-box;
 
 }
 .price {
@@ -33,10 +45,10 @@ body {
     border-radius: 70%;
 }
 img {
-    width: 40%;
-    height: 25%;
     display: flex;
     margin: auto;
+    width: 25%;
+    height: 25%;
 }
 /* Initial of developer */
 em {
@@ -54,10 +66,6 @@ p {
     font-size: 16px;
     font-style: italic;
     font-weight: 1;
-}
-
-* {
-    box-sizing: border-box;
 }
 .smallText {
     font-size: small;
