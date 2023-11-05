@@ -79,7 +79,6 @@ nev > ul {
 }
 nev > ul button {
     border-radius: 25px;
-    width: 150px;
     background: linear-gradient(90deg, hsl(238, 100%, 6%),hsl(240, 92%, 75%), hsl(250, 59%, 62%), hsl(300, 100%, 6%));
     margin: 0;
 }
