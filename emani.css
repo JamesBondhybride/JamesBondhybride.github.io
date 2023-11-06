@@ -29,29 +29,30 @@ h1 {
 
 
 body {
-    background: linear-gradient(rgba(0, 0, 100, 0.5), rgba(0, 0, 200, 0.5), rgba(0, 0, 20, 0.5)), url(https://wallpapercave.com/wp/wp7043567.jpg);
-
+    background: url(https://live.staticflickr.com/65535/53313106664_74b3cfa091_h.jpg);
+}
+main {
+    background-color: rgba(0, 0, 0, 0.484);
 }
 
 .catalogue:hover, .catalogue:focus, .catalogue:active {
     background: linear-gradient(hsl(238, 100%, 6%),hsl(240, 90%, 70%), hsl(250, 60%, 30%), hsl(300, 100%, 6%));
 }
 .catalogue {
-    display: inline-block;
+    display: inline-table;
+    margin: 1em 1em 1em 6.3em;
     color: aliceblue;
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     background-color: rgba(6, 9, 69, 0.559);
     border-radius: 3%;
-    border: 5px solid rgba(1, 1, 15, 0.247);
-    margin: 1em 3em 1em 3em;
     box-sizing: border-box;
+
 
 }
 .price {
     font-family:'Great Vibes', cursive;
     font-size: x-large;
-    border-radius: 70%;
 }
 img {
     display: flex;
@@ -108,7 +109,8 @@ footer hr {
 address {
     color: #ffffff;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.194);
 }
-
+div p, h2 {
+    margin: auto;
+}
 
