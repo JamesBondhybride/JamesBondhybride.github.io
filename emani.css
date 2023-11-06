@@ -40,7 +40,8 @@ main {
 }
 .catalogue {
     display: inline-table;
-    margin: 1em 1em 1em 6.3em;
+    justify-content: center;
+    margin: 1em 3em 1em 6em;
     color: aliceblue;
     width: 250px;
     height: 250px;
