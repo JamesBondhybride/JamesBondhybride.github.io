@@ -10,12 +10,12 @@ h1 {
     letter-spacing: 5px;
     text-align: left;
     background: linear-gradient(90deg, rgba(0, 0, 100, 0.5), rgba(11, 111, 173, 0.5),rgba(1, 20, 36, 0.5));
-    width: 100%;
+    width: 90%;
     margin: 0;
 }
 .shed1 {
     background: linear-gradient(90deg, rgba(0, 0, 5, 0.785), rgba(43, 43, 88, 0.589), rgba(0, 0, 30, 0.5));
-    width: 90%;
+    width: 100%;
     margin: 0;
 }
 .shed2 {
@@ -43,20 +43,19 @@ main {
 .catalogue {
     display: inline-table;
     justify-content: space-evenly;
-    margin: 1em 1em 1em 7em;
     color: aliceblue;
     width: 250px;
     height: 250px;
     background-color: rgba(6, 9, 69, 0.559);
     border-radius: 3%;
     box-sizing: border-box;
-
+    margin-left: 115px;
+    margin-top: 20px;
 
 }
 .price {
     font-family:'Great Vibes', cursive;
     font-size: x-large;
-    margin: 10px;
 }
 img {
     display: flex;
