@@ -42,23 +42,24 @@ main {
 }
 .catalogue {
     display: inline-table;
+    justify-content: center;
+    margin-left: 5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 5rem;
     color: aliceblue;
     width: 250px;
     height: 250px;
     background-color: rgba(6, 9, 69, 0.559);
     border-radius: 3%;
-    margin-left: 115px;
-    margin-top: 10px;
-
-    
-    
 }
 .price {
     font-family:'Great Vibes', cursive;
     font-size: x-large;
+    margin: 10px;
 }
 img {
-    display: flex;
+    display: block;
     margin: auto;
     width: 25%;
     height: 25%;
