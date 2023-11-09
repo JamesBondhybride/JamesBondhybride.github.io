@@ -42,7 +42,6 @@ main {
 }
 .catalogue {
     display: inline-table;
-    justify-content: center;
     margin-left: 5rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
