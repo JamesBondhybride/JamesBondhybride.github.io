@@ -4,6 +4,7 @@ h2 {
     letter-spacing: 5px;
     font-size: 2em;
     text-align: center;
+    padding-top: 1px;
 }
 h1 {
     color: rgba(245, 245, 245, 0.578);
@@ -42,13 +43,10 @@ main {
 }
 .catalogue {
     display: inline-table;
-    margin-left: 5rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    margin-right: 5rem;
+    margin: 1rem 4rem;
     color: aliceblue;
-    width: 250px;
-    height: 250px;
+    width: 280px;
+    height: 280px;
     background-color: rgba(6, 9, 69, 0.559);
     border-radius: 3%;
 }
