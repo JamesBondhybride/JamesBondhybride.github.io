@@ -5,15 +5,18 @@ h2 {
     font-size: 2em;
     text-align: center;
     padding-top: 1px;
+    font-family: cursive;
+    font-style: italic;
 }
 h1 {
     color: rgba(245, 245, 245, 0.578);
-    letter-spacing: 5px;
+    letter-spacing: 15px;
     text-align: left;
     background: linear-gradient(90deg, rgba(0, 0, 100, 0.5), rgba(11, 111, 173, 0.5),rgba(1, 20, 36, 0.5));
     width: 90%;
     margin: 0;
     border-top-right-radius: 100%;
+    margin-top: -10px;
 }
 .shed1 {
     background: linear-gradient(90deg, rgba(35, 56, 3, 0.785), rgba(62, 74, 3, 0.589),rgba(159, 188, 10, 0.5), rgba(25, 30, 0, 0.5));
@@ -39,6 +42,7 @@ body {
     background: url(https://live.staticflickr.com/65535/53313106664_74b3cfa091_h.jpg);
 }
 main {
+    margin-top: -2px;
     background-color: rgba(0, 0, 0, 0.484);
 }
 
@@ -46,9 +50,9 @@ main {
     background: linear-gradient(hsl(238, 100%, 6%),hsl(240, 90%, 70%), hsl(250, 60%, 30%), hsl(300, 100%, 6%));
 }
 .catalogue {
+    margin-left: 100px;
+    margin-top: 30px;
     display: inline-table;
-    margin: 1rem 4rem;
-    color: aliceblue;
     width: 280px;
     height: 280px;
     background-color: rgba(6, 9, 69, 0.559);
@@ -85,28 +89,27 @@ p {
 .smallText {
     font-size: small;
 }
-
-nev > ul {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 10px;
-    margin: auto;
-}
-nev > ul button {
+button {
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 30%;
+    border-bottom-left-radius: 30%;
+    margin-left: 13rem;
     width: 10em;
-    border-radius: 25px;
-    background: linear-gradient(90deg, hsl(238, 100%, 6%),hsl(240, 92%, 75%), hsl(250, 59%, 62%), hsl(300, 100%, 6%));
-    margin: auto;
+    background: linear-gradient(180deg, hsl(238, 100%, 6%),hsl(240, 92%, 75%), hsl(250, 59%, 62%), hsl(300, 100%, 6%));
 }
 
 button:hover, button:active, button:focus {
-    background: linear-gradient(90deg, hsl(238, 100%, 6%),hsl(240, 77%, 73%), hsl(250, 63%, 77%), hsl(245, 70%, 30%), hsl(300, 100%, 6%));
+    background: linear-gradient(180deg, hsl(238, 100%, 6%),hsl(240, 77%, 73%), hsl(250, 63%, 77%), hsl(245, 70%, 30%), hsl(300, 100%, 6%));
    
 }
 a {
+    font-family: cursive;
+    color: #ffffff98;
     font-size: larger;
     font-style: italic;
-    font-weight: 900;
+    font-weight: 700;
+    text-decoration: none;
 }
 footer hr {
     width: 25em;
