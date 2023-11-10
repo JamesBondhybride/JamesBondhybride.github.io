@@ -13,21 +13,25 @@ h1 {
     background: linear-gradient(90deg, rgba(0, 0, 100, 0.5), rgba(11, 111, 173, 0.5),rgba(1, 20, 36, 0.5));
     width: 90%;
     margin: 0;
+    border-top-right-radius: 100%;
 }
 .shed1 {
-    background: linear-gradient(90deg, rgba(0, 0, 5, 0.785), rgba(43, 43, 88, 0.589), rgba(0, 0, 30, 0.5));
+    background: linear-gradient(90deg, rgba(35, 56, 3, 0.785), rgba(62, 74, 3, 0.589),rgba(159, 188, 10, 0.5), rgba(25, 30, 0, 0.5));
     width: 100%;
     margin: 0;
+    border-bottom-right-radius: 100%;
 }
 .shed2 {
     background: linear-gradient(180deg, rgba(92, 0, 100, 0.5), rgba(166, 7, 206, 0.5), rgba(165, 6, 174, 0.5));
     width: 90%;
     margin: 0;
+    border-top-right-radius: 100%;
 }
 .shed3 {
     background: linear-gradient(180deg, rgba(0, 0, 5, 0.785), rgba(43, 43, 88, 0.589), rgba(0, 0, 30, 0.5));
     width: 90%;
     margin: 0;
+    border-bottom-right-radius: 100%;
 }
 
 
