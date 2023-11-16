@@ -1,3 +1,9 @@
+*, ::after, ::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 :root {
     --website-color1: linear-gradient(90deg, rgba(0, 0, 100, 0.5), rgba(11, 111, 173, 0.5),rgba(1, 20, 36, 0.5));
     --shed1-color: linear-gradient(90deg, rgba(35, 56, 3, 0.785), rgba(62, 74, 3, 0.589),rgba(159, 188, 10, 0.5), rgba(25, 30, 0, 0.5));
@@ -7,6 +13,7 @@
     --button-color2: rgba(43, 43, 88, 0.589);
     --button-color3: rgba(0, 0, 100, 0.5);
     --button-color4: rgba(35, 56, 3, 0.785);
+    --catalogue-color: rgba(6, 9, 69, 0.559);
 }
 
 h2 {
@@ -25,8 +32,8 @@ h1 {
     background: var(--website-color1);
     width: 90%;
     border-top-right-radius: 100%;
-    margin-top: -10px;
     margin-bottom: 0;
+    margin-top: 1px;
 
     
 }
@@ -54,7 +61,7 @@ body {
     background: var(--website-color1) 5%, url(https://live.staticflickr.com/65535/53313106664_74b3cfa091_h.jpg) 95%;
 }
 
-.catalogue:hover, .catalogue:focus, .catalogue:active {
+.catalogue:hover, .catalogue:focus, .catalogue:active, a:hover, a:active, a:focus {
     background: var(--website-color1);
 }
 .catalogue {
@@ -64,7 +71,7 @@ body {
     display: inline-table;
     width: 280px;
     height: 280px;
-    background-color: rgba(6, 9, 69, 0.559);
+    background-color: var(--catalogue-color);
     border-radius: 3%;
 }
 .price {
@@ -72,7 +79,7 @@ body {
     font-size: x-large;
     margin: 10px;
 }
-img {
+div > img {
     display: block;
     margin: auto;
     width: 25%;
@@ -108,7 +115,6 @@ button {
     margin-left: 230px;
     width: 8em;
     background: var(--website-color1);
-    box-shadow: black;
 }
 
 button:hover, button:active, button:focus {
@@ -133,15 +139,15 @@ div p {
     color: #ffffffc0;
 }
 
-@media (max-width: 700px) {
+@media (max-width:1000px) {
     h1 {
-        letter-spacing: 5px;
+        letter-spacing: 1px;
         color: rgba(245, 245, 245, 0.578);
         text-align: left;
         background: var(--website-color1);
         width: 90%;
         border-top-right-radius: 100%;
-        margin-top: -10px;
+        margin-top: 0;
         margin-bottom: 0;
     }
     body {
@@ -157,7 +163,24 @@ div p {
         margin-left: 25px;
         width: 8em;
         background: var(--website-color1);
-        box-shadow: black;
     }
-    
+    .catalogue {
+        display: inline-table;
+        width: 180px;
+        height: 300px;
+        align-items: center;
+        justify-content: center;
+        margin: 5px;
+        margin-left: 10px;
+    }
+    h2 {
+        margin: 2px;
+
+    }
+    div > img {
+        display: block;
+        margin: auto;
+        width: 25%;
+        height: 15%;
+    }
 }
