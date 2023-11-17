@@ -65,14 +65,19 @@ body {
     background: var(--website-color1);
 }
 .catalogue {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100% / 4);
+  height: 20rem;
+  border: 1px solid #000;
+  border-radius: 5px;
+  background: var(--catalogue-color);
+  margin: 10px 30px 10px 30px;
+}
+main {
     margin-left: 100px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    display: inline-table;
-    width: 280px;
-    height: 280px;
-    background-color: var(--catalogue-color);
-    border-radius: 3%;
 }
 .price {
     font-family:'Great Vibes', cursive;
@@ -166,21 +171,30 @@ div p {
     }
     .catalogue {
         display: inline-table;
-        width: 180px;
-        height: 300px;
         align-items: center;
-        justify-content: center;
-        margin: 5px;
-        margin-left: 10px;
+        text-align: center;
+        width: 10rem;
+        height: 18em;
+        border: 1px solid #000;
+        border-radius: 5px;
+        background: var(--catalogue-color);
+        margin: 1px 1px 1px 1px;
+              }
+    main {
+        margin-left: 35px;
     }
     h2 {
         margin: 2px;
-
     }
     div > img {
         display: block;
         margin: auto;
         width: 25%;
         height: 15%;
-    }
+            }
+    *, ::after, ::before {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
 }
