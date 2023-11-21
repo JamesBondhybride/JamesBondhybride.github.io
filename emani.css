@@ -69,12 +69,14 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  width: calc(100% / 4);
-  height: 20rem;
+  width: 25vw;
+  height: 25vw;
   border: 1px solid #000;
-  border-radius: 5px;
+  border-radius: 5%;
   background: var(--catalogue-color);
-  margin: 10px 30px 10px 30px;
+  margin: 10px 10px 10px 10px;
+  border: 2px solid black;
+
 }
 main {
     margin-left: 100px;
@@ -178,11 +180,7 @@ div p {
         border: 1px solid #000;
         border-radius: 5px;
         background: var(--catalogue-color);
-        margin: 1px 1px 1px 1px;
-              }
-    main {
-        margin-left: 35px;
-    }
+         }
     h2 {
         margin: 2px;
     }
@@ -197,4 +195,10 @@ div p {
                 margin: 0;
                 box-sizing: border-box;
             }
+    *, ::after, ::before {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+            
 }
