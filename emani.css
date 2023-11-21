@@ -157,6 +157,30 @@ div p {
         margin-top: 0;
         margin-bottom: 0;
     }
+    h2 {
+        color: rgba(245, 222, 179, 0.808);
+        margin: auto;
+        letter-spacing: 5px;
+        font-size: 10em;
+        text-align: center;
+        padding-top: 1px;
+        font-style: italic;
+        font-size: 18px;
+    }
+    .catalogue {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 30vw;
+        height: 55vw;
+        border: 1px solid #000;
+        border-radius: 5%;
+        background: var(--catalogue-color);
+        margin-left: -20px;
+        margin-right: 20px;
+      
+      }
     body {
         background: var(--website-color1), var(--shed1-color);
     }
@@ -170,19 +194,6 @@ div p {
         margin-left: 25px;
         width: 8em;
         background: var(--website-color1);
-    }
-    .catalogue {
-        display: inline-table;
-        align-items: center;
-        text-align: center;
-        width: 10rem;
-        height: 18em;
-        border: 1px solid #000;
-        border-radius: 5px;
-        background: var(--catalogue-color);
-         }
-    h2 {
-        margin: 2px;
     }
     div > img {
         display: block;
@@ -200,5 +211,17 @@ div p {
                 margin: 0;
                 box-sizing: border-box;
             }
-            
+    html {
+        margin: 0%;
+    }
+    p {
+        font-family: 'Tilt Neon', sans-serif;
+        color: #ffffff;
+        text-align: center;
+        font-size: 13px;
+        font-style: italic;
+        font-weight: 1;
+    }
+    
+    
 }
