@@ -139,6 +139,7 @@ footer hr {
 address {
     color: #ffffff;
     text-align: center;
+    transition: transform 0.3s ease-out;
 }
 div p {
     margin: auto;
@@ -224,3 +225,30 @@ div p {
     
     
 }
+
+
+.contact-details {
+    font-size: 2.4rem;
+    text-shadow: 2px 2px 1px #1f1f1f;
+    transition: transform 0.3s ease-out;
+  }
+  .contact-details:hover {
+    transform: translateY(8px);
+  }
+
+  .contact-links {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 980px;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+    margin-left: 100px;
+  }
+  .btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 2px;
+  }
+  
+  
