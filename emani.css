@@ -42,18 +42,33 @@ h1 {
     width: 100%;
     margin: 0;
     border-bottom-right-radius: 100%;
+    animation: shed 1s linear infinite;
 }
 .shed2 {
     background: var(--shed2-color);
     width: 90%;
     margin: 0;
     border-top-right-radius: 100%;
+    animation: shed 1s linear infinite;
 }
 .shed3 {
     background: var(--shed3-color);
     width: 90%;
     margin: 0;
     border-bottom-right-radius: 100%;
+    animation: shed 1s linear infinite;
+}
+
+@keyframes shed {
+    0% {
+        background-color: red;
+    }
+    50% {
+        background-color: var(--shed2-color);
+    }
+    100% {
+        background-color: green;
+    }
 }
 
 
@@ -233,7 +248,7 @@ div p {
     transition: transform 0.3s ease-out;
   }
   .contact-details:hover {
-    transform: translateY(8px);
+    transform: translate(8px);
   }
 
   .contact-links {
@@ -241,14 +256,12 @@ div p {
     justify-content: center;
     width: 100%;
     max-width: 980px;
-    margin-top: 4rem;
     flex-wrap: wrap;
     margin-left: 100px;
+    margin-top: 0;
   }
   .btn {
     display: inline-block;
     padding: 1rem 2rem;
     border-radius: 2px;
   }
-  
-  
