@@ -172,16 +172,7 @@ div p {
 }
 
 @media (max-width:1000px) {
-    .contact-links {
-        display: inline-flex;
-        width: 50%;
-        margin: 0;
-        font-size: 5px;
-      }
-      .contact-details {
-        margin: 0;
-        font-size: 5px;
-      }
+    
     h1 {
         letter-spacing: 1px;
         color: rgba(245, 245, 245, 0.578);
@@ -207,7 +198,7 @@ div p {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        width: 30vw;
+        width: 35vw;
         height: 55vw;
         border: 1px solid #000;
         border-radius: 5%;
@@ -253,7 +244,7 @@ div p {
         font-family: 'Tilt Neon', sans-serif;
         color: #ffffff;
         text-align: center;
-        font-size: 13px;
+        font-size: 11px;
         font-style: italic;
         font-weight: 1;
     }
@@ -266,3 +257,5 @@ div p {
     padding: 1rem 2rem;
     border-radius: 2px;
   }
+  
+  
