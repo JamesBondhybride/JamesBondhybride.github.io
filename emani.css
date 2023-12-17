@@ -71,6 +71,15 @@ h1 {
     }
 }
 
+@keyframes product {
+    0% {
+        background-color: var(--catalogue-color);
+    }
+    50% {
+        background-color: var(--website-color1);
+    }
+}
+
 
 body {
     background: var(--website-color1) 5%, url(https://live.staticflickr.com/65535/53313106664_74b3cfa091_h.jpg) 95%;
@@ -90,6 +99,7 @@ body {
   border-radius: 5%;
   background: var(--catalogue-color);
   margin: 10px 10px 10px 10px;
+  animation: product 10s linear infinite;
 
 }
 main {
@@ -162,6 +172,16 @@ div p {
 }
 
 @media (max-width:1000px) {
+    .contact-links {
+        display: inline-flex;
+        width: 50%;
+        margin: 0;
+        font-size: 5px;
+      }
+      .contact-details {
+        margin: 0;
+        font-size: 5px;
+      }
     h1 {
         letter-spacing: 1px;
         color: rgba(245, 245, 245, 0.578);
@@ -241,25 +261,6 @@ div p {
     
 }
 
-
-.contact-details {
-    font-size: 2.4rem;
-    text-shadow: 2px 2px 1px #1f1f1f;
-    transition: transform 0.3s ease-out;
-  }
-  .contact-details:hover {
-    transform: translate(8px);
-  }
-
-  .contact-links {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    max-width: 980px;
-    flex-wrap: wrap;
-    margin-left: 100px;
-    margin-top: 0;
-  }
   .btn {
     display: inline-block;
     padding: 1rem 2rem;
