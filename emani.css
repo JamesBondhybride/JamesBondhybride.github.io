@@ -191,7 +191,7 @@ div p {
         text-align: center;
         padding-top: 1px;
         font-style: italic;
-        font-size: 20px;
+        font-size: 15px;
     }
     .catalogue {
         display: inline-flex;
@@ -244,7 +244,7 @@ div p {
         font-family: 'Tilt Neon', sans-serif;
         color: #ffffff;
         text-align: center;
-        font-size: 11px;
+        font-size: 10px;
         font-style: italic;
         font-weight: 1;
     }
