@@ -72,8 +72,17 @@ h1 {
         font-size: 100%;
         text-align: center;
     }
+    50% {
+        font-size: 105%;
+        text-align: center;
+
+    }
+    75% {
+        font-size: 110%;
+        text-align: center;
+    }
     100% {
-        font-size: 120%;
+        font-size: 115%;
         text-align: center;
     }
 }
@@ -155,8 +164,7 @@ p {
 }
 .details {
    font-size: 100%;
-    animation: textSize 10s linear infinite;
-    animation-direction: alternate-reverse;
+    animation: textSize 20s linear infinite;
 }
 .smallText {
     font-size: small;
@@ -194,6 +202,12 @@ address {
 div p {
     margin: auto;
     color: #ffffffc0;
+}
+
+/* fiverr affiliate link background*/
+
+#fiv {
+    background-color: #1dbf73;;
 }
 
 @media (max-width:1000px) {
@@ -265,19 +279,12 @@ div p {
     html {
         margin: 0%;
     }
-    @keyframes textSizeD {
-      0% {
-         font-size: small;
-      }
-    }
     .details {
         font-family: 'Tilt Neon', sans-serif;
         color: #ffffff;
         text-align: center;
         font-style: italic;
         font-weight: 1;
-        font-size: 50%;
-        animation: textSizeD 20s linear infinite;
     }
     
     
@@ -351,6 +358,10 @@ div p {
     Phone: +8801710568775
     Find Me <a href="https://www.fiverr.com/s/DLeK7Q">@Fiverr</a>
     </address>
+    </div>
+    <div id="fiv">
+    <iframe src="https://www.fiverr.com/gig_widgets?id=U2FsdGVkX1+OhIFnrRzi8X4+i6P1zxBRTagdxFfuG4ViywzqRYCY31eRJGi+ERKc2QbrkG2xQ+eBq5268TFK2U3XOMkiBHakaCM76+cYOevXFYcKAbjz/zBt1NIXkelAH7GarKKmvwCZtq2hg5zYWKwaOJ3tjqYD/pWpQeXJbGcxkgg0kDAth132CblFyy59LUIPQ1dbPzyV5i5mpFN34f2cD8QtRBCzM3Jy6W5bl6MQyly84VuitfE6yPn2Yfmy3wzvbacNj58yA9IHsO6NSge5aKss0QJBdKOM++FRz/sqp9E8oi/BegWjltxHY22DIZI0z9MDF4SEQZTo6g3GwE1YpsHduQZXoEx94zQfqi89fmKf9HJfdnZUMMUlsNT80KS2bzTWYOuJk4h1wNnut0/N+rCnHmSfcIVPk3dEwRO2zzph/W+xMY++COaJFCJHrWrnGNS+23MKd1LGkmrZApPE/4C7+zllDAHmfdmWayllcxt0ge56/fxZpNANSTRu4v5q7nhKFxe5OiVbkoiDY8ACiXUyoedDbxW8vaOdoV3llBGhh906HWOpMnhmwC5O&affiliate_id=898859&strip_google_tagmanager=true" loading="lazy" data-with-title="true" class="fiverr_nga_frame" frameborder="0" height="350" width="100%" referrerpolicy="no-referrer-when-downgrade" data-mode="random_gigs" onload=" var frame = this; var script = document.createElement('script'); script.addEventListener('load', function() { window.FW_SDK.register(frame); }); script.setAttribute('src', 'https://www.fiverr.com/gig_widgets/sdk'); document.body.appendChild(script); " ></iframe>
+
     </div>
     </body>
  </html>
