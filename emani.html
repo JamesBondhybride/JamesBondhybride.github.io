@@ -133,7 +133,7 @@ h1 {
 
 
 body {
-    animation: bodyBackgroundSlides 60s infinite;
+    animation: bodyBackgroundSlides 60s linear infinite;
 }
 
 .catalogue:hover, .catalogue:focus, .catalogue:active, a:hover, a:active, a:focus {
@@ -212,7 +212,7 @@ button {
     border-top-right-radius: 20%;
     border-bottom-left-radius: 20%;
     margin-top: 1rem;
-    margin-left: 230px;
+    margin-left: 20%;
     width: 8em;
     background: var(--website-color1);
 }
@@ -242,10 +242,13 @@ div p {
     background-color: #1dbf73;;
 }
 
+
+
 @media (max-width:1000px) {
-    .price {
+
+.price {
         font-style: normal;
-    }
+}
 p {
     font-family: 'Tilt Neon', sans-serif;
     color: #ffffff;
@@ -257,7 +260,7 @@ p {
 
 }
     
-    h1 {
+h1 {
         letter-spacing: 1px;
         color: rgba(245, 245, 245, 0.578);
         text-align: left;
@@ -266,8 +269,8 @@ p {
         border-top-right-radius: 100%;
         margin-top: 0;
         margin-bottom: 0;
-    }
-    h2 {
+}
+h2 {
         color: rgba(245, 222, 179, 0.808);
         margin: auto;
         letter-spacing: 5px;
@@ -275,19 +278,21 @@ p {
         text-align: center;
         padding-top: 1px;
         font-style: italic;
-    }
-    .catalogue {
-        display: flex;
+}
+
+.catalogue {
+        display: flexbox;
         flex-direction: column;
         align-items: center;
         text-align: center;
-        width: 80vw;
-        height: 80vw;
+        width: 60vw;
+        height: 60vw;
         border: 1px solid #000;
         border-radius: 5%;
         background: var(--catalogue-color);
-        margin-left: -50px;     
+             
       }
+
     button {
         padding: 0%;
         border-top-left-radius: 20%;
@@ -295,9 +300,9 @@ p {
         border-top-right-radius: 20%;
         border-bottom-left-radius: 20%;
         margin-top: 1rem;
-        margin-left: 25px;
         width: 8em;
         background: var(--website-color1);
+        margin-left: 15%;
     }
     div > img {
         display: block;
@@ -328,15 +333,13 @@ p {
     
     
 }
-
-  .btn {
-    display: inline-block;
-    padding: 1rem 2rem;
-    border-radius: 2px;
-  }
+@media (max-width: 500px) {
+    button {
+        margin-left: 7%;
+    }
+}
   
-  
-    </style>
+</style>
     </head>
     <body>
      <header>
@@ -350,7 +353,7 @@ p {
    <nav><button><a href="https://jamesbondhybride.github.io/">About</a></button><button><a href="https://jamesbondhybride.github.io/CitySkyline.html">Projects</a></button><button><a href="https://jamesbondhybride.github.io/emani.html">My Services</a></button></nav>
    </header>
    <main>
-   <div id="container">
+
     <div class="catalogue">
       <h2>Website Buiding</h2>
          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEoUlEQVR4nO1bXW8UVRgeuVP/h7/B+9ledGaVxNmNN8UL9Uq9sBQkSmQRNWIAi6BAgASbspUKimgMXhQLpdIPqeWj4gdSG1lLw1fLd3fb7kOeHWbPOdt2dhu7zPTsPMmbbM68O7PvM8/7zntmzzGMEtTVNTxtWs5yM55cGbOdNTqYaTmNMTv5fDwef8rwwROmlVwds52JmJ2AlmYlxmN2oomxKpGnUqllpp1oC/wHPjZz0goJZuHOC4eXXn0dzdt3Yc++/VoYY2FMcoxMccPLeVn2W7btRC6Xg25gTJu37lDSIc6awOIg7vwbWgbvgbGteEUowax34kbMclZ5A1s/2110zufz6PjpRMH4eSFjYQbTQUkD03bWewMt6faiIwPyxjs6uxY0FmYwxiIBtrM+IsCcRwEFaXd24VjnSVXuFYxpoQBdERGQ9lHAW2s34MDBw9pY+6EjuJwZrVwBMQ2NHaAvATEruaKmCUilUsvqLKch6H69Gtb65UFk/iuTAh5QI4gISEcKgPoUqH/xGdNyhjlLKs0XHTH7KWA773gDbV99A90RdYLpaC6AeTvBlmgy1A7dEaVAOqQpkAdwPAN8Pww8mKpBAgavAo1drpGEmiNg53lBwNGRGiNgIgs0nRQEjN2rMQI6/hXBNw9W91qhJOCj04KA7lENCPhrHFjXA7zfD9yc9PcduS2CX90N3JOeAHdywKdngM0DQObOEiHgzDU3EC+ovjF//0MXhe++C+qx3ivi2Ns/AxcnQk7AqVG1mH3QD9z1+a91agZYe0r4D91Qj1M97/aoCjl3PaQEHLssfiht42m3updTi+fPQKfn+GPp+gPgw1+EHwnuuRIiAvIAjgyrwbOS+915D3uGxHe+vTS/3+0ssGlA+K7sAn4cCQEB03mg9Q81+F3ngex0+e8yKDldMnf9/e9PuQVRvhZJywdJQGeJ7Ft+n1vGc4F9v/c93t1KkJ0BdkuqoS00HRaVgONSELQvLriFrRLIkuZ5KsFMHmj7U70ma0+gKbC/JAV2nAMmy6QA5S4XNaZDOeRmgL2/qddi+lWquKoWwe9KiuCWX90mZj4cviR89w6Vvwbzf/tZ9Rpf/73w/K/qY/BExq3Ocg/AR9hcMl7XK/zOXvM/L9XBTlAO/v9Ml6vaCPWPqZX9vT7gVom82ex4x9kE+dUMqohEyunCZivUrfDQDWCN1Ar3lrTCbHe9Y2yD/SC3wuwC2TgticnQ8C1gQx/w8YCqAE505HkCJ0J+YCvM83BixQnWkp8Od4+K4DkFrgQsdIu59CpQApoHBQF8CRIEAiPg6n21lx8v855AOwKOjggC+AI0KARGwA//CAL4CrzmCJicdlXAhinI9aShfCn6OBERkI4UgCgF7KgGQFoklWjyGOF2Et3xyTZpy4zlNBp18Reek9fV6rxpKpvNoeHl18RaYitpG9w69mhHZWGQW8t0JIHBb2r+XC6AN59NJp8srBOW04DGRZNMh6DX+y+WUfbKnXftzeJCaW4j5XbSEgdtzbQTrbP2DxvcPM0d41I66GaU/aM7Pyt4wwNrAgsjK6RpJzZqYYyl3okXc17CQ9FF4NpJfxysAAAAAElFTkSuQmCC" alt="Website Buiding">
@@ -387,7 +390,6 @@ p {
              <p class="details">"Design customize website visually appealing but also feature animations and interactivity to engage your visitors.."</p>
                     <p class="price">[$120]</p>
     </div>
-   </div>
    </main>
      
     <footer>
