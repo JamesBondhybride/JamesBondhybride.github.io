@@ -9,7 +9,7 @@
     <style>
 
 
-*, ::after, ::before {
+*, ::after, ::before, main {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -149,12 +149,9 @@ body {
   border: 1px solid #000;
   border-radius: 5%;
   background: var(--catalogue-color);
-  margin: 10px 10px 10px 10px;
+  margin: 2% 3% 0% 4%;
   animation: product 10s linear infinite;
 
-}
-main {
-    margin-left: 100px;
 }
 .price {
     font-family:'Great Vibes', cursive;
@@ -246,6 +243,17 @@ div p {
 
 @media (max-width:1000px) {
 
+*, ::after, ::before {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+*, ::after, ::before {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+   
 .price {
         font-style: normal;
 }
@@ -281,15 +289,16 @@ h2 {
 }
 
 .catalogue {
-        display: flexbox;
+        display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
-        width: 60vw;
-        height: 60vw;
+        width: 80vw;
+        height: 80vw;
         border: 1px solid #000;
         border-radius: 5%;
         background: var(--catalogue-color);
+        margin-left: 10%;
              
       }
 
@@ -302,23 +311,13 @@ h2 {
         margin-top: 1rem;
         width: 8em;
         background: var(--website-color1);
-        margin-left: 15%;
+        margin-left: 10%;
     }
     div > img {
         display: block;
         margin: auto;
         width: 25%;
         height: 15%;
-            }
-    *, ::after, ::before {
-                padding: 0;
-                margin: 0;
-                box-sizing: border-box;
-            }
-    *, ::after, ::before {
-                padding: 0;
-                margin: 0;
-                box-sizing: border-box;
             }
     html {
         margin: 0%;
@@ -335,7 +334,7 @@ h2 {
 }
 @media (max-width: 500px) {
     button {
-        margin-left: 7%;
+        margin-left: 5%;
     }
 }
   
