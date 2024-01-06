@@ -1,146 +1,1113 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-<title>James's Tech Blog</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="james.css">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1756283382889543"
-     crossorigin="anonymous"></script></head>
+ <html lang="en">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:image" content="https://live.staticflickr.com/65535/53410473743_360463192f_k.jpg">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="1024">
+    <title>Emani Technologies</title>
 
-     <body class="w3-light-grey">
+<style>
 
-<!-- w3-content defines a container for fixed size centered content, 
-and is wrapped around the whole page content, except for the footer in this example -->
-<div class="w3-content" style="max-width:1400px">
+*, ::after, ::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
-<!-- Header -->
-<header class="w3-container w3-center w3-padding-32"> 
-  <h1><b>MY TECH BLOG</b></h1>
-  <p>Welcome to the blog of <span class="w3-tag">Junaed</span></p>
-</header>
+:root {
+    --website-color1: linear-gradient(90deg, rgba(0, 0, 100, 0.5), rgba(11, 111, 173, 0.5),rgba(1, 20, 36, 0.5));
+    --shed1-color: linear-gradient(90deg, rgba(35, 56, 3, 0.785), rgba(62, 74, 3, 0.589),rgba(159, 188, 10, 0.5), rgba(25, 30, 0, 0.5));
+    --shed2-color: repeating-linear-gradient(180deg, rgba(92, 0, 100, 0.5), rgba(166, 7, 206, 0.5), rgba(165, 6, 174, 0.5));
+    --shed3-color: repeating-linear-gradient(180deg, rgba(0, 0, 5, 0.785), rgba(43, 43, 88, 0.589), rgba(0, 0, 30, 0.5));
+    --button-color1: rgba(0, 0, 5, 0.785);
+    --button-color2: rgba(43, 43, 88, 0.589);
+    --button-color3: rgba(0, 0, 100, 0.5);
+    --button-color4: rgba(35, 56, 3, 0.785);
+    --catalogue-color: rgba(6, 9, 69, 0.559);
+}
 
-<!-- Grid -->
-<div class="w3-row">
+h2 {
+    color: rgba(245, 222, 179, 0.808);
+    margin: auto;
+    letter-spacing: 5px;
+    font-size: 2em;
+    text-align: center;
+    padding-top: 1px;
+    font-style: italic;
+}
+h1 {
+    color: rgba(245, 245, 245, 0.578);
+    letter-spacing: 15px;
+    text-align: left;
+    background: var(--website-color1);
+    width: 90%;
+    border-top-right-radius: 100%;
+    margin-bottom: 0;
+    margin-top: 1px;
 
-<!-- Blog entries -->
-<div class="w3-col l8 s12">
-  <!-- Blog entry -->
-  <div class="w3-card-4 w3-margin w3-white">
-    <div style="position: relative; width: 100%; height: 0; padding-top: 66.6667%; padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden; border-radius: 8px; will-change: transform;"> <iframe class="iframeU" loading="lazy" src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFxG7j4Otk&#x2F;view?embed"></iframe></div>
-    <div class="w3-container">
-      <h3><b>About My Programming Languages</b></h3>
-      <h5>How i started coding, <span class="w3-opacity">October 13, 2023</span></h5>
-    </div>
+    
+}
+.shed1 {
+    background: var(--shed1-color);
+    width: 100%;
+    margin: 0;
+    border-bottom-right-radius: 100%;
+    animation: shed 1s linear infinite;
+}
+.shed2 {
+    background: var(--shed2-color);
+    width: 90%;
+    margin: 0;
+    border-top-right-radius: 100%;
+    animation: shed 1s linear infinite;
+}
+.shed3 {
+    background: var(--shed3-color);
+    width: 90%;
+    margin: 0;
+    border-bottom-right-radius: 100%;
+    animation: shed 1s linear infinite;
+}
+@keyframes textSize {
+    0% {
+        font-size: 100%;
+        text-align: center;
+        color: transparent;
+    }
+    25% {
+        font-size: 105%;
+        text-align: center;
+        color: rgb(208, 208, 223);
+    }
+    50% {
+        font-size: 110%;
+        text-align: center;
+        color: rgb(185, 185, 206);
 
-    <div class="w3-container">
-      <p>
-        I first started programming at <em>Fontys</em> University of Applied Science with <em>C#</em> programming, following online tutorials and courses that taught me the basics of various languages and frameworks. I started with <em>HTML, CSS, and JavaScript,</em> which are the building blocks of web development. I learned how to create static and dynamic web pages, add interactivity and functionality, and use tools like Bootstrap and jQuery to enhance the user experience. I also learned how to use Git and GitHub to manage my code and collaborate with other developers.<br>
+    }
+    75% {
+        font-size: 115%;
+        text-align: center;
+        color: rgb(162, 162, 186);
+    }
+    
+    100% {
+        font-size: 115%;
+        text-align: center;
+        color: rgb(176, 176, 201);
+    }
+}
 
-        After mastering the <em>web development</em> skills, I wanted to learn more about <em>data science and machine learning.</em> I enrolled in a course on <em>Python,</em> which is a popular language for data analysis and manipulation. I learned how to use libraries like <em>NumPy, Pandas, Matplotlib,</em> and Scikit-learn to perform various tasks such as <em>data cleaning, visualization, modeling, and evaluation.</em> I also learned how to use <em>Jupyter</em> Notebook, which is an interactive environment for writing and running code. As I progressed in my learning journey, I became interested in exploring other <em>domains and technologies.</em> I learned how to use <em>C#,</em> which is a general-purpose language that can be used for desktop, web, mobile, and game development. I learned how to use <em>Visual Studio Code,</em> which is a powerful code editor that supports <em>multiple languages</em> and extensions. I also learned how to use <em>Unity,</em> which is a cross-platform game engine that allows me to create 2D and 3D games for various platforms.<br>
-        
-        I learned programming by being <em>curious, motivated, and persistent.</em> I enjoyed the process of solving problems, creating projects, and learning new things. I also benefited from the online community of programmers who shared their knowledge, feedback, and resources. Programming has become my passion and hobby, and I hope to continue learning and improving my skills.
-      </p>
+@keyframes shed {
+    0% {
+        background-color: red;
+    }
+    50% {
+        background-color: var(--shed2-color);
+    }
+    100% {
+        background-color: green;
+    }
+}
 
-      <div class="w3-row">
-        <div class="w3-col m8 s12">
-          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
-        </div>
-        <div class="w3-col m4 w3-hide-small">
-          <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-tag">0</span></span></p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <hr>
+@keyframes product {
+    0% {
+        background-color: var(--catalogue-color);
+    }
+    50% {
+        background-color: var(--website-color1);
+    }
+}
+@keyframes bodyBackgroundSlides {
+    0% {
+        background: var(--website-color1) 5%, url(https://live.staticflickr.com/65535/53444655740_49b425779e_h.jpg) 0%;
+    }
+    25% {
+        background: var(--website-color1) 5%, url(https://live.staticflickr.com/65535/53444655740_49b425779e_h.jpg) 25%;
+            }
+    50% {
+        background: var(--website-color1) 5%, url(https://live.staticflickr.com/65535/53444655740_49b425779e_h.jpg) 75%;
+    }
+    75% {
+        background: var(--website-color1) 5%, url(https://live.staticflickr.com/65535/53444655740_49b425779e_h.jpg) 100%;
+    }
+    100% {
+        background: var(--website-color1) 5%, url(https://live.staticflickr.com/65535/53444021364_4b8ed8e0b2_o.jpg) 0.01%;
+    }
+}
 
-  <!-- Blog entry -->
-  <div class="w3-card-4 w3-margin w3-white">
-  <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
-  padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
-  border-radius: 8px; will-change: transform;">
-   <iframe loading="lazy" class="iframeU" src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFxywG2gsU&#x2F;view?embed"></iframe></div>
-    <div class="w3-container">
-      <h3><b>BLOG ENTRY</b></h3>
-      <h5>Living, Studying and Working in The Netherlands, <span class="w3-opacity">October 13, 2023</span></h5>
-    </div>
 
-    <div class="w3-container">
-      <p>All about my experience in the Netherlands coming soon!!!</p>
-      <div class="w3-row">
-        <div class="w3-col m8 s12">
-          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
-        </div>
-        <div class="w3-col m4 w3-hide-small">
-          <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-badge">2</span></span></p>
-        </div>
-      </div>
-    </div>
-  </div>
-<!-- END BLOG ENTRIES -->
-</div>
+body {
+    animation: bodyBackgroundSlides 60s linear infinite;
+}
 
-<!-- Introduction menu -->
-<div class="w3-col l4">
-  <!-- About Card -->
-  <div class="w3-card w3-margin w3-margin-top">
-    <img src="https://sammly-host.com/images/site.gif" style="width:100%" alt="Coding">
-      <div class="w3-container w3-white">
-      <h4><b>Junaed Mustofa Chowhdury</b></h4>
-      <p>Just me, myself and I, exploring the universe of codes. I have a heart of love and an interest in Programming Languages and developing websites. I want to share my world with you.</p>
-    </div>
-  </div><hr>
+.catalogue:hover, .catalogue:focus, .catalogue:active, a:hover, a:active, a:focus {
+    background: var(--website-color1);
+}
+.catalogue {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 25vw;
+  height: 25vw;
+  border: 1px solid #000;
+  border-radius: 5%;
+  background: var(--catalogue-color);
+  margin: 2% 3% 0% 4%;
+  animation: product 10s linear infinite;
+
+}
+.price {
+    font-family:'Great Vibes', cursive;
+    font-size: x-large;
+    margin: 10px;
+    padding: 0%;
+}
+div > img {
+    display: block;
+    margin: auto;
+    width: 25%;
+    height: 25%;
+}
+/* contacts division */
+#contacts {
+    background-color: var(--button-color1);
+    border: 1px solid wheat;
+    padding: 100px;
+    animation: textSize 60s linear infinite;
+    color: wheat;
+}
+
+
+/* Initial of developer */
+em {
+    font-family:'Great Vibes', cursive; 
+    font-size: xx-large;
+  }
+
+
+.dev {
+    font-size: larger;
+    font-family: 'Tilt Neon', sans-serif;
+}
+p {
+    font-family: 'Tilt Neon', sans-serif;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 1px;
+    
+}
+.details {
+   
+   animation: textSize 20s linear infinite;
+}
+.smallText {
+    font-size: small;
+}
+button {
+    padding: 0%;
+    margin-top: 1rem;
+    margin-left: 20%;
+    background: var(--website-color1);
+}
+
+button:hover, button:active, button:focus {
+    background: var(--button-color3), var(--button-color2);  
+}
+a {
+    color: #ffffff98;
+    font-size: larger;
+    font-style: italic;
+    font-weight: 700;
+    text-decoration: none;
+}
+footer hr {
+    width: 25em;
+}
+
+div p {
+    margin: auto;
+    color: #ffffffc0;
+}
+
+/* fiverr affiliate link background*/
+
+#fiv {
+    background-color: #1dbf73;;
+}
+
+
+
+@media (max-width:1000px) {
+
+*, ::after, ::before {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+*, ::after, ::before {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+   
+.price {
+        font-style: normal;
+}
+p {
+    font-family: 'Tilt Neon', sans-serif;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 1px;
+    
+
+}
+    
+h1 {
+        letter-spacing: 1px;
+        color: rgba(245, 245, 245, 0.578);
+        text-align: left;
+        background: var(--website-color1);
+        width: 90%;
+        border-top-right-radius: 100%;
+        margin-top: 0;
+        margin-bottom: 0;
+}
+h2 {
+        color: rgba(245, 222, 179, 0.808);
+        margin: auto;
+        letter-spacing: 5px;
+        font-size: 2em;
+        text-align: center;
+        padding-top: 1px;
+        font-style: italic;
+}
+
+.catalogue {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 80vw;
+        height: 80vw;
+        border: 1px solid #000;
+        border-radius: 5%;
+        background: var(--catalogue-color);
+        margin-left: 10%;
+             
+      }
+
+    button {
+        padding: 0%;
+        margin-top: 1rem;
+        background: var(--button-color2);
+        margin-left: 10%;
+    }
+    div > img {
+        display: block;
+        margin: auto;
+        width: 25%;
+        height: 15%;
+            }
+    html {
+        margin: 0%;
+    }
+    .details {
+        font-family: 'Tilt Neon', sans-serif;
+        color: #ffffff;
+        text-align: center;
+        font-style: italic;
+        font-weight: 1;
+    }
+    
+    
+}
+@media (max-width: 500px) {
+    button {
+        margin-left: 5%;
+    }
+}
+:root {
+  /* colors */
+  --primary-color: #dfdfe2;
+  --secondary-color: #ffffff;
+  --app-background-color: #4d4d62;
+  --background-color: #1b1b32;
+  --foreground-color: #3b3b4f;
+  --highlight-color: #f1be32;
+
+  /* font sizes */
+  --root-font-size: 16px;
+  font-size: var(--root-font-size);
+
+  /* font-families */
+  --font-headline: "Roboto Mono", monospace;
+  --font-family: "Lato", sans-serif;
+}
+
+
+.container {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 5px;
+}
+
+.player,
+.playlist {
   
-  <!-- Posts -->
-  <div class="w3-card w3-margin">
-    <div class="w3-container w3-padding">
-      <h4>Some YouTube i like most I like most!</h4>
-    </div>
-    <ul class="w3-ul w3-hoverable w3-white">
-      <li class="w3-padding-16">
-        <img src=" ">
-        <span class="w3-large"></span><br>
-        <span></span>
-      </li>  
-    </ul>
-  </div>
-  <hr> 
+  background-color: var(--background-color);
+  border: 3px solid var(--foreground-color);
+}
+
+.player {
+  height: 260px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+}
+
+.player-bar,
+.playlist-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5px;
+  width: 100%;
+  height: 30px;
+  background-color: var(--foreground-color);
+}
+
+.parallel-lines {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 6px;
+  padding: 0 5px;
+}
+
+.parallel-lines > div {
+  height: 2px;
+  width: 100%;
+  min-width: 75px;
+  background-color: var(--highlight-color);
+}
+
+.fcc-title,
+.playlist-title {
+  color: var(--secondary-color);
+  margin: 0 10px;
+  font-family: var(--font-headline);
+}
+
+.player-content {
+  display: flex;
+  background-color: var(--foreground-color);
+  width: 430px;
+  height: 200px;
+  column-gap: 13px;
+  align-items: center;
+  justify-content: center;
+}
+
+#player-album-art {
+  background-color: var(--secondary-color);
+  border: 6px solid var(--background-color);
+}
+
+#player-album-art img {
+  width: 150px;
+  display: block;
+}
+
+.player-display {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  padding: 14px;
+  background-color: var(--background-color);
+  height: 153px;
+  width: 226px;
+}
+
+.player-display-song-artist {
+  height: 80px;
+}
+
+.player-buttons svg {
+  fill: var(--primary-color);
+}
+
+.playing > svg {
+  fill: var(--highlight-color);
+}
+
+.player-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.playlist-song {
+  outline-color: var(--highlight-color);
+}
+
+.playlist li:not(:last-child) {
+  border-bottom: 1px solid var(--background-color);
+}
+
+button:focus,
+.playlist-song:focus {
+  outline-style: dashed;
+  outline-width: 2px;
+}
+
+/* Playlist */
+.playlist {
+  height: auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+}
+
+#playlist-songs {
+  width: 600px;
+  height: 100%;
+  background-color: var(--foreground-color);
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  visibility: visible;
+  justify-content: start;
+  list-style: none;
+  color: white;
+}
+
+.playlist-song {
+  display: flex;
+  height: 55px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+}
+
+[aria-current="true"] {
+  background-color: var(--background-color);
+}
+
+[aria-current="true"] p {
+  color: var(--highlight-color);
+}
+
+.playlist-song-info {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  column-gap: 7px;
+  padding: 5px 0;
+  font-family: var(--font-family);
+}
+
+#player-song-title,
+#player-song-artist {
+  margin: 0;
+}
+
+#player-song-artist {
+  color: var(--highlight-color);
+  font-size: 0.75rem;
+}
+
+#player-song-title {
+  font-size: 1.125rem;
+}
+
+.playlist-song-title {
+  font-size: 0.85rem;
+  width: 241px;
+  text-align: left;
+}
+
+.playlist-song-artist {
+  font-size: 0.725rem;
+  width: 80px;
+}
+
+.playlist-song-duration {
+  font-size: 0.725rem;
+  margin: auto;
+  font-family: var(--font-headline);
+  width: 30px;
+}
+
+.playlist-song-delete {
+  padding: 0;
+  width: 20px;
+  height: 20px;
+}
+
+.playlist-song-delete,
+.playlist-song-delete {
+  fill: var(--foreground-color);
+}
+
+.playlist-song-delete:hover circle,
+.playlist-song-delete:focus circle {
+  fill: #ff0000;
+}
+
+@media (max-width: 700px) {
+  .player,
+  .playlist {
+    width: 300px;
+  }
+
+  .player {
+    height: 340px;
+  }
+
+  #playlist-songs {
+    height: 280px;
+    padding: 5px 6px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-color: var(--background-color) var(--secondary-color);
+    scrollbar-width: thin;
+  }
+
+  #playlist-songs::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  #playlist-songs::-webkit-scrollbar-track {
+    background: var(--background-color);
+  }
+
+  #playlist-songs::-webkit-scrollbar-thumb {
+    background: var(--secondary-color);
+  }
+
+  h1 {
+    font-size: 0.813rem;
+  }
+
+  h2 {
+    font-size: 0.75rem;
+  }
+
+  .player-bar,
+  .playlist-bar,
+  .player-content,
+  #playlist-songs {
+    width: 280px;
+    color: white;
+  }
+
+  .playlist-song {
+    justify-content: space-between;
  
-  <!-- Labels / tags -->
-  <div class="w3-card w3-margin">
-    <div class="w3-container w3-padding">
-      <h4>Tags</h4>
-    </div>
-    <div class="w3-container w3-white">
-    <p><span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">The Netherlands</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Europe</span>
-      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">IKEA</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">POLAND</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">DIY</span>
-      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Baby</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Family</span>
-      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">News</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">GUITAR</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">CODE</span>
-      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Sports</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Games</span>
-    </p>
-    </div>
-  </div>
+  }
+
+  .playlist-song-title {
+    width: 140px;
+  }
+
+  .playlist-song-artist {
+    width: 40px;
+  }
+
+  .playlist-song-duration > button {
+    padding: 0;
+  }
+
+  .player-content {
+    display: inline;
+    position: relative;
+    justify-items: center;
+    height: 100%;
+  }
+
+  #player-album-art {
+    z-index: -100;
+    height: 280px;
+    box-shadow: none;
+    background: #000;
+  }
+
+  #player-album-art img {
+    width: 100%;
+    opacity: 0.6;
+  }
+
+  .player-display-song-artist {
+    padding: 0 10px;
+  }
+
+  .player-display-song-artist > p {
+    white-space: pre-wrap;
+  }
+
+  .player-display {
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+    background-color: transparent;
+    top: 0;
+    height: 280px;
+    justify-content: space-between;
+    text-align: center;
+  }
+}
   
-<!-- END Introduction Menu -->
-</div>
+</style>
+    </head>
+    <body>
+    <div class="shed1">
+      <div class="shed2">
+         <div class="shed3">
+            <h1>E<span class="smallText">mani</span> T<span class="smallText">echnologies</span></h1>
+         </div>
+      </div>
+    </div>
+   <nav><button><a href="https://jamesbondhybride.github.io/">About</a></button><button><a href="https://jamesbondhybride.github.io/CitySkyline.html">Projects</a></button><button><a href="https://jamesbondhybride.github.io/emani.html">My Services</a></button></nav>
 
-<!-- END GRID -->
-</div><br>
 
-<!-- END w3-content -->
-</div>
+    <div class="catalogue">
+      <h2>Website Development</h2>
+         <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEoUlEQVR4nO1bXW8UVRgeuVP/h7/B+9ledGaVxNmNN8UL9Uq9sBQkSmQRNWIAi6BAgASbspUKimgMXhQLpdIPqeWj4gdSG1lLw1fLd3fb7kOeHWbPOdt2dhu7zPTsPMmbbM68O7PvM8/7zntmzzGMEtTVNTxtWs5yM55cGbOdNTqYaTmNMTv5fDwef8rwwROmlVwds52JmJ2AlmYlxmN2oomxKpGnUqllpp1oC/wHPjZz0goJZuHOC4eXXn0dzdt3Yc++/VoYY2FMcoxMccPLeVn2W7btRC6Xg25gTJu37lDSIc6awOIg7vwbWgbvgbGteEUowax34kbMclZ5A1s/2110zufz6PjpRMH4eSFjYQbTQUkD03bWewMt6faiIwPyxjs6uxY0FmYwxiIBtrM+IsCcRwEFaXd24VjnSVXuFYxpoQBdERGQ9lHAW2s34MDBw9pY+6EjuJwZrVwBMQ2NHaAvATEruaKmCUilUsvqLKch6H69Gtb65UFk/iuTAh5QI4gISEcKgPoUqH/xGdNyhjlLKs0XHTH7KWA773gDbV99A90RdYLpaC6AeTvBlmgy1A7dEaVAOqQpkAdwPAN8Pww8mKpBAgavAo1drpGEmiNg53lBwNGRGiNgIgs0nRQEjN2rMQI6/hXBNw9W91qhJOCj04KA7lENCPhrHFjXA7zfD9yc9PcduS2CX90N3JOeAHdywKdngM0DQObOEiHgzDU3EC+ovjF//0MXhe++C+qx3ivi2Ns/AxcnQk7AqVG1mH3QD9z1+a91agZYe0r4D91Qj1M97/aoCjl3PaQEHLssfiht42m3updTi+fPQKfn+GPp+gPgw1+EHwnuuRIiAvIAjgyrwbOS+915D3uGxHe+vTS/3+0ssGlA+K7sAn4cCQEB03mg9Q81+F3ngex0+e8yKDldMnf9/e9PuQVRvhZJywdJQGeJ7Ft+n1vGc4F9v/c93t1KkJ0BdkuqoS00HRaVgONSELQvLriFrRLIkuZ5KsFMHmj7U70ma0+gKbC/JAV2nAMmy6QA5S4XNaZDOeRmgL2/qddi+lWquKoWwe9KiuCWX90mZj4cviR89w6Vvwbzf/tZ9Rpf/73w/K/qY/BExq3Ocg/AR9hcMl7XK/zOXvM/L9XBTlAO/v9Ml6vaCPWPqZX9vT7gVom82ex4x9kE+dUMqohEyunCZivUrfDQDWCN1Ar3lrTCbHe9Y2yD/SC3wuwC2TgticnQ8C1gQx/w8YCqAE505HkCJ0J+YCvM83BixQnWkp8Od4+K4DkFrgQsdIu59CpQApoHBQF8CRIEAiPg6n21lx8v855AOwKOjggC+AI0KARGwA//CAL4CrzmCJicdlXAhinI9aShfCn6OBERkI4UgCgF7KgGQFoklWjyGOF2Et3xyTZpy4zlNBp18Reek9fV6rxpKpvNoeHl18RaYitpG9w69mhHZWGQW8t0JIHBb2r+XC6AN59NJp8srBOW04DGRZNMh6DX+y+WUfbKnXftzeJCaW4j5XbSEgdtzbQTrbP2DxvcPM0d41I66GaU/aM7Pyt4wwNrAgsjK6RpJzZqYYyl3okXc17CQ9FF4NpJfxysAAAAAElFTkSuQmCC" alt="Website Buiding">
+               <p class="details">"We will take care of your website while you busy in business. Build your website from scratch with HTML, CSS and JavaScript</p>
+                    <p class="price">[$50]</p>
+    </div>
+    <div class="catalogue">
+      <h2>Webpage Design</h2>
+         <img src="data:image/png;base64,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" alt="Website Design">
+               <p class="details">"We have an eye for creative design to make your website user-friendly, aesthetically pleasent for visitor engagement and interectiveness"</p>
+                 <p class="price">[$55]</p>
+    </div>
+    <div class="catalogue">
+      <h2>Resposive  Website</h2>
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEjUlEQVR4nO2a609bZRzH+18Y98Y3Jppsc0tmRtY53NYWuWWAg+20BZ04BrMgIDCMirDJNk5gizbOoBIJ0cyYLXgbvnASQcYtkzCgUAVaCr1QSm/P2dZyG1/TbivpKLVoL/T0fJPPm6enyfP9nF9v55TH48KFCxcuXLxCUdRTEolkD5twdeIFEoqSXKLE0lVKLAWroKSrSa8k9/otLxaL90V8oyFEKExASkpKnh8B0pNsF5CcmNriT0D+k0/6OjELd+Iz8FVSltc6LUvAZN2z6KrehdellGf9xKkc1Dbn43xLAXJP52w5AUlJqd8ELKA0UwzDvnQPskyx57HZhmfglD/tprH4kGf9fXkePmmTufmw8VR0Czh1TIJp/sPy6v0ZOHFc4nlMceF5j4DzpxM96xUX3/QIeLfhZHQLoMRSVL5KoTkpC+VH186+i/zXMnG1go/6QpHXuliajZKaXJSezYUkOzv6BVAsQigQ+ReQnp5ZnZaWATaSmnoEhw4e/hcBRzI+FwpEy2xEcFi0IhCIViSUdGMBdobJJwwDtmEnBIZZIxRjSkyqNf1+Bdx3OLCwsBC7AsgW2PBmUSkV+LX1WnAEOFwTsLgY8VKboeZMOUTCBMzqZv6/AKfTicWlpeg5+3+NQSrNQYIoEe+9XRhaARO3rbhaNIPLAjVovipkNLysRpN0Gjc/04IQ/wJG2tvw4xcfo4muAV1RjLsWU2gEKH63uDcWyuJP8lGcEpeyhjcsf89sBIY7PDzo+xlLw53BF2C3M7iSPhXW8i7q+JMo2vEHelr1PgUsjw94CVgd/A0r3a24N6cPrgD1oDXs5R9TvOMWrrwxuv7sm/Re5T1T0N+G5cH24AoY6zBHVACddmedgAcDzUDvp+vpkWPlRhHuawaCJ2C007LlBOD6c8B323zilG/DQs+F0AoYaWMQijjsK6iPV299AXSsTwDNCVBxE0DH8ktghHsTVMX2BNCcABU7J8Dh44JITE0A8fGrK6beBEmAAmJ+AugwSKjjq1C0vSvyE6DsjswEnNurROH2TjRkDkVWwJzOjvoD4b0c5qJsV59bwLcfTERWAGEY3LhoCFvx2ri/Uf6o/Du7ezCnt0VegMVM8H2VDvT+0BU/s/s2Snbechd3Uf5iLwbbjT73E3YB5BEahRV910zobDL+Z36q9T1NpS90o2JPL5pLlLj55TSsVrLhPiImgASJ/usmr8/7xwLOitau5fkj6gUQ1/eLDovXTZaYE0Bcd5v+tEKePLVpAQvyA3Be3usTa0E8HD9UR4cAwjDQjtvQmDWFkp2BCzDlvAXjsWKfGPjpsNNl0SOAuG5yDptRGdeHc8IYFUAYBkYdwUjXXOwKIJvAIsvzLeCozP2/RuaXFs+xNrudfQLuDnXCXi2DrTJ/jfI8mKjjsFUVeB07b7Y8FDA65l8AIaTMarOBLVisNszPm93ldTo9hkYUUGk0PRsKMBqNBVqdAXrDLKvQzGgxOqZ0C9DMzNTy/GV8YtLoOpCNjE+qDLxAMqXVHlSr1VVsQq/XvxRQeS5cuHDhwoud/AOtW2vdHUlL2AAAAABJRU5ErkJggg=="><p class="price" alt="Blog Design">
+              <p class="details">"Make your website fully responsive, fits to any devices, user-friendly, attract more visitors and increase engagement."</p>
+                    <p class="price">[$110]</p>
+    </div>
+    <div class="catalogue">
+       <h2>Website Optimization</h2>
+         <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEjUlEQVR4nO2a609bZRzH+18Y98Y3Jppsc0tmRtY53NYWuWWAg+20BZ04BrMgIDCMirDJNk5gizbOoBIJ0cyYLXgbvnASQcYtkzCgUAVaCr1QSm/P2dZyG1/TbivpKLVoL/T0fJPPm6enyfP9nF9v55TH48KFCxcuXLxCUdRTEolkD5twdeIFEoqSXKLE0lVKLAWroKSrSa8k9/otLxaL90V8oyFEKExASkpKnh8B0pNsF5CcmNriT0D+k0/6OjELd+Iz8FVSltc6LUvAZN2z6KrehdellGf9xKkc1Dbn43xLAXJP52w5AUlJqd8ELKA0UwzDvnQPskyx57HZhmfglD/tprH4kGf9fXkePmmTufmw8VR0Czh1TIJp/sPy6v0ZOHFc4nlMceF5j4DzpxM96xUX3/QIeLfhZHQLoMRSVL5KoTkpC+VH186+i/zXMnG1go/6QpHXuliajZKaXJSezYUkOzv6BVAsQigQ+ReQnp5ZnZaWATaSmnoEhw4e/hcBRzI+FwpEy2xEcFi0IhCIViSUdGMBdobJJwwDtmEnBIZZIxRjSkyqNf1+Bdx3OLCwsBC7AsgW2PBmUSkV+LX1WnAEOFwTsLgY8VKboeZMOUTCBMzqZv6/AKfTicWlpeg5+3+NQSrNQYIoEe+9XRhaARO3rbhaNIPLAjVovipkNLysRpN0Gjc/04IQ/wJG2tvw4xcfo4muAV1RjLsWU2gEKH63uDcWyuJP8lGcEpeyhjcsf89sBIY7PDzo+xlLw53BF2C3M7iSPhXW8i7q+JMo2vEHelr1PgUsjw94CVgd/A0r3a24N6cPrgD1oDXs5R9TvOMWrrwxuv7sm/Re5T1T0N+G5cH24AoY6zBHVACddmedgAcDzUDvp+vpkWPlRhHuawaCJ2C007LlBOD6c8B323zilG/DQs+F0AoYaWMQijjsK6iPV299AXSsTwDNCVBxE0DH8ktghHsTVMX2BNCcABU7J8Dh44JITE0A8fGrK6beBEmAAmJ+AugwSKjjq1C0vSvyE6DsjswEnNurROH2TjRkDkVWwJzOjvoD4b0c5qJsV59bwLcfTERWAGEY3LhoCFvx2ri/Uf6o/Du7ezCnt0VegMVM8H2VDvT+0BU/s/s2Snbechd3Uf5iLwbbjT73E3YB5BEahRV910zobDL+Z36q9T1NpS90o2JPL5pLlLj55TSsVrLhPiImgASJ/usmr8/7xwLOitau5fkj6gUQ1/eLDovXTZaYE0Bcd5v+tEKePLVpAQvyA3Be3usTa0E8HD9UR4cAwjDQjtvQmDWFkp2BCzDlvAXjsWKfGPjpsNNl0SOAuG5yDptRGdeHc8IYFUAYBkYdwUjXXOwKIJvAIsvzLeCozP2/RuaXFs+xNrudfQLuDnXCXi2DrTJ/jfI8mKjjsFUVeB07b7Y8FDA65l8AIaTMarOBLVisNszPm93ldTo9hkYUUGk0PRsKMBqNBVqdAXrDLKvQzGgxOqZ0C9DMzNTy/GV8YtLoOpCNjE+qDLxAMqXVHlSr1VVsQq/XvxRQeS5cuHDhwoud/AOtW2vdHUlL2AAAAABJRU5ErkJggg=="><p class="price" alt="Blog Design">
+              <p class="details"> "Websites requires updates and maintenance to ensure it continue to perform well."</p>
+              <p class="price">[$30]</p>
+    </div>
+    <div class="catalogue">
+       <h2>Website SEO</h2>
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAADKUlEQVR4nO1bS08TURQe2an/w9/gfqYL5o6aeGfiBlyoK3VhBR8RkzZKjIkPCD6jC0NwUMRojC4kgVaHqInlN+CjSCzxtVAIVeczpzDtTFsQ6PR1e7/kS8jJMDPnzHfOvae5R1GKEIl0bFV1vks1rKMa4ydEoKrzqMasnYZhbFFWwSZVt45pjP/QmAkhqZvfNWZ2ka8Bz2OxWJvKzOG6v2DNyO1AENTcly9csPfAIfRduYnbd+4KQfKFfPL7SCmueDnvl/2lgRvIZrMQDeTTxf7rgXQwqCZQcSh8+cNCOu+BfOvcX1CC2s4NRdN5t2fov3orf7HruhhPvMyR/l6PrZFB6RBIA5XxuGcYtEfyF5JDnn086azL1sggH/MBYDwuA6CuoICctJMOJpKTQbmvwSaEAkSFDIC9igKO95zB/dHHwnDk4ROkZ2bXrgBNQNIOcNUAaLrV2dIBiMVibRGdd9R7v14NDt0bxcyn/6SAB7QIZABsqQAEV4H2PdtUnU9Tl1ScLyKidBVg/JRnGH7wCKJD7gRt2QtgxZ3goGyGRiA6ZArYMgWwoRrgAkhlgIl0OEykgbn58s8ie2KD96V3dKuhgFQGiDrhsvdt+WeRvZL70rs2dQCiFd73+fsqBMAFMJUBnk6Hw7EPK6dAQwaglpABcKQCIFPAabAaMDcPnK1wefKze3KpGDZNDUikw18GT75qMgX0hqyAZ++aKAC1hAyAIxUAmQJOg9UAt4J2uLj1/bIAjH8EZn82UQ1IZcLr/M6llmyn3wC//7ZgAHqXl9Oe18CfMr9eVLrcUtfaUO3wWFHr+3UBeDEDfP5V/ll0Lf3PRp41Va1fhESBDIAtFQCZAkzWAMgiyOQqALkMMrkPiMuNkNrqO0GNmV2egcZJRMflAd/IjM6jSsTYvcN/rlbkoanFxSw69h0snCXWLabQ6NjyRGXOSKNlIgaBnL/Qd80v/2/bLWtz7pywPw2IdGiS0qHe5/3DIsk+8OWXeCR/UJrGSGmctN5H22tFlZlDJfPDCg1P08S4Lx1EI8l++cuXOK94oJpAhZEqpMrM80KQfGnnRj7nffgHMbL+ipXMoFIAAAAASUVORK5CYII=" alt="Website Refresh">
+              <p class="details">"Boost your Website's performace and Visibility, SEO best practices to improve the website visibility on search engines and social media sites from the root files like HTML/CSS codes, no extra cost and high-performance"</p>
+                    <p class="price">[$30]</p>
+    </div>
+    <div class="catalogue">
+        <h2>Website Animation</h2>
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAADKUlEQVR4nO1bS08TURQe2an/w9/gfqYL5o6aeGfiBlyoK3VhBR8RkzZKjIkPCD6jC0NwUMRojC4kgVaHqInlN+CjSCzxtVAIVeczpzDtTFsQ6PR1e7/kS8jJMDPnzHfOvae5R1GKEIl0bFV1vks1rKMa4ydEoKrzqMasnYZhbFFWwSZVt45pjP/QmAkhqZvfNWZ2ka8Bz2OxWJvKzOG6v2DNyO1AENTcly9csPfAIfRduYnbd+4KQfKFfPL7SCmueDnvl/2lgRvIZrMQDeTTxf7rgXQwqCZQcSh8+cNCOu+BfOvcX1CC2s4NRdN5t2fov3orf7HruhhPvMyR/l6PrZFB6RBIA5XxuGcYtEfyF5JDnn086azL1sggH/MBYDwuA6CuoICctJMOJpKTQbmvwSaEAkSFDIC9igKO95zB/dHHwnDk4ROkZ2bXrgBNQNIOcNUAaLrV2dIBiMVibRGdd9R7v14NDt0bxcyn/6SAB7QIZABsqQAEV4H2PdtUnU9Tl1ScLyKidBVg/JRnGH7wCKJD7gRt2QtgxZ3goGyGRiA6ZArYMgWwoRrgAkhlgIl0OEykgbn58s8ie2KD96V3dKuhgFQGiDrhsvdt+WeRvZL70rs2dQCiFd73+fsqBMAFMJUBnk6Hw7EPK6dAQwaglpABcKQCIFPAabAaMDcPnK1wefKze3KpGDZNDUikw18GT75qMgX0hqyAZ++aKAC1hAyAIxUAmQJOg9UAt4J2uLj1/bIAjH8EZn82UQ1IZcLr/M6llmyn3wC//7ZgAHqXl9Oe18CfMr9eVLrcUtfaUO3wWFHr+3UBeDEDfP5V/ll0Lf3PRp41Va1fhESBDIAtFQCZAkzWAMgiyOQqALkMMrkPiMuNkNrqO0GNmV2egcZJRMflAd/IjM6jSsTYvcN/rlbkoanFxSw69h0snCXWLabQ6NjyRGXOSKNlIgaBnL/Qd80v/2/bLWtz7pywPw2IdGiS0qHe5/3DIsk+8OWXeCR/UJrGSGmctN5H22tFlZlDJfPDCg1P08S4Lx1EI8l++cuXOK94oJpAhZEqpMrM80KQfGnnRj7nffgHMbL+ipXMoFIAAAAASUVORK5CYII=" alt="Website Refresh">
+             <p class="details">"Design customize website visually appealing but also feature animations and interactivity to engage your visitors.."</p>
+                    <p class="price">[$120]</p>
+    </div>
+        
+    <div id = "contacts">
+    <address class="dev">Contact:<br><em>J</em>unaed <em>M</em>ustofa <em>C</em>howdhury<br>
+    Front End Developer || HTML, CSS, JavaScript, C# || Programmer, Web Designer<br>
+    email: junaedchowdhury@gmail.com<br>
+    Please visit <a href="https://jamesbondhybride.github.io"><"My Blog"></a>
+    Phone: +8801710568775 <a href="https://wa.me/message/3E2F3HEKTMTID1">Chat @Whatsapp</a>
+    Find Me <a href="https://www.fiverr.com/s/DLeK7Q">@Fiverr</a>
+    </address>
+    </div>
+    <div id="fiv">
+    <iframe src="https://www.fiverr.com/gig_widgets?id=U2FsdGVkX1+OhIFnrRzi8X4+i6P1zxBRTagdxFfuG4ViywzqRYCY31eRJGi+ERKc2QbrkG2xQ+eBq5268TFK2U3XOMkiBHakaCM76+cYOevXFYcKAbjz/zBt1NIXkelAH7GarKKmvwCZtq2hg5zYWKwaOJ3tjqYD/pWpQeXJbGcxkgg0kDAth132CblFyy59LUIPQ1dbPzyV5i5mpFN34f2cD8QtRBCzM3Jy6W5bl6MQyly84VuitfE6yPn2Yfmy3wzvbacNj58yA9IHsO6NSge5aKss0QJBdKOM++FRz/sqp9E8oi/BegWjltxHY22DIZI0z9MDF4SEQZTo6g3GwE1YpsHduQZXoEx94zQfqi89fmKf9HJfdnZUMMUlsNT80KS2bzTWYOuJk4h1wNnut0/N+rCnHmSfcIVPk3dEwRO2zzph/W+xMY++COaJFCJHrWrnGNS+23MKd1LGkmrZApPE/4C7+zllDAHmfdmWayllcxt0ge56/fxZpNANSTRu4v5q7nhKFxe5OiVbkoiDY8ACiXUyoedDbxW8vaOdoV3llBGhh906HWOpMnhmwC5O&affiliate_id=898859&strip_google_tagmanager=true" loading="lazy" data-with-title="true" class="fiverr_nga_frame" frameborder="0" height="350" width="100%" referrerpolicy="no-referrer-when-downgrade" data-mode="random_gigs" onload=" var frame = this; var script = document.createElement('script'); script.addEventListener('load', function() { window.FW_SDK.register(frame); }); script.setAttribute('src', 'https://www.fiverr.com/gig_widgets/sdk'); document.body.appendChild(script); " ></iframe>
+    </div>
+    <div class="player">
+        <div class="player-bar">
+          <div class="parallel-lines">
+            <div></div>
+            <div></div>
+          </div>
+          <h1 class="fcc-title">MP3</h1><small>Player by James</small>
+          <div class="parallel-lines">
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+        <div class="player-content">
+          <div id="player-album-art">
+            <img
+              src="https://live.staticflickr.com/65535/53410434311_3194f4d03f.jpg"
+              alt="song cover art"
+            />
+          </div>
+          <div class="player-display">
+            <div class="player-display-song-artist">
+              <p id="player-song-title"></p>
+              <p id="player-song-artist"></p>
+            </div>
+            <div class="player-buttons">
+              <button id="previous" class="previous" aria-label="Previous">
+                <svg
+                  width="24"
+                  height="19"
+                  viewBox="0 0 24 19"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                ><path d="M23.2248 0L7.03964 9.5L23.2248 19L23.2248 0Z" /><rect
+                    width="4.63633"
+                    height="18.5453"
+                    transform="matrix(-1 0 0 1 4.63633 0)"/></svg>
+              </button>
+              <button id="play" class="play" aria-label="Play">
+                <svg
+                  width="17"
+                  height="19"
+                  viewBox="0 0 17 19"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                > <path d="M0 0L16.1852 9.5L1.88952e-07 19L0 0Z" /></svg>
+              </button>
+              <button id="pause" class="pause" aria-label="Pause">
+                <svg
+                  width="17"
+                  height="19"
+                  viewBox="0 0 17 19"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                ><path d="M0 6.54013e-07H4.75V19H0V6.54013e-07Z" /> <path d="M11.4 0H16.15V19H11.4V0Z" /></svg>
+              </button>
+              <button id="next" class="next" aria-label="Next">
+                <svg
+                  width="24"
+                  height="19"
+                  viewBox="0 0 24 19"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                ><path d="M0 0L16.1852 9.5L1.88952e-07 19L0 0Z" /> <rect x="18.5885" width="4.63633" height="18.5453" /></svg>
+              </button>
+              <button id="shuffle" class="shuffle" aria-label="Shuffle">
+                <svg
+                  width="17"
+                  height="14"
+                  viewBox="0 0 17 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                ><path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M12.2127 0L17 2.9219L12.0759 5.60686L12.1321 3.30594C11.9081 3.30997 11.7043 3.3165 11.528 3.326C11.3777 3.3341 11.2523 3.34411 11.1542 3.35578C11.1053 3.3616 11.0661 3.36749 11.036 3.37309C11.0211 3.37587 11.0095 3.37835 11.001 3.38041C10.9967 3.38143 10.9936 3.38227 10.9913 3.38289C10.989 3.38352 10.988 3.38385 10.9881 3.38382C10.9266 3.40381 10.7572 3.5014 10.4637 3.73265C10.1895 3.94866 9.85452 4.24234 9.47614 4.59282C8.81462 5.20556 8.03912 5.97461 7.25609 6.76752C8.03912 7.56043 8.81462 8.32948 9.47614 8.94223C9.85452 9.29271 10.1895 9.58639 10.4637 9.80239C10.7572 10.0336 10.9266 10.1312 10.9881 10.1512C10.988 10.1512 10.989 10.1515 10.9913 10.1522C10.9936 10.1528 10.9967 10.1536 11.001 10.1546C11.0095 10.1567 11.0211 10.1592 11.036 10.162C11.0661 10.1676 11.1053 10.1734 11.1542 10.1793C11.2523 10.1909 11.3777 10.2009 11.528 10.209C11.7043 10.2185 11.9081 10.2251 12.1321 10.2291L12.0759 7.92819L17 10.6131L12.2127 13.535L12.1558 11.2011C11.9071 11.197 11.677 11.1899 11.4757 11.1791C11.175 11.1629 10.8757 11.1361 10.6878 11.0751C10.4405 10.9947 10.1465 10.7892 9.86244 10.5654C9.55904 10.3263 9.20251 10.0129 8.81601 9.6549C8.14192 9.03051 7.35822 8.2533 6.57518 7.46052C6.2731 7.76927 5.9736 8.07675 5.68453 8.37353C5.24051 8.8294 4.82109 9.26001 4.45467 9.63114C4.10458 9.98574 3.79502 10.2941 3.54834 10.5285C3.42516 10.6455 3.31437 10.7473 3.22005 10.8285C3.13287 10.9035 3.03686 10.9812 2.94938 11.0324C2.46156 11.3178 1.79381 11.3751 1.32395 11.3812C1.07514 11.3845 0.852462 11.3732 0.692065 11.3611C0.611577 11.3551 0.546037 11.3488 0.499864 11.344C0.476761 11.3415 0.458455 11.3394 0.445496 11.3379L0.43012 11.336L0.425557 11.3355L0.423542 11.3352C0.423448 11.3352 0.423143 11.3352 0.485767 10.8535L0.423542 11.3352C0.157529 11.3006 -0.0304782 11.0569 0.00410824 10.7909C0.0386807 10.525 0.282182 10.3374 0.548069 10.3718C0.548087 10.3718 0.548051 10.3718 0.548069 10.3718L0.549944 10.372L0.559616 10.3732C0.568682 10.3743 0.582871 10.3759 0.60165 10.3779C0.639243 10.3818 0.695017 10.3872 0.764728 10.3924C0.90473 10.4029 1.09799 10.4127 1.31133 10.4099C1.76571 10.404 2.20705 10.3412 2.4587 10.194C2.45847 10.1941 2.4583 10.1942 2.4587 10.194C2.46075 10.1926 2.47161 10.1855 2.49271 10.1693C2.51674 10.1508 2.54777 10.1254 2.58634 10.0922C2.66358 10.0258 2.7615 9.93612 2.87917 9.82431C3.11419 9.60097 3.41488 9.30164 3.76339 8.94864C4.1317 8.57559 4.54478 8.15147 4.98424 7.70025C5.27761 7.39904 5.58273 7.08575 5.89415 6.76752C5.58272 6.44928 5.27759 6.13598 4.98421 5.83476C4.54476 5.38355 4.1317 4.95944 3.76339 4.5864C3.41488 4.2334 3.11419 3.93407 2.87917 3.71074C2.7615 3.59892 2.66358 3.50929 2.58634 3.44281C2.54777 3.40961 2.51674 3.38425 2.49271 3.36577C2.4716 3.34954 2.46099 3.34258 2.45894 3.34123C2.45868 3.34108 2.45853 3.34096 2.45894 3.34123C2.2073 3.19405 1.76572 3.13106 1.31133 3.12515C1.09799 3.12238 0.90473 3.13211 0.764728 3.14261C0.695017 3.14784 0.639243 3.15321 0.60165 3.15717C0.582871 3.15915 0.568682 3.16077 0.559616 3.16184L0.549944 3.16301L0.548391 3.1632C0.282436 3.1977 0.0386882 3.01013 0.00410824 2.74417C-0.0304782 2.47816 0.15713 2.23447 0.423143 2.19989L0.485767 2.68154C0.423143 2.19989 0.423048 2.1999 0.423143 2.19989L0.425557 2.19958L0.43012 2.199L0.445496 2.19714C0.458455 2.19561 0.476761 2.19352 0.499864 2.19109C0.546037 2.18622 0.611577 2.17995 0.692065 2.17391C0.852462 2.16188 1.07514 2.15058 1.32395 2.15381C1.79381 2.15992 2.46156 2.21726 2.94938 2.50267C3.03686 2.55385 3.13287 2.63152 3.22005 2.70655C3.31437 2.78773 3.42516 2.8895 3.54834 3.00655C3.79502 3.24097 4.10458 3.54931 4.45467 3.9039C4.82109 4.27504 5.24052 4.70565 5.68455 5.16153C5.97361 5.4583 6.2731 5.76578 6.57518 6.07452C7.35822 5.28174 8.14192 4.50454 8.81601 3.88014C9.20251 3.52214 9.55904 3.20872 9.86244 2.96964C10.1465 2.74581 10.4405 2.54035 10.6878 2.45997C10.8757 2.39892 11.175 2.37219 11.4757 2.35598C11.677 2.34514 11.9071 2.33807 12.1558 2.33396L12.2127 0Z"
+                  /></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="playlist">
+        <div class="playlist-bar">
+          <div class="parallel-lines">
+            <div></div>
+            <div></div>
+          </div>
+          <h2 class="playlist-title" id="playlist">Playlist</h2>
+          <div class="parallel-lines">
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+        <ul id="playlist-songs"></ul>
+      </div>
+    </div>
+    <script>
+const playlistSongs = document.getElementById("playlist-songs");
+const playButton = document.getElementById("play");
+const pauseButton = document.getElementById("pause");
+const nextButton = document.getElementById("next");
+const previousButton = document.getElementById("previous");
+const shuffleButton = document.getElementById("shuffle");
 
-<!-- Footer -->
-<footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
-  <button class="w3-button w3-black w3-disabled w3-padding-large w3-margin-bottom">Previous</button>
-  <button class="w3-button w3-black w3-padding-large w3-margin-bottom">Next »</button>
-  <p>Develped by:<br><span class="bigL">J</span>unaed <span class="bigL">M</span>ustofa <span class="bigL">C</span>howdhury</p>
-    <span>For business web design, development and maintenance services and pricing<br>
-      Please visit <a href="https://jamesbondhybride.github.io/emani.html">Emani Technologies</a> <br>
-      email: junaedchowdhury@gmail.com<br> 
-      Phone: +8801710568775 </span>
-</footer>
-</body>
-</html>
+const allSongs = [
+  {
+    id: 0,
+    title: "Scratching The Surface",
+    artist: "Quincy Larson",
+    duration: "4:25",
+    src: "https://s3.amazonaws.com/org.freecodecamp.mp3-player-project/scratching-the-surface.mp3",
+  },
+  {
+    id: 1,
+    title: "Can't Stay Down",
+    artist: "Quincy Larson",
+    duration: "4:15",
+    src: "https://s3.amazonaws.com/org.freecodecamp.mp3-player-project/cant-stay-down.mp3",
+  },
+  {
+    id: 2,
+    title: "Still Learning",
+    artist: "Quincy Larson",
+    duration: "3:51",
+    src: "https://s3.amazonaws.com/org.freecodecamp.mp3-player-project/still-learning.mp3",
+  },
+  {
+    id: 3,
+    title: "Cruising for a Musing",
+    artist: "Quincy Larson",
+    duration: "3:34",
+    src: "https://s3.amazonaws.com/org.freecodecamp.mp3-player-project/cruising-for-a-musing.mp3",
+  },
+  {
+    id: 4,
+    title: "Never Not Favored",
+    artist: "Quincy Larson",
+    duration: "3:35",
+    src: "https://s3.amazonaws.com/org.freecodecamp.mp3-player-project/never-not-favored.mp3",
+  },
+  {
+    id: 5,
+    title: "From the Ground Up",
+    artist: "Quincy Larson",
+    duration: "3:12",
+    src: "https://s3.amazonaws.com/org.freecodecamp.mp3-player-project/from-the-ground-up.mp3",
+  },
+  {
+    id: 6,
+    title: "Walking on Air",
+    artist: "Quincy Larson",
+    duration: "3:25",
+    src: "https://s3.amazonaws.com/org.freecodecamp.mp3-player-project/walking-on-air.mp3",
+  },
+  {
+    id: 7,
+    title: "Can't Stop Me. Can't Even Slow Me Down.",
+    artist: "Quincy Larson",
+    duration: "3:52",
+    src: "https://s3.amazonaws.com/org.freecodecamp.mp3-player-project/cant-stop-me-cant-even-slow-me-down.mp3",
+  },
+  {
+    id: 8,
+    title: "The Surest Way Out is Through",
+    artist: "Quincy Larson",
+    duration: "3:10",
+    src: "https://s3.amazonaws.com/org.freecodecamp.mp3-player-project/the-surest-way-out-is-through.mp3",
+  },
+  {
+    id: 9,
+    title: "Chasing That Feeling",
+    artist: "Quincy Larson",
+    duration: "2:43",
+    src: "https://s3.amazonaws.com/org.freecodecamp.mp3-player-project/chasing-that-feeling.mp3",
+  },
+];
+
+const audio = new Audio();
+let userData = {
+  songs: [...allSongs],
+  currentSong: null,
+  songCurrentTime: 0,
+};
+
+const playSong = (id) => {
+  const song = userData?.songs.find((song) => song.id === id);
+  audio.src = song.src;
+  audio.title = song.title;
+
+  if (userData?.currentSong === null || userData?.currentSong.id !== song.id) {
+    audio.currentTime = 0;
+  } else {
+    audio.currentTime = userData.songCurrentTime;
+  }
+  userData.currentSong = song;
+  playButton.classList.add("playing");
+
+  highlightCurrentSong();
+  setPlayerDisplay();
+  setPlayButtonAccessibleText();
+  audio.play();
+};
+
+const pauseSong = () => {
+  userData.songCurrentTime = audio.currentTime;
+  
+  playButton.classList.remove("playing");
+  audio.pause();
+};
+
+const playNextSong = () => {
+  if (userData?.currentSong === null) {
+    playSong(userData?.songs[0].id);
+  } else {
+    const currentSongIndex = getCurrentSongIndex();
+    const nextSong = userData?.songs[currentSongIndex + 1];
+
+    playSong(nextSong.id);
+  }
+};
+
+const playPreviousSong = () =>{
+   if (userData?.currentSong === null) return;
+   else {
+    const currentSongIndex = getCurrentSongIndex();
+    const previousSong = userData?.songs[currentSongIndex - 1];
+
+    playSong(previousSong.id);
+   }
+};
+
+const shuffle = () => {
+  userData?.songs.sort(() => Math.random() - 0.5);
+  userData.currentSong = null;
+  userData.songCurrentTime = 0;
+
+  renderSongs(userData?.songs);
+  pauseSong();
+  setPlayerDisplay();
+  setPlayButtonAccessibleText();
+};
+
+const deleteSong = (id) => {
+  if (userData?.currentSong?.id === id) {
+    userData.currentSong = null;
+    userData.songCurrentTime = 0;
+
+    pauseSong();
+    setPlayerDisplay();
+  }
+
+  userData.songs = userData?.songs.filter((song) => song.id !== id);
+  renderSongs(userData?.songs); 
+  highlightCurrentSong(); 
+  setPlayButtonAccessibleText(); 
+
+  if (userData.songs.length === 0) {
+    const resetButton = document.createElement("button");
+    const resetText = document.createTextNode("Reset Playlist");
+
+    resetButton.id = "reset";
+    resetButton.ariaLabel = "Reset playlist";
+    resetButton.appendChild(resetText);
+    playlistSongs.appendChild(resetButton);
+
+    resetButton.addEventListener("click", () => {
+      userData.songs = [...allSongs];
+
+      renderSongs(userData?.songs); 
+      setPlayButtonAccessibleText();
+      resetButton.remove();
+    });
+
+  }
+
+};
+
+const setPlayerDisplay = () => {
+  const playingSong = document.getElementById("player-song-title");
+  const songArtist = document.getElementById("player-song-artist");
+  const currentTitle = userData?.currentSong?.title;
+  const currentArtist = userData?.currentSong?.artist;
+
+  playingSong.textContent = currentTitle ? currentTitle : "";
+  songArtist.textContent = currentArtist ? currentArtist : "";
+};
+
+const highlightCurrentSong = () => {
+  const playlistSongElements = document.querySelectorAll(".playlist-song");
+  const songToHighlight = document.getElementById(
+    `song-${userData?.currentSong?.id}`
+  );
+
+  playlistSongElements.forEach((songEl) => {
+    songEl.removeAttribute("aria-current");
+  });
+
+  if (songToHighlight) songToHighlight.setAttribute("aria-current", "true");
+};
+
+const renderSongs = (array) => {
+  const songsHTML = array
+    .map((song)=> {
+      return `
+      <li id="song-${song.id}" class="playlist-song">
+      <button class="playlist-song-info" onclick="playSong(${song.id})">
+          <span class="playlist-song-title">${song.title}</span>
+          <span class="playlist-song-artist">${song.artist}</span>
+          <span class="playlist-song-duration">${song.duration}</span>
+      </button>
+      <button onclick="deleteSong(${song.id})" class="playlist-song-delete" aria-label="Delete ${song.title}">
+          <svg width="20" height="20" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="8" cy="8" r="8" fill="#4d4d62"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M5.32587 5.18571C5.7107 4.90301 6.28333 4.94814 6.60485 5.28651L8 6.75478L9.39515 5.28651C9.71667 4.94814 10.2893 4.90301 10.6741 5.18571C11.059 5.4684 11.1103 5.97188 10.7888 6.31026L9.1832 7.99999L10.7888 9.68974C11.1103 10.0281 11.059 10.5316 10.6741 10.8143C10.2893 11.097 9.71667 11.0519 9.39515 10.7135L8 9.24521L6.60485 10.7135C6.28333 11.0519 5.7107 11.097 5.32587 10.8143C4.94102 10.5316 4.88969 10.0281 5.21121 9.68974L6.8168 7.99999L5.21122 6.31026C4.8897 5.97188 4.94102 5.4684 5.32587 5.18571Z" fill="white"/></svg>
+        </button>
+      </li>
+      `;
+    })
+    .join("");
+
+  playlistSongs.innerHTML = songsHTML;
+};
+
+const setPlayButtonAccessibleText = () => {
+  const song = userData?.currentSong || userData?.songs[0];
+
+  playButton.setAttribute(
+    "aria-label",
+    song?.title ? `Play ${song.title}` : "Play"
+  );
+};
+
+const getCurrentSongIndex = () => userData?.songs.indexOf(userData.currentSong);
+
+playButton.addEventListener("click", () => {
+    if (userData?.currentSong === null) {
+    playSong(userData?.songs[0].id);
+  } else {
+    playSong(userData?.currentSong.id);
+  }
+});
+
+pauseButton.addEventListener("click",  pauseSong);
+
+nextButton.addEventListener("click", playNextSong);
+
+previousButton.addEventListener("click", playPreviousSong);
+
+shuffleButton.addEventListener("click", shuffle);
+
+audio.addEventListener("ended", () => {
+  const currentSongIndex = getCurrentSongIndex();
+  const nextSongExists = userData?.songs[currentSongIndex + 1] !== undefined;
+
+    if (nextSongExists) {
+      playNextSong();
+    } else {
+      userData.currentSong = null;
+      userData.songCurrentTime = 0;  
+pauseSong();
+setPlayerDisplay();
+highlightCurrentSong()
+setPlayButtonAccessibleText();
+
+    }
+});
+
+renderSongs(userData?.songs);
+setPlayButtonAccessibleText();
+    </script>
+  <div id="fb-root"></div>
+  <label style="color:wheat">Please share in Facebook   </label>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v18.0&appId=387746120311570" nonce="wVpnpDut"></script>
+  <div class="fb-share-button" data-href="https://jamesbondhybride.github.io/emani.html" data-layout="" data-size=""><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fjamesbondhybride.github.io%2Femani.html&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore"><strong><em>Share with your friends in Facebook</em></strong></a></div>  
+  </body>
+ </html>
