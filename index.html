@@ -128,7 +128,7 @@ h1 {
 }
 @keyframes bodyBackgroundSlides {
     0% {
-        background: var(--website-color1) 5%, url(https://live.staticflickr.com/65535/53444655740_49b425779e_h.jpg) 0%;
+        background: var(--website-color1) 5%, url(https://live.staticflickr.com/65535/53488931155_01f4e2e758_h.jpg) 0%;
     }
     25% {
         background: var(--website-color1) 5%, url(https://live.staticflickr.com/65535/53444655740_49b425779e_h.jpg) 25%;
@@ -140,7 +140,7 @@ h1 {
         background: var(--website-color1) 5%, url(https://live.staticflickr.com/65535/53444655740_49b425779e_h.jpg) 100%;
     }
     100% {
-        background: var(--website-color1) 5%, url(https://live.staticflickr.com/65535/53444021364_4b8ed8e0b2_o.jpg) 0.01%;
+        background: var(--website-color1) 5%, url(https://live.staticflickr.com/65535/53488931155_01f4e2e758_h.jpg) 0.01%;
     }
 }
 
@@ -695,9 +695,9 @@ button:focus,
     </div>
     <nav>
       <ul style="list-style-type: none">
-        <li><a class="btn btn-block target" href="https://jamesbondhybride.github.io/"><strong>About</strong></a></li>
-        <li><a class="btn btn-block target">Projects</a></li>
-        <li><a class="btn btn-block target" href="">My Services</a></li>
+        <li class="bounce"><i class="info"></i><a class="btn btn-block target" href="https://jamesbondhybride.github.io/"><strong>About</strong></a></li>
+        <li class="bounce"><a class="btn btn-block target">Projects</a></li>
+        <li class="bounce"><a class="btn btn-block target" href="">My Services</a></li>
       </ul>
     </nav>
     <div class="catalogue">
@@ -736,7 +736,8 @@ button:focus,
              <p class="details">"Design customize website visually appealing but also feature animations and interactivity to engage your visitors.."</p>
                     <p class="price">[$120]</p>
     </div>
-        
+        <!--The div element below is responsible to render the service offerings-->
+        <div class="serviceOffers"></div>
     <div id = "contacts">
     <address class="dev">Contact:<br><em>J</em>unaed <em>M</em>ustofa <em>C</em>howdhury<br>
     Front End Developer || HTML, CSS, JavaScript, C# || Programmer, Web Designer<br>
@@ -746,10 +747,13 @@ button:focus,
     Find Me <a href="https://www.fiverr.com/s/DLeK7Q">@Fiverr</a>
     </address>
     </div>
+    <div class="container-fluid">
     <div id="fiv">
     <iframe src="https://www.fiverr.com/gig_widgets?id=U2FsdGVkX1+OhIFnrRzi8X4+i6P1zxBRTagdxFfuG4ViywzqRYCY31eRJGi+ERKc2QbrkG2xQ+eBq5268TFK2U3XOMkiBHakaCM76+cYOevXFYcKAbjz/zBt1NIXkelAH7GarKKmvwCZtq2hg5zYWKwaOJ3tjqYD/pWpQeXJbGcxkgg0kDAth132CblFyy59LUIPQ1dbPzyV5i5mpFN34f2cD8QtRBCzM3Jy6W5bl6MQyly84VuitfE6yPn2Yfmy3wzvbacNj58yA9IHsO6NSge5aKss0QJBdKOM++FRz/sqp9E8oi/BegWjltxHY22DIZI0z9MDF4SEQZTo6g3GwE1YpsHduQZXoEx94zQfqi89fmKf9HJfdnZUMMUlsNT80KS2bzTWYOuJk4h1wNnut0/N+rCnHmSfcIVPk3dEwRO2zzph/W+xMY++COaJFCJHrWrnGNS+23MKd1LGkmrZApPE/4C7+zllDAHmfdmWayllcxt0ge56/fxZpNANSTRu4v5q7nhKFxe5OiVbkoiDY8ACiXUyoedDbxW8vaOdoV3llBGhh906HWOpMnhmwC5O&affiliate_id=898859&strip_google_tagmanager=true" loading="lazy" data-with-title="true" class="fiverr_nga_frame" frameborder="0" height="350" width="100%" referrerpolicy="no-referrer-when-downgrade" data-mode="random_gigs" onload=" var frame = this; var script = document.createElement('script'); script.addEventListener('load', function() { window.FW_SDK.register(frame); }); script.setAttribute('src', 'https://www.fiverr.com/gig_widgets/sdk'); document.body.appendChild(script); " ></iframe>
     </div>
       </div>
+      </div>
+      <div class="container-fluid">
     <div class="player">
         <div class="player-bar">
           <div class="parallel-lines">
@@ -846,6 +850,8 @@ button:focus,
         <ul id="playlist-songs"></ul>
       </div>
     </div>
+  </div>
+</div>
     <script>
 const playlistSongs = document.getElementById("playlist-songs");
 const playButton = document.getElementById("play");
@@ -1118,13 +1124,62 @@ setPlayButtonAccessibleText();
 
 renderSongs(userData?.songs);
 setPlayButtonAccessibleText();
-    </script>
-    <script>
+</script>
+<!--Script for the main part-->
+<script>
+  const serviceCatelog = [{
+    offer1 : { 
+      title: "Webpage Design",
+      description: "We will take care of your website while you busy in business. Build your website from scratch with HTML, CSS and JavaScript",
+      image: "",
+      price: 50
+    }
+  },
+  { 
+    offer2 : { 
+      title: "Webpage Design",
+      description: "We will take care of your website while you busy in business. Build your website from scratch with HTML, CSS and JavaScript",
+      image: "",
+      price: 50
+    }
+  },
+  {
+    offer3: { 
+      title: "Webpage Development",
+      description: "We will take care of your website while you busy in business. Build your website from scratch with HTML, CSS and JavaScript",
+      image: "",
+      price: 50
+    }
+  },
+  {
+      offer4: { 
+      title: "Making a responsive Webpage",
+      description: "We will take care of your website while you busy in business. Build your website from scratch with HTML, CSS and JavaScript",
+      image: "",
+      price: 50
+    }
+  },
+  {
+      offer5: { 
+      title: "Website with built in SEO",
+      description: "We will take care of your website while you busy in business. Build your website from scratch with HTML, CSS and JavaScript",
+      image: "",
+      price: 50
+    }
+  },
+  {
+      offer6: { 
+      title: "Customize your Website as you like",
+      description: "We will take care of your website while you busy in business. Build your website from scratch with HTML, CSS and JavaScript",
+      image: "",
+      price: 50
+    }
+  }];
+  const offers = document.querySelectorAll("serviceOffers");
+  serviceCatelog.forEach((offer) => {
+    return offers.innerHTML = `<div><h2>${title}</h2><p>${description}</p><p>${price}</p></div>`;
+  });
 
-    </script>
-  <div id="fb-root"></div>
-  <label style="color:wheat">Please share in Facebook   </label>
-  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v18.0&appId=387746120311570" nonce="wVpnpDut"></script>
-  <div class="fb-share-button" data-href="https://jamesbondhybride.github.io/emani.html" data-layout="" data-size=""><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fjamesbondhybride.github.io%2Femani.html&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore"><strong><em>Share with your friends in Facebook</em></strong></a></div>  
-  </body>
+</script>  
+</body>
  </html>
