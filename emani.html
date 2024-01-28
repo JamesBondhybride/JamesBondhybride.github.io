@@ -159,7 +159,7 @@ body {
 
 /* contacts division */
 #contacts {
-    padding: 50px;
+    padding: 5rem;
     background-color: var(--button-color1);
     color: #ffffff98;
 }
@@ -319,10 +319,10 @@ h2 {
         <div id="serviceDiv"></div>
         <div id="contacts">
             <div class="row">
-                <div class="col-xs-3"><p><em>J</em>unaed <em>M</em>ustofa <em>C</em>howdhury<br>Frontend Developer || HTML, CSS, JavaScript || Bootstrap, jQuery, SASS, React, Redux</p></div>
-                <div class="col-xs-3"><a href="https://www.facebook.com/emanitechno?mibextid=LQQJ4d"> Please Visit our <i class="fa-brands fa-facebook"> Facebook</i> page</a></div>
-                <div class="col-xs-3"><a href="https://www.facebook.com/emanitechno?mibextid=LQQJ4d"> Chat with me in <i class="fa-brands fa-square-whatsapp"> whatsapp</i></a></div>
-                <div class="col-xs-3">Write Me Email:<i class="fa-solid fa-envelope"> junaedchowdhury@gmail.com</i> </div>
+                <div class="col-xs-6"><p><em>J</em>unaed <em>M</em>ustofa <em>C</em>howdhury<br>Frontend Developer || HTML, CSS, JavaScript || Bootstrap, jQuery, SASS, React, Redux</p></div>
+                <div class="col-xs-6"><a href="https://www.facebook.com/emanitechno?mibextid=LQQJ4d"> Please Visit our <i class="fa-brands fa-facebook"> </i> Facebook Page</a></div>
+                <div class="col-xs-6"><a href="https://www.facebook.com/emanitechno?mibextid=LQQJ4d"> Chat with me in <i class="fa-brands fa-square-whatsapp"></i> whatsapp</a></div>
+                <div class="col-xs-6"><i class="fa-solid fa-envelope"></i> Write Me Email: junaedchowdhury@gmail.com</div>
             </div>
         </div>
 
@@ -368,7 +368,7 @@ h2 {
     }];
 
     services.forEach(({title , description , icon , price}) => {
-    offer.innerHTML += `<div id="display"><h2>${title}</h2><h1>${icon}</h1><p class="details">${description}</p><p class="price">[$${price}]</p></div>`;
+    offer.innerHTML += `<div id="display"><h1>${icon}</h1><h2>${title}</h2><p class="details">${description}</p><p class="price">[$${price}]</p></div>`;
         });
         </script>
     </body>
