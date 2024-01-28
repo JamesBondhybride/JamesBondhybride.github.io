@@ -39,7 +39,6 @@ h2 {
     color: rgba(245, 222, 179, 0.808);
     margin: auto;
     letter-spacing: 5px;
-    font-size: 2em;
     text-align: center;
     padding-top: 1px;
     font-style: italic;
@@ -157,12 +156,6 @@ body {
     margin: 10px;
     padding: 0%;
 }
-div > img {
-    display: block;
-    margin: auto;
-    width: 25%;
-    height: 25%;
-}
 /* contacts division */
 #contacts {
     background-color: var(--button-color1);
@@ -275,7 +268,6 @@ h2 {
         color: rgba(245, 222, 179, 0.808);
         margin: auto;
         letter-spacing: 5px;
-        font-size: 2em;
         text-align: center;
         padding-top: 1px;
         font-style: italic;
@@ -301,12 +293,6 @@ h2 {
         background: var(--button-color2);
         margin-left: 10%;
     }
-    div > img {
-        display: block;
-        margin: auto;
-        width: 25%;
-        height: 15%;
-            }
     html {
         margin: 0%;
     }
@@ -320,11 +306,7 @@ h2 {
     
     
 }
-@media (max-width: 500px) {
-    button {
-        margin-left: 5%;
-    }
-}
+
 :root {
   /* colors */
   --primary-color: #dfdfe2;
@@ -1108,7 +1090,7 @@ setPlayButtonAccessibleText();
 
   const serviceDiv = document.getElementById("serviceOffers");
   serviceCateloge.forEach(({ title , description , ic , price}) => {
-  serviceDiv.innerHTML += `<div class="catalogue"><h2>${title}</h2><h1>${ic}</h1><p class="details">${description}</p></div>`;
+  serviceDiv.innerHTML += `<div class="catalogue"><h2>${title}</h2><h1>${ic}</h1><p class="details">${description}</p><p class="price">[$${price}]</p></div>`;
   });
 </script>
 </body>
