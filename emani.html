@@ -140,7 +140,7 @@ body {
   align-items: center;
   text-align: center;
   width: 25vw;
-  height: 25vw;
+  height: 20vw;
   border: 1px solid #000;
   border-radius: 5%;
   background: var(--catalogue-color);
@@ -319,10 +319,27 @@ h2 {
         <div id="serviceDiv"></div>
         <div id="contacts">
             <div class="row">
-                <div class="col-xs-6"><p><em>J</em>unaed <em>M</em>ustofa <em>C</em>howdhury<br>Frontend Developer || HTML, CSS, JavaScript || Bootstrap, jQuery, SASS, React, Redux</p></div>
-                <div class="col-xs-6"><a href="https://www.facebook.com/emanitechno?mibextid=LQQJ4d"> Please Visit our <i class="fa-brands fa-facebook"> </i> Facebook Page</a></div>
-                <div class="col-xs-6"><a href="https://www.facebook.com/emanitechno?mibextid=LQQJ4d"> Chat with me in <i class="fa-brands fa-square-whatsapp"></i> whatsapp</a></div>
-                <div class="col-xs-6"><i class="fa-solid fa-envelope"></i> Write Me Email: junaedchowdhury@gmail.com</div>
+                <div class="col-xs-3"><!-- Put this code anywhere in the body of your page where you want the badge to show up. -->
+
+                    <div itemscope itemtype='http://schema.org/Person' class='fiverr-seller-widget' style='display: inline-block;'>
+                         <a itemprop='url' href=https://www.fiverr.com/junaedchowdhury rel="nofollow" target="_blank" style='display: inline-block;'>
+                            <div class='fiverr-seller-content' id='fiverr-seller-widget-content-c43e4abc-755f-4069-bcce-b732b4adac10' itemprop='contentURL' style='display: none;'></div>
+                            <div id='fiverr-widget-seller-data' style='display: none;'>
+                                <div itemprop='name' >junaedchowdhury</div>
+                                <div itemscope itemtype='http://schema.org/Organization'><span itemprop='name'>Fiverr</span></div>
+                                <div itemprop='jobtitle'>Seller</div>
+                                <div itemprop='description'>Programmer: JavaScript, HTML, CSS. I have intensive experience in the related industry field for more than five years under private IT companies and financial service companies like HSBC and now as a full-time freelancer ready to deliver a high level of service efficiency.</div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <script id='fiverr-seller-widget-script-c43e4abc-755f-4069-bcce-b732b4adac10' src='https://widgets.fiverr.com/api/v1/seller/junaedchowdhury?widget_id=c43e4abc-755f-4069-bcce-b732b4adac10' data-config='{"category_name":"Programming \u0026 Tech"}' async='true' defer='true'></script>
+               </div>
+                <div class="col-xs-3"><p><em>J</em>unaed <em>M</em>ustofa <em>C</em>howdhury<br>Frontend Developer || HTML, CSS, JavaScript || Bootstrap, jQuery, SASS, React, Redux</p></div>
+                <div class="col-xs-3"><a href="https://www.facebook.com/emanitechno?mibextid=LQQJ4d"> Please Visit our <i class="fa-brands fa-facebook"> </i> Facebook Page</a></div>
+                <div class="col-xs-3"><a href="https://www.facebook.com/emanitechno?mibextid=LQQJ4d"> Chat with me in <i class="fa-brands fa-square-whatsapp"></i> whatsapp</a></div>
+                <div class="col-xs-3"><p><i class="fa-solid fa-envelope"></i> Write Me Email: junaedchowdhury@gmail.com</p></div>
+                
             </div>
         </div>
 
@@ -368,7 +385,7 @@ h2 {
     }];
 
     services.forEach(({title , description , icon , price}) => {
-    offer.innerHTML += `<div id="display"><h1>${icon}</h1><h2>${title}</h2><p class="details">${description}</p><p class="price">[$${price}]</p></div>`;
+    offer.innerHTML += `<div id="display"><h1>${icon}<p>${title}</p></h1><p class="details">${description}</p><p class="price">[$${price}]</p></div>`;
         });
         </script>
     </body>
