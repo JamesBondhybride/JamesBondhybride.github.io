@@ -75,6 +75,7 @@ h1 {
     border-bottom-right-radius: 100%;
     animation: shed 1s linear infinite;
 }
+
 body {
   background: url(https://live.staticflickr.com/65535/53444655740_97c99e4aba_b.jpg);
   background-size: cover;
@@ -140,7 +141,7 @@ body {
   align-items: center;
   text-align: center;
   width: 25vw;
-  height: 20vw;
+  height: 25vw;
   border: 1px solid #000;
   border-radius: 5%;
   background: var(--catalogue-color);
@@ -148,13 +149,9 @@ body {
   animation: product 10s linear infinite;
 }
 .price {
-    font-family:'Great Vibes', cursive;
     font-size: x-large;
     margin: 10px;
     padding: 0%;
-}
-.smallText {
-    font-size: small;
 }
 
 /* contacts division */
@@ -165,11 +162,6 @@ body {
 }
 
 
-/* Initial of developer */
-em {
-    font-family:'Great Vibes', cursive; 
-    font-size: xx-large;
-  }
 
 
 p {
@@ -182,7 +174,7 @@ p {
     
 }
 .details {
-   
+   padding: 10px;
    animation: textSize 20s linear infinite;
 }
 
@@ -192,7 +184,7 @@ p {
 }
 
 .btn:hover, .btn:active, .btn:focus {
-    background: var(--button-color3), var(--button-color2);  
+    background: var(--button-color3), var(--button-color2); 
 }
 a {
     color: #ffffff98;
@@ -201,7 +193,6 @@ a {
     font-weight: 700;
     text-decoration: none;
 }
-
 
 @media (max-width:1000px) {
 
@@ -289,6 +280,10 @@ h2 {
   --font-headline: "Roboto Mono", monospace;
   --font-family: "Lato", sans-serif;
 }
+
+#hideBtn {
+    display: none;
+}
         </style>
     </head>
     <body>
@@ -297,26 +292,33 @@ h2 {
         <div class="shed1">
             <div class="shed2">
                <div class="shed3">
-                  <h1>E<span class="smallText">mani</span> T<span class="smallText">echnologies</span></h1>
+                  <h1>E<span class="small">mani</span> T<span class="small">echnologies</span></h1>
                </div>
             </div>
           </div>
-
             <nav>
                 <div class="row">
                 <div class="col-xs-4">
-                    <button class="btn btn-block" ><i class="fa-solid fa-circle-info"><strong> Info</strong></i></button>
+                    <a href="https://jamesbondhybride.github.io/"><button class="btn btn-block" id="infoButton" ><i class="fa-solid fa-circle-info"> <strong>Info</strong></i></button></a>
                 </div>
                 <div class="col-xs-4">
-                    <button class="btn btn-block"><i class="fa-solid fa-diagram-project"><strong> Projects</strong></i></button>
-                </div>
+                <button class="btn btn-block" id="projectBtn"><i class="fa-solid fa-diagram-project"> <strong>Projects <i class="fa fa-bars" aria-hidden="true"></i></strong></i><i class="fa fa-bars" aria-hidden="true"></i></button>
+                <button class="btn btn-block" id="hideBtn"><i class="fa-solid fa-diagram-project"></i> <a href="https://jamesbondhybride.github.io/dicegame.html">"Dice Game"</a> <span class="small">- JavaScript project</span></button>
+                <button class="btn btn-block" id="hideBtn"><i class="fa-solid fa-diagram-project"></i> <a href="https://jamesbondhybride.github.io/dicegame.html">"City Skyline"</a> <span class="small">- CSS responsive project</span></button>
+                <button class="btn btn-block" id="hideBtn"><i class="fa-solid fa-diagram-project"></i> <a href="https://jamesbondhybride.github.io/dicegame.html">"Dice Game"</a> <span class="small">- JavaScript project</span></button>
+                <button class="btn btn-block" id="hideBtn"><i class="fa-solid fa-diagram-project"></i> <a href="https://jamesbondhybride.github.io/dicegame.html">"City Skyline"</a> <span class="small">- CSS responsive project</span></button>
+                <button class="btn btn-block" id="hideBtn"><i class="fa-solid fa-diagram-project"></i> <a href="https://jamesbondhybride.github.io/dicegame.html">"Dice Game"</a> <span class="small">- JavaScript project</span></button>
+                <button class="btn btn-block" id="hideBtn"><i class="fa-solid fa-diagram-project"></i> <a href="https://jamesbondhybride.github.io/dicegame.html">"City Skyline"</a> <span class="small">- CSS responsive project</span></button>
+            </div>
                 <div class="col-xs-4">
-                    <button class="btn btn-block"><i class="fa-solid fa-plug"><strong> Services</strong></i></button>
+                    <button class="btn btn-block" id="serviceButton"><i class="fa-solid fa-plug"> <strong>Services</strong></i></button>
                 </div>
                 </div>
             </nav>
-        <!--div element below is part of my JavaScript used to display my services and cost-->
+        
+            <!--div element below is part of my JavaScript used to display my services and cost-->
         <div id="serviceDiv"></div>
+        
         <div id="contacts">
             <div class="row">
                 <div class="col-xs-3"><!-- Put this code anywhere in the body of your page where you want the badge to show up. -->
@@ -335,7 +337,7 @@ h2 {
                     
                     <script id='fiverr-seller-widget-script-c43e4abc-755f-4069-bcce-b732b4adac10' src='https://widgets.fiverr.com/api/v1/seller/junaedchowdhury?widget_id=c43e4abc-755f-4069-bcce-b732b4adac10' data-config='{"category_name":"Programming \u0026 Tech"}' async='true' defer='true'></script>
                </div>
-                <div class="col-xs-3"><p><em>J</em>unaed <em>M</em>ustofa <em>C</em>howdhury<br>Frontend Developer || HTML, CSS, JavaScript || Bootstrap, jQuery, SASS, React, Redux</p></div>
+                <div class="col-xs-3"><h2>J<span class="small">unaed</span> M<span class="small">ustofa</span> C<span class="small">howdhury</span></h2><br><p>Frontend Developer || HTML, CSS, JavaScript || Bootstrap, jQuery, SASS, React, Redux</p></div>
                 <div class="col-xs-3"><a href="https://www.facebook.com/emanitechno?mibextid=LQQJ4d"> Please Visit our <i class="fa-brands fa-facebook"> </i> Facebook Page</a></div>
                 <div class="col-xs-3"><a href="https://www.facebook.com/emanitechno?mibextid=LQQJ4d"> Chat with me in <i class="fa-brands fa-square-whatsapp"></i> whatsapp</a></div>
                 <div class="col-xs-3"><p><i class="fa-solid fa-envelope"></i> Write Me Email: junaedchowdhury@gmail.com</p></div>
@@ -385,8 +387,19 @@ h2 {
     }];
 
     services.forEach(({title , description , icon , price}) => {
-    offer.innerHTML += `<div id="display"><h1>${icon}<p>${title}</p></h1><p class="details">${description}</p><p class="price">[$${price}]</p></div>`;
+    offer.innerHTML += `<div id="display"><h1>${icon}<p>${title}</p></h1><p class="details">${description}</p><p class="price">$${price}</p></div>`;
         });
+/* The line below is for the project button */
+const projectButton = document.getElementById("projectBtn");
+const x = document.getElementById("hideBtn");
+projectButton.addEventListener("click", () => {
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+});
+
         </script>
     </body>
 </html>
