@@ -220,6 +220,7 @@ h1 {
         border-top-right-radius: 100%;
         margin-top: 0;
         margin-bottom: 0;
+        font-size: medium;
 }
 h2 {
         color: rgba(245, 222, 179, 0.808);
@@ -234,11 +235,11 @@ h2 {
 #display {
         display: flex;
         flex-direction: space-between;
-        margin-left: 5px;
+        margin-left: 25px;
         align-items: center;
         text-align: center;
         width: 80vw;
-        height: 80vw;
+        height: 70vw;
         border: 1px solid #000;
         border-radius: 5%;
         background: var(--catalogue-color);
@@ -296,14 +297,17 @@ h2 {
         <div class="shed1">
             <div class="shed2">
                <div class="shed3">
-                  <h1>E<span class="small">mani</span> T<span class="small">echnologies</span></h1>
-               </div>
+                <h1><i class="fa-solid fa-circle-nodes">E<small>mani</small> T<small>echnologies</small></i></h1>
+               <!--
+                <h1><img style="height: 35px; width: 50px; position: absolute;" class="img-responsive img-fluid" src="https://jamesbondhybride.github.io/emanitechlogo.png"/>..E<span class="small">mani</span> T<span class="small">echnologies</span></h1>
+               -->
+            </div>
             </div>
           </div>
             <nav>
                 <div class="row">
                 <div class="col-xs-4">
-                    <a href="https://jamesbondhybride.github.io/"><button class="btn btn-block" id="infoButton" ><i class="fa-solid fa-circle-info"> <strong>Info</strong></i></button></a>
+                    <a href="#contacts"><button class="btn btn-block" id="infoButton" ><i class="fa-solid fa-circle-info"> <strong>Info</strong></i></button></a>
                 </div>
                 <div class="col-xs-4">
                 <button class="btn btn-block" id="projectBtn"><i class="fa-solid fa-diagram-project"> <strong>Projects <i class="fa fa-bars" aria-hidden="true"></i></strong></i><i class="fa fa-bars" aria-hidden="true"></i></button>
@@ -351,13 +355,13 @@ h2 {
       title: "Resposive Website",
       description: "Make your website fully responsive, fits to any devices, user-friendly, attract more visitors and increase engagement.",
       icon: `<i class="fa-solid fa-laptop-code"></i>`,
-      price: 50
+      price: 20
     },
      { 
       title: "Website Optimization",
       description: "Websites requires updates and maintenance to ensure it continue to perform well.",
       icon: `<i class="fa-solid fa-bug-slash"></i>`,
-      price: 50
+      price: 30
       },
       { 
       title: "Website SEO",
@@ -369,11 +373,11 @@ h2 {
       title: "Website Animation",
       description: "Design customize website visually appealing but also feature animations and interactivity to engage your visitors..",
       icon: `<i class="fa-solid fa-icons"></i>`,
-      price: 50
+      price: 20
     }];
 
     services.forEach(({title , description , icon , price}) => {
-    offer.innerHTML += `<div id="display"><h1>${icon}<p>${title}</p></h1><p class="details">${description}</p><p class="price">$${price}</p></div>`;
+    offer.innerHTML += `<div id="display"><h1>${icon}<p>${title}</p></h1><p class="details">${description}</p><p class="price">$${price}</p><button class="btn cart">Add to Cart</button></div>`;
         });
 /* The line below is for the project button */
 const projectButton = document.getElementById("projectBtn");
