@@ -78,8 +78,12 @@ h1 {
 
 body {
   background: url(https://live.staticflickr.com/65535/53444655740_97c99e4aba_b.jpg);
+  background-position: center top;
   background-size: cover;
-  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100px;
+
 }
 @keyframes textSize {
     0% {
@@ -220,6 +224,7 @@ h1 {
         border-top-right-radius: 100%;
         margin-top: 0;
         margin-bottom: 0;
+        font-size: medium;
 }
 h2 {
         color: rgba(245, 222, 179, 0.808);
@@ -234,11 +239,11 @@ h2 {
 #display {
         display: flex;
         flex-direction: space-between;
-        margin-left: 5px;
+        margin-left: 25px;
         align-items: center;
         text-align: center;
         width: 80vw;
-        height: 80vw;
+        height: 70vw;
         border: 1px solid #000;
         border-radius: 5%;
         background: var(--catalogue-color);
@@ -296,8 +301,11 @@ h2 {
         <div class="shed1">
             <div class="shed2">
                <div class="shed3">
-                  <h1>E<span class="small">mani</span> T<span class="small">echnologies</span></h1>
-               </div>
+                <h1><i class="fa-solid fa-circle-nodes">E<small>mani</small> T<small>echnologies</small></i></h1>
+               <!--
+                <h1><img style="height: 35px; width: 50px; position: absolute;" class="img-responsive img-fluid" src="https://jamesbondhybride.github.io/emanitechlogo.png"/>..E<span class="small">mani</span> T<span class="small">echnologies</span></h1>
+               -->
+            </div>
             </div>
           </div>
             <nav>
