@@ -336,7 +336,8 @@ h2 {
         
         <div id="contacts">
             <div class="row">
-                <div class="col-xs-4"><h2>J<span class="small">unaed</span> M<span class="small">ustofa</span> C<span class="small">howdhury</span></h2><br><p>Frontend Developer || HTML, CSS, JavaScript || Bootstrap, jQuery, SASS, React, Redux<br><p><i class="fa-solid fa-envelope"></i> Write Me Email: junaedchowdhury@gmail.com</p></p></div>
+                <div><img style="margin-left: 6vw; width: 15vw; border-radius: 10vw;" src="https://jamesbondhybride.github.io/IMG_6240.jpeg" alt="Developer's selfie"></div>
+                <div class="col-xs-4"><h2>J<span class="small">unaed</span> M<span class="small">ustofa</span> C<span class="small">howdhury</span></h2><br><p style="color: white;">Frontend Developer || HTML, CSS, JavaScript || Bootstrap, jQuery, SASS, React, Redux<br><i class="fa-solid fa-envelope"></i> Write Me Email: junaedchowdhury@gmail.com</p></div>
                 <div class="col-xs-4"><a href="https://www.facebook.com/emanitechno?mibextid=LQQJ4d"> Please Visit our <i class="fa-brands fa-facebook"> </i> Facebook Page</a></div>
                 <div class="col-xs-4"><a href="https://www.facebook.com/emanitechno?mibextid=LQQJ4d"> Chat with me in <i class="fa-brands fa-square-whatsapp"></i> whatsapp</a></div>
             </div>
@@ -384,7 +385,7 @@ h2 {
     }];
 
     services.forEach(({title , description , icon , price}) => {
-    offer.innerHTML += `<div id="display"><h1>${icon}<p>${title}</p></h1><p class="details">${description}</p><p class="price">$${price}</p><button class="btn cart">Add to Cart</button></div>`;
+    offer.innerHTML += `<div id="display"><h1>${icon}<p>${title}</p></h1><p class="details">${description}</p></div>`;
         });
 /* The line below is for the project button */
 const projectButton = document.getElementById("projectBtn");
