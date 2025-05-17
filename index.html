@@ -1,352 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
+<htm lang="en">
     <head>
-        <meta charset="utf-8" />
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!--Font Awesome is a convenient library of icons. These icons can be webfonts or vector graphics. These icons are treated just like fonts. You can specify their size using pixels,
-         and they will assume the font size of their parent HTML elements. You can include Font Awesome in any app by adding the following code to the top of your HTML:-->
-         <script src="https://kit.fontawesome.com/f1eafbdbd5.js" crossorigin="anonymous"></script>
-        <!--Links below for Facebook or other social media sites, to share Image of the website-->
+        <title>Junaed Mustofa Chowdhury -Frontend Developer</title>
+        <!--Link is for social media integration--> 
         <meta property="og:image" content="https://live.staticflickr.com/65535/53444655740_97c99e4aba_b.jpg">
         <meta property="og:image:type" content="image/png">
         <meta property="og:image:width" content="1024">
         <meta property="og:image:height" content="1024">
-        <!--Bootstrap link-->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
-        <title>Emani Technologies</title>
         <style>
-
-*, ::after, ::before html {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-:root {
-    --website-color1: linear-gradient(90deg, rgba(0, 0, 100, 0.5), rgba(11, 111, 173, 0.5),rgba(1, 20, 36, 0.5));
-    --shed1-color: linear-gradient(90deg, rgba(35, 56, 3, 0.785), rgba(62, 74, 3, 0.589),rgba(159, 188, 10, 0.5), rgba(25, 30, 0, 0.5));
-    --shed2-color: repeating-linear-gradient(180deg, rgba(92, 0, 100, 0.5), rgba(166, 7, 206, 0.5), rgba(165, 6, 174, 0.5));
-    --shed3-color: repeating-linear-gradient(180deg, rgba(0, 0, 5, 0.785), rgba(43, 43, 88, 0.589), rgba(0, 0, 30, 0.5));
-    --button-color1: rgba(0, 0, 5, 0.785);
-    --button-color2: rgba(43, 43, 88, 0.589);
-    --button-color3: rgba(0, 0, 100, 0.5);
-    --button-color4: rgba(35, 56, 3, 0.785);
-    --catalogue-color: rgba(6, 9, 69, 0.559);
-}
-
-h2 {
-    color: rgba(245, 222, 179, 0.808);
-    margin: auto;
-    letter-spacing: 5px;
-    font-size: 2em;
-    text-align: center;
-    padding-top: 1px;
-    font-style: italic;
-}
-h1 {
-    color: rgba(245, 245, 245, 0.578);
-    letter-spacing: 15px;
-    text-align: left;
-    background: var(--website-color1);
-    width: 90%;
-    border-top-right-radius: 100%;
-    margin-bottom: 0;
-    margin-top: 1px;
-
-}
-.shed1 {
-    background: var(--shed1-color);
-    width: 100%;
-    margin: 0;
-    border-bottom-right-radius: 100%;
-    animation: shed 1s linear infinite;
-}
-.shed2 {
-    background: var(--shed2-color);
-    width: 90%;
-    margin: 0;
-    border-top-right-radius: 100%;
-    animation: shed 1s linear infinite;
-}
-.shed3 {
-    background: var(--shed3-color);
-    width: 90%;
-    margin: 0;
-    border-bottom-right-radius: 100%;
-    animation: shed 1s linear infinite;
-}
-
-body {
-  /* background: url(https://jamesbondhybride.github.io/IMG_6240.jpeg);
-  background-color: rgb(67, 50, 32); */
-  background-position: left top;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  min-height: 100px;
-
-}
-@keyframes textSize {
-    0% {
-        font-size: 100%;
-        text-align: center;
-        color: transparent;
-    }
-    25% {
-        font-size: 105%;
-        text-align: center;
-        color: rgb(208, 208, 223);
-    }
-    50% {
-        font-size: 110%;
-        text-align: center;
-        color: rgb(185, 185, 206);
-
-    }
-    75% {
-        font-size: 115%;
-        text-align: center;
-        color: rgb(162, 162, 186);
-    }
-    
-    100% {
-        font-size: 115%;
-        text-align: center;
-        color: rgb(176, 176, 201);
-    }
-}
-
-@keyframes shed {
-    0% {
-        background-color: red;
-    }
-    50% {
-        background-color: var(--shed2-color);
-    }
-    100% {
-        background-color: green;
-    }
-}
-
-@keyframes product {
-    0% {
-        background-color: var(--catalogue-color);
-    }
-    50% {
-        background-color: var(--website-color1);
-    }
-}
-#display:hover, #display:focus, #display:active, a:hover, a:active, a:focus {
-    background: var(--website-color1);
-}
-#display {
-  display: inline-flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-  text-align: center;
-  width: 25vw;
-  height: 25vw;
-  border: 1px solid #000;
-  border-radius: 5%;
-  background: var(--catalogue-color);
-  margin: 2% 3% 2% 4%;
-  animation: product 10s linear infinite;
-}
-.price {
-    font-size: x-large;
-    margin: 10px;
-    padding: 0%;
-}
-
-/* contacts division */
-#contacts {
-    padding: 5rem;
-    background-color: var(--button-color1);
-    color: #ffffff98;
-}
-
-
-
-
-p {
-    font-family: 'Tilt Neon', sans-serif;
-    color: black;
-    text-align: center;
-    font-size: 14px;
-    font-style: italic;
-    font-weight: 1px;
-    
-}
-.details {
-   padding: 10px;
-   color: #056792;
-   text-decoration: wavy;
-   font-size: large;
-}
-
-.btn {
-    background: var(--website-color1);
-    color: #ffffff98;
-}
-
-.btn:hover, .btn:active, .btn:focus {
-    background: var(--button-color3), var(--button-color2); 
-}
-a {
-    color: #ffffff98;
-    font-size: larger;
-    font-style: italic;
-    font-weight: 700;
-    text-decoration: none;
-}
-
-@media (max-width:1000px) {
-
-*, ::after, ::before {
-                padding: 0;
-                margin: 0;
-                box-sizing: border-box;
+            header {
+            text-align: center;
+            color: white;
+            background-color: rgba(2, 11, 27, 0.648);
+            padding: 20px;
+            margin-bottom: 5vh;
+            border-top-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+           }
+            h1 {
+                margin: 1vh;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-style: italic;
             }
-*, ::after, ::before {
-                padding: 0;
-                margin: 0;
-                box-sizing: border-box;
+            h2 {
+                text-align: center;
+                background-color: rgba(146, 171, 215, 0.445);
             }
-   
-.price {
-        font-style: normal;
-}
-    
-h1 {
-        letter-spacing: 1px;
-        color: rgba(245, 245, 245, 0.578);
-        text-align: left;
-        background: var(--website-color1);
-        width: 90%;
-        border-top-right-radius: 100%;
-        margin-top: 0;
-        margin-bottom: 0;
-        font-size: medium;
-}
-h2 {
-        color: rgba(245, 222, 179, 0.808);
-        margin: auto;
-        letter-spacing: 5px;
-        font-size: 2em;
-        text-align: center;
-        padding-top: 1px;
-        font-style: italic;
-}
-
-#display {
-        display: flex;
-        flex-direction: space-between;
-        margin-left: 25px;
-        align-items: center;
-        text-align: center;
-        width: 80vw;
-        height: 70vw;
-        border: 1px solid #000;
-        border-radius: 5%;
-        background: var(--catalogue-color);
-             
-      }
-      #contacts {
-        padding: 15px;
-        font-size: 11px;
-      }
-
-    .btn {
-        background: var(--button-color2);
-        color: #ffffff98;
-    }
-    html {
-        margin: 0%;
-    }
-    .details {
-        font-family: 'Tilt Neon', sans-serif;
-        color: #ffffff;
-        text-align: center;
-        font-style: italic;
-        font-weight: 1;
-    }
-    
-    
-}
-
-:root {
-  /* colors */
-  --primary-color: #dfdfe2;
-  --secondary-color: #ffffff;
-  --app-background-color: #4d4d62;
-  --background-color: #1b1b32;
-  --foreground-color: #3b3b4f;
-  --highlight-color: #f1be32;
-
-  /* font sizes */
-  --root-font-size: 16px;
-  font-size: var(--root-font-size);
-
-  /* font-families */
-  --font-headline: "Roboto Mono", monospace;
-  --font-family: "Lato", sans-serif;
-}
-
-#hideBtn {
-    display: none;
-}
-        </style>
+            h3 {
+                transition-duration: 1s;
+                padding: 1vh;
+            }
+            sub {
+                font-size: large;
+                color: rgb(201, 126, 196);
+                padding: 5vh;
+            }
+           
+            body {
+                background-image: url();
+            }
+            #display {
+                display: inline-table;
+                text-align: center;
+                width: 40vh;
+                height: 40vh;
+                border: 1px solid rgba(56, 23, 23, 0.53);
+                border-radius: 15%;
+                color: black;
+                padding: 3vw;
+                background-color: rgba(146, 171, 215, 0.445);
+                transition-duration: 1s;
+            }
+            #display:hover {
+                background-color: rgba(17, 39, 77, 0.648);
+                color: whitesmoke;
+                p {
+                    font-size: large;
+                }
+            }
+            #contacts {
+                color: white;
+                text-align: center;
+                background-color: rgba(17, 39, 77, 0.648);
+                border-top-left-radius: 25%;
+                border-bottom-right-radius: 25%;
+                padding: 3vh;
+            }
+            a {
+                text-decoration: none;
+                display: inline-block;
+                color: rgb(244, 209, 241);
+                background-color: rgba(2, 14, 36, 0.648);
+                padding: 3vh;
+                border-radius: 15px;
+                margin-left: 2rem;
+                margin-top: 1rem;
+            }
+            a:hover {
+                background-color: rgba(2, 14, 36, 0.897);
+            }
+            a:active {
+                background-color: brown;
+            }
+            #serviceOfferings {
+                margin: 3vw 0 3vw 10vw;
+            }
+            hr {
+                height: 5px;
+            }
+            #headHr {
+                width: 50rem;
+            }
+            @media (max-width: 1000px) {
+                #display {
+                    margin: 0 0 0 10vw;
+                }
+            }
+        </style>    
     </head>
     <body>
-        <!--div element below contains Bootstrap container-fluid class-->
-        <div class="container-fluid">
-        <div class="shed1">
-            <div class="shed2">
-               <div class="shed3">
-                <h1><i class="fa-solid fa-circle-nodes">E<small>mani</small> T<small>echnologies</small></i></h1>
-               <!--
-                <h1><img style="height: 35px; width: 50px; position: absolute;" class="img-responsive img-fluid" src="https://jamesbondhybride.github.io/emanitechlogo.png"/>..E<span class="small">mani</span> T<span class="small">echnologies</span></h1>
-               -->
+        <header>
+            <h1>Junaed Mustofa Chowdhury</h1>
+            <sub>Frontend Developer || HTML, CSS, JavaScript || Bootstrap, jQuery, SASS, React, Redux</sub>
+            <div>
+                <nav>
+                    <a href="">About Me</a>
+                    <a href="">Project Portfolio</a>
+                    <a href="">Services I offer</a>
+                    <a href="">Contact Me</a>
+                </nav>
             </div>
+        </header>
+        <main>
+            <div id="services"><h2>Services:</h2>
+            <div id="serviceOfferings"></div>
             </div>
-          </div>
-            <nav>
-                <div class="row">
-                <div class="col-xs-4">
-                    <a href="#contacts"><button class="btn btn-block" id="infoButton" ><i class="fa-solid fa-circle-info"> <strong>Info</strong></i></button></a>
-                </div>
-                <div class="col-xs-4">
-                <button class="btn btn-block" id="projectBtn"><i class="fa-solid fa-diagram-project"> <strong>Projects <i class="fa fa-bars" aria-hidden="true"></i></strong></i><i class="fa fa-bars" aria-hidden="true"></i></button>
-                <button class="btn btn-block" id="hideBtn"><i class="fa-solid fa-diagram-project"></i> <a href="https://jamesbondhybride.github.io/dicegame.html">"Dice Game"</a> <span class="small">- JS</span></button>
-                <button class="btn btn-block" id="hideBtn"><i class="fa-solid fa-diagram-project"></i> <a href="https://jamesbondhybride.github.io/dicegame.html">"City Skyline"</a> <span class="small">- css</span></button>
-                <button class="btn btn-block" id="hideBtn"><i class="fa-solid fa-diagram-project"></i> <a href="https://jamesbondhybride.github.io/dicegame.html">"Dice Game"</a> <span class="small">- JavaScript project</span></button>
-                <button class="btn btn-block" id="hideBtn"><i class="fa-solid fa-diagram-project"></i> <a href="https://jamesbondhybride.github.io/dicegame.html">"City Skyline"</a> <span class="small">- CSS responsive project</span></button>
-                <button class="btn btn-block" id="hideBtn"><i class="fa-solid fa-diagram-project"></i> <a href="https://jamesbondhybride.github.io/dicegame.html">"Dice Game"</a> <span class="small">- JavaScript project</span></button>
-                <button class="btn btn-block" id="hideBtn"><i class="fa-solid fa-diagram-project"></i> <a href="https://jamesbondhybride.github.io/dicegame.html">"City Skyline"</a> <span class="small">- CSS responsive project</span></button>
+            <div id="contacts">
+                <h2>Junaed Mustofa Chowdhury</h2>
+                <p type="email" href="mailto:">junaed_chowdhury@hotmail.com</p>
             </div>
-                <div class="col-xs-4">
-                    <button class="btn btn-block" id="serviceButton"><i class="fa-solid fa-plug"> <strong>Services</strong></i></button>
-                </div>
-                </div>
-            </nav>
-        
-            <!--div element below is part of my JavaScript used to display my services and cost-->
-        <div id="serviceDiv"></div>
-        
-        <div id="contacts">
-            <div class="row">
-                <div><img style="margin-left: 6vw; width: 15vw; border-radius: 10vw;" src="https://jamesbondhybride.github.io/IMG_6240.jpeg" alt="Developer's selfie"></div>
-                <div class="col-xs-4"><h2>J<span class="small">unaed</span> M<span class="small">ustofa</span> C<span class="small">howdhury</span></h2><br><p style="color: white;">Frontend Developer || HTML, CSS, JavaScript || Bootstrap, jQuery, SASS, React, Redux<br><i class="fa-solid fa-envelope"></i> Write Me Email: junaedchowdhury@gmail.com</p></div>
-                <div class="col-xs-4"><a href="https://www.facebook.com/emanitechno?mibextid=LQQJ4d"> Please Visit our <i class="fa-brands fa-facebook"> </i> Facebook Page</a></div>
-                <div class="col-xs-4"><a href="https://www.facebook.com/emanitechno?mibextid=LQQJ4d"> Chat with me in <i class="fa-brands fa-square-whatsapp"></i> whatsapp</a></div>
-            </div>
-        </div>
-
-        <iframe src="https://www.fiverr.com/gig_widgets?id=U2FsdGVkX1+OhIFnrRzi8X4+i6P1zxBRTagdxFfuG4ViywzqRYCY31eRJGi+ERKc2QbrkG2xQ+eBq5268TFK2U3XOMkiBHakaCM76+cYOevXFYcKAbjz/zBt1NIXkelAH7GarKKmvwCZtq2hg5zYWKwaOJ3tjqYD/pWpQeXJbGcxkgg0kDAth132CblFyy59LUIPQ1dbPzyV5i5mpFN34f2cD8QtRBCzM3Jy6W5bl6MQyly84VuitfE6yPn2Yfmy3wzvbacNj58yA9IHsO6NSge5aKss0QJBdKOM++FRz/sqp9E8oi/BegWjltxHY22DIZI0z9MDF4SEQZTo6g3GwE1YpsHduQZXoEx94zQfqi89fmKf9HJfdnZUMMUlsNT80KS2bzTWYOuJk4h1wNnut0/N+rCnHmSfcIVPk3dEwRO2zzph/W+xMY++COaJFCJHrWrnGNS+23MKd1LGkmrZApPE/4C7+zllDAHmfdmWayllcxt0ge56/fxZpNANSTRu4v5q7nhKFxe5OiVbkoiDY8ACiXUyoedDbxW8vaOdoV3llBGhh906HWOpMnhmwC5O&affiliate_id=898859&strip_google_tagmanager=true" loading="lazy" data-with-title="true" class="fiverr_nga_frame" frameborder="0" height="350" width="100%" referrerpolicy="no-referrer-when-downgrade" data-mode="random_gigs" onload=" var frame = this; var script = document.createElement('script'); script.addEventListener('load', function() { window.FW_SDK.register(frame); }); script.setAttribute('src', 'https://www.fiverr.com/gig_widgets/sdk'); document.body.appendChild(script); " ></iframe>
-        </div>
-        <script>
-    const offer = document.getElementById("serviceDiv");
+            <script>
+    const offer = document.getElementById("serviceOfferings");
     const services = [{ 
       title: "Webpage Development",
       description: "We will take care of your website while you busy in business. Build your website from scratch with HTML, CSS and JavaScript",
@@ -355,7 +131,7 @@ h2 {
     },
     { 
       title: "Webpage Design",
-      description: "We have an eye for creative design to make your website user-friendly, aesthetically pleasent for visitor engagement and interectiveness",
+      description: "We have an eye for creative design to make your website user-friendly, aesthetically pleasent for visitor engagement and interectiveness.",
       icon: `<i class="fa-solid fa-file-code"></i>`,
       price: 50
     },
@@ -373,31 +149,21 @@ h2 {
       },
       { 
       title: "Website SEO",
-      description: "Boost your Website's performace and Visibility, SEO best practices to improve the website visibility on search engines and social media sites from the root files like HTML/CSS codes, no extra cost and high-performance",
+      description: "Boost your Website's performace and Visibility, SEO best practices to improve the website visibility on search engines and social media sites from the root files like HTML/CSS codes, no extra cost and high-performance.",
       icon: `<i class="fa-solid fa-code-fork"></i>`,
       price: 50
     },
     {
       title: "Website Animation",
-      description: "Design customize website visually appealing but also feature animations and interactivity to engage your visitors..",
+      description: "Design customize website visually appealing but also feature animations and interactivity to engage your visitors.",
       icon: `<i class="fa-solid fa-icons"></i>`,
       price: 20
     }];
 
     services.forEach(({title , description , icon , price}) => {
-    offer.innerHTML += `<div id="display"><h1>${icon}<p>${title}</p></h1><p class="details">${description}</p></div>`;
+    offer.innerHTML += `<div id="display"><h3 id="serviceHeadings">${title}</h3><hr><p class="details">${description}</p><hr></div>`;
         });
-/* The line below is for the project button */
-const projectButton = document.getElementById("projectBtn");
-const x = document.getElementById("hideBtn");
-projectButton.addEventListener("click", () => {
-        if (x.style.display === "none") {
-            x.style.display = "block";
-        } else {
-            x.style.display = "none";
-        }
-});
-
         </script>
+        </main>
     </body>
-</html>
+</htm>
