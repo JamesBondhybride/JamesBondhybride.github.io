@@ -56,12 +56,12 @@
                 padding: 3vw;
                 background-color: rgba(146, 171, 215, 0.845);
                 transition-duration: 1s;
-                transform: skewX(7deg);
+                transform: skewY(5deg);
             }
             #display:hover {
-                transform: skewY(10deg);
-            }
-            #display:hover {
+                transform: none;
+                width: 45vh;
+                height: 45vh;
                 background-color: rgba(17, 39, 77, 0.648);
                 color: whitesmoke;
                 p {
@@ -101,9 +101,16 @@
             #headHr {
                 width: 50rem;
             }
+            
             @media (max-width: 1000px) {
                 #display {
                     margin: 0 0 0 10vw;
+                }
+                a {
+                    display: block;
+                }
+                body {
+                    background-image: none;
                 }
             }
         </style>    
@@ -114,18 +121,21 @@
             <sub>Frontend Developer || HTML, CSS, JavaScript || Bootstrap, jQuery, SASS, React, Redux</sub>
             <div>
                 <nav>
-                    <a href="">About Me</a>
-                    <a href="">Project Portfolio</a>
-                    <a href="">Services I offer</a>
-                    <a href="">Contact Me</a>
+                    <a href="#about">About Me</a>
+                    <a href="#portfolio">Project Portfolio</a>
+                    <a href="#serviesIoffer">Services I offer</a>
+                    <a href="#contact">Contact Me</a>
                 </nav>
             </div>
         </header>
         <main>
-            <div id="services"><h2>Services:</h2>
+            <div id="services" class="division"><h2>Services:</h2>
             <div id="serviceOfferings"></div>
             </div>
-            <div id="contacts">
+            <div id="portfolio" class="division">
+                <h2>Portfolio:</h2>
+            </div>
+            <div id="contacts" class="division">
                 <h2>Junaed Mustofa Chowdhury</h2>
                 <p type="email" href="mailto:">junaed_chowdhury@hotmail.com</p>
             </div>
