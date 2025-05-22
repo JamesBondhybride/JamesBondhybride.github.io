@@ -84,7 +84,7 @@
             #contacts {
                 color: white;
                 text-align: center;
-                background-color: rgba(17, 39, 77, 0.648);
+                background-color: linear-gradient(to right, blue, green, blue);
                 border-top-left-radius: 25%;
                 border-bottom-right-radius: 25%;
                 padding: 3vh;
@@ -117,11 +117,20 @@
             
             @media (max-width: 1000px) {
                 #display {
-                    display: block;
-                    margin: 0 0 0 5vw;
+                    display: inline-table;
+                    justify-content: flex-start;
+                    margin: 5vw 0 0 5vw;
+                    font-size: xx-small;
+                    width: 20px;
+                    height: 10px;
+                    border-radius: 5vw;
                 }
                 a {
-                    display: block;
+                    display: inline-flex;
+                    width: 30px;
+                    height: 30px;
+                    font-size: smaller;
+                    padding: 4vw;
                 }
                 body {
                     background-image: none;
