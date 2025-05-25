@@ -49,7 +49,10 @@
                 
             }
             #display {
-                display: inline-table;
+                display: inline-flex;
+                justify-content: space-evenly;
+                flex-direction: column;
+                align-items: center;
                 text-align: center;
                 width: 40vh;
                 height: 40vh;
@@ -60,6 +63,7 @@
                 background-color: rgba(146, 171, 215, 0.845);
                 transition-duration: 1s;
                 transform: skewY(5deg);
+                filter: hue-rotate(45deg);
             }
             #display:nth-child(2) {
                 background-color: hsla(120, 58%, 14%, 0.5);
@@ -112,7 +116,7 @@
                 margin: 3vw 0 3vw 10vw;
             }
             hr {
-                height: 5px;
+                width: 50px;
             }
             #headHr {
                 width: 50rem;
@@ -120,13 +124,22 @@
             
             @media (max-width: 1000px) {
                 #display {
-                    display: inline-table;
-                    justify-content: flex-start;
+                    display: inline-flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
                     margin: 5vw 0 0 5vw;
                     font-size: xx-small;
                     width: 25vw;
                     height: 25vh;
                     border-radius: 5vw;
+                }
+                p {
+                    font-size: smaller;
+                }
+                #display:hover {
+                    transform: none;
+                    width: 25vw;
+                    height: 25vh;
                 }
 
                 a {
