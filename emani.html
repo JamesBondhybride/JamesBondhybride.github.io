@@ -10,6 +10,14 @@
         <meta property="og:image:width" content="1024">
         <meta property="og:image:height" content="1024">
         <style>
+            @font-face {
+                font-family: myfont;
+                src: url(https://www.fontpair.co/pairings/rosaline-satoshi);
+                font-style: italic;
+            }
+            .details {
+                overflow-y: hidden;
+            }
             header {
             text-align: center;
             color: white;
@@ -20,9 +28,8 @@
             border-bottom-right-radius: 50px;
            }
             h1 {
+                font-family: myfont;
                 margin: 1vh;
-                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-                font-style: italic;
             }
             h2 {
                 text-align: center;
@@ -46,7 +53,10 @@
                 
             }
             #display {
-                display: inline-table;
+                display: inline-flex;
+                justify-content: space-evenly;
+                flex-direction: column;
+                align-items: center;
                 text-align: center;
                 width: 40vh;
                 height: 40vh;
@@ -56,22 +66,33 @@
                 padding: 3vw;
                 background-color: rgba(146, 171, 215, 0.845);
                 transition-duration: 1s;
-                transform: skewX(7deg);
+                transform: skewY(5deg);
+                filter: hue-rotate(45deg);
             }
-            #display:hover {
-                transform: skewY(10deg);
+            #display:nth-child(2) {
+                background-color: hsla(120, 58%, 14%, 0.5);
+                color: white;
             }
+            #display:nth-child(4) {
+                background-color: hsla(120, 58%, 14%, 0.5);
+                color: white;
+            }
+            #display:nth-child(6) {
+                background-color: hsla(120, 58%, 14%, 0.5);
+                color: white;
+            }
+
             #display:hover {
+                transform: none;
+                width: 45vh;
+                height: 45vh;
                 background-color: rgba(17, 39, 77, 0.648);
                 color: whitesmoke;
-                p {
-                    font-size: large;
-                }
             }
             #contacts {
                 color: white;
                 text-align: center;
-                background-color: rgba(17, 39, 77, 0.648);
+                background-color: linear-gradient(to right, blue, green, blue);
                 border-top-left-radius: 25%;
                 border-bottom-right-radius: 25%;
                 padding: 3vh;
@@ -90,21 +111,52 @@
                 background-color: rgba(2, 14, 36, 0.897);
             }
             a:active {
-                background-color: brown;
+                background-color: red;
             }
             #serviceOfferings {
                 margin: 3vw 0 3vw 10vw;
             }
             hr {
-                height: 5px;
+                width: 50px;
             }
             #headHr {
                 width: 50rem;
             }
+            
             @media (max-width: 1000px) {
                 #display {
-                    margin: 0 0 0 10vw;
+                    display: inline-flex;
+                    justify-content: space-between;
+                    margin: 5vw 0 0 5vw;
+                    font-size: xx-small;
+                    width: 25vw;
+                    height: 25vh;
+                    border-radius: 5vw;
                 }
+                p {
+                    font-size: smaller;
+                }
+                #display:hover {
+                    transform: none;
+                    font-size: xx-small;
+                    width: 25vw;
+                    height: 25vh;
+                }
+
+                a {
+                    display: inline-flex;
+                    width: 30px;
+                    height: 30px;
+                    font-size: smaller;
+                    padding: 4vw;
+                }
+                body {
+                background-image: url(https://jamesbondhybride.github.io/mypicture.jpg);
+                background-size: 100vw 200vh;
+                background-repeat: no-repeat;
+                background-position-y: top;
+                
+            }
             }
         </style>    
     </head>
@@ -114,18 +166,21 @@
             <sub>Frontend Developer || HTML, CSS, JavaScript || Bootstrap, jQuery, SASS, React, Redux</sub>
             <div>
                 <nav>
-                    <a href="">About Me</a>
-                    <a href="">Project Portfolio</a>
-                    <a href="">Services I offer</a>
-                    <a href="">Contact Me</a>
+                    <a href="#about">About Me</a>
+                    <a href="#portfolio">Project Portfolio</a>
+                    <a href="#serviesIoffer">Services I offer</a>
+                    <a href="#contact">Contact Me</a>
                 </nav>
             </div>
         </header>
         <main>
-            <div id="services"><h2>Services:</h2>
+            <div id="services" class="division"><h2>Services:</h2>
             <div id="serviceOfferings"></div>
             </div>
-            <div id="contacts">
+            <div id="portfolio" class="division">
+                <h2>Portfolio:</h2>
+            </div>
+            <div id="contacts" class="division">
                 <h2>Junaed Mustofa Chowdhury</h2>
                 <p type="email" href="mailto:">junaed_chowdhury@hotmail.com</p>
             </div>
