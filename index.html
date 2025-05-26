@@ -10,6 +10,11 @@
         <meta property="og:image:width" content="1024">
         <meta property="og:image:height" content="1024">
         <style>
+            @font-face {
+                font-family: myfont;
+                src: url(https://www.fontpair.co/pairings/rosaline-satoshi);
+                font-style: italic;
+            }
             .details {
                 overflow-y: hidden;
             }
@@ -23,9 +28,8 @@
             border-bottom-right-radius: 50px;
            }
             h1 {
+                font-family: myfont;
                 margin: 1vh;
-                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-                font-style: italic;
             }
             h2 {
                 text-align: center;
@@ -84,9 +88,6 @@
                 height: 45vh;
                 background-color: rgba(17, 39, 77, 0.648);
                 color: whitesmoke;
-                p {
-                    font-size: large;
-                }
             }
             #contacts {
                 color: white;
@@ -125,7 +126,6 @@
             @media (max-width: 1000px) {
                 #display {
                     display: inline-flex;
-                    flex-wrap: wrap;
                     justify-content: space-between;
                     margin: 5vw 0 0 5vw;
                     font-size: xx-small;
@@ -138,6 +138,7 @@
                 }
                 #display:hover {
                     transform: none;
+                    font-size: xx-small;
                     width: 25vw;
                     height: 25vh;
                 }
