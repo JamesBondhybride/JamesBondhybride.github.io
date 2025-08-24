@@ -1,192 +1,103 @@
 <!DOCTYPE html>
-<htm lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Junaed Mustofa Chowdhury -Frontend Developer</title>
-        <!--Link is for social media integration--> 
-        <meta property="og:image" content="https://live.staticflickr.com/65535/53444655740_97c99e4aba_b.jpg">
-        <meta property="og:image:type" content="image/png">
-        <meta property="og:image:width" content="1024">
-        <meta property="og:image:height" content="1024">
-        <style>
-            @font-face {
-                font-family: myfont;
-                src: url(https://www.fontpair.co/pairings/rosaline-satoshi);
-                font-style: italic;
-            }
-            .details {
-                overflow-y: hidden;
-            }
-            header {
-            text-align: center;
-            color: white;
-            background-color: rgba(2, 11, 27, 0.648);
-            padding: 20px;
-            margin-bottom: 5vh;
-            border-top-left-radius: 50px;
-            border-bottom-right-radius: 50px;
-           }
-            h1 {
-                font-family: myfont;
-                margin: 1vh;
-            }
-            h2 {
-                text-align: center;
-                background-color: rgba(146, 171, 215, 0.445);
-            }
-            h3 {
-                transition-duration: 1s;
-                padding: 1vh;
-            }
-            sub {
-                font-size: large;
-                color: rgb(201, 126, 196);
-                padding: 5vh;
-            }
-           
-            body {
-                background-image: url(https://jamesbondhybride.github.io/mypicture.jpg);
-                background-size: 100vw;
-                background-repeat: no-repeat;
-                background-position-y: top;
-                
-            }
-            #display {
-                display: inline-flex;
-                justify-content: space-evenly;
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-                width: 40vh;
-                height: 40vh;
-                border: 1px solid rgba(56, 23, 23, 0.53);
-                border-radius: 15%;
-                color: rgb(0, 0, 0);
-                padding: 3vw;
-                background-color: rgba(146, 171, 215, 0.845);
-                transition-duration: 1s;
-                transform: skewY(5deg);
-                filter: hue-rotate(45deg);
-            }
-            #display:nth-child(2) {
-                background-color: hsla(120, 58%, 14%, 0.5);
-                color: white;
-            }
-            #display:nth-child(4) {
-                background-color: hsla(120, 58%, 14%, 0.5);
-                color: white;
-            }
-            #display:nth-child(6) {
-                background-color: hsla(120, 58%, 14%, 0.5);
-                color: white;
-            }
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>CSS Grid, and How Does It Differ from Flexbox</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&display=swap" rel="stylesheet">
+  <meta property="og:image" content="https://jamesbondhybride.github.io/mypicture.jpg">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1024">
+  <meta property="og:image:height" content="1024">
+  <style>
+    :root {
+        --main-color: #7F4A84;
+        --color1 : #9A7E9D;
+        --color2: #987F9E;
+        --color3: #5D1F6E;
+        --color4: #49025D;
+        --color5: #5D1F6E;
+        --color6: #5D1F6E;
 
-            #display:hover {
-                transform: none;
-                width: 45vh;
-                height: 45vh;
-                background-color: rgba(17, 39, 77, 0.648);
-                color: whitesmoke;
-            }
-            #contacts {
-                color: white;
-                text-align: center;
-                background-color: linear-gradient(to right, blue, green, blue);
-                border-top-left-radius: 25%;
-                border-bottom-right-radius: 25%;
-                padding: 3vh;
-            }
-            a {
-                text-decoration: none;
-                display: inline-block;
-                color: rgb(244, 209, 241);
-                background-color: rgba(2, 14, 36, 0.648);
-                padding: 3vh;
-                border-radius: 15px;
-                margin-left: 2rem;
-                margin-top: 1rem;
-            }
-            a:hover {
-                background-color: rgba(2, 14, 36, 0.897);
-            }
-            a:active {
-                background-color: red;
-            }
-            #serviceOfferings {
-                margin: 3vw 0 3vw 10vw;
-            }
-            hr {
-                width: 50px;
-            }
-            #headHr {
-                width: 50rem;
-            }
-            
-            @media (max-width: 1000px) {
-                #display {
-                    display: inline-flex;
-                    justify-content: space-between;
-                    margin: 5vw 0 0 5vw;
-                    font-size: xx-small;
-                    width: 25vw;
-                    height: 25vh;
-                    border-radius: 5vw;
-                }
-                p {
-                    font-size: smaller;
-                }
-                #display:hover {
-                    transform: none;
-                    font-size: xx-small;
-                    width: 25vw;
-                    height: 25vh;
-                }
+    }
+    body {
+      background-image: url(https://jamesbondhybride.github.io/mypicture.jpg);
+      background-size: cover;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      min-height: 100vh;
+    }
+    header, footer {
+      background: #333;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    main {
+      padding: 2rem;
+    }
 
-                a {
-                    display: inline-flex;
-                    width: 30px;
-                    height: 30px;
-                    font-size: smaller;
-                    padding: 4vw;
-                }
-                body {
-                background-image: url(https://jamesbondhybride.github.io/mypicture.jpg);
-                background-size: 100vw 200vh;
-                background-repeat: no-repeat;
-                background-position-y: top;
-                
-            }
-            }
-        </style>    
-    </head>
-    <body>
-        <header>
-            <h1>Junaed Mustofa Chowdhury</h1>
-            <sub>Frontend Developer || HTML, CSS, JavaScript || Bootstrap, jQuery, SASS, React, Redux</sub>
-            <div>
-                <nav>
-                    <a href="#about">About Me</a>
-                    <a href="#portfolio">Project Portfolio</a>
-                    <a href="#serviesIoffer">Services I offer</a>
-                    <a href="#contact">Contact Me</a>
-                </nav>
-            </div>
-        </header>
-        <main>
-            <div id="services" class="division"><h2>Services:</h2>
-            <div id="serviceOfferings"></div>
-            </div>
-            <div id="portfolio" class="division">
-                <h2>Portfolio:</h2>
-            </div>
-            <div id="contacts" class="division">
-                <h2>Junaed Mustofa Chowdhury</h2>
-                <p type="email" href="mailto:">junaed_chowdhury@hotmail.com</p>
-            </div>
-            <script>
-    const offer = document.getElementById("serviceOfferings");
-    const services = [{ 
+/* experiment starts here */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  background-color: transparent;
+  padding: 20px;
+}
+
+.item {
+  color: var(--color4);
+  background-color: var(--color1);
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+.item:nth-of-type(1):hover, .item:nth-of-type(3):hover, .item:nth-of-type(5):hover {
+    background-image: linear-gradient(to right, var(--color1), var(--color3), var(--color5));
+    color: var(--white);
+}
+.item:nth-of-type(2):hover, .item:nth-of-type(4):hover, .item:nth-of-type(6):hover {
+    background-image: linear-gradient(to right, var(--color2), var(--color4), var(--color6));
+    color: var(--white);
+}
+h1 {
+  font-family: 'Qwitcher Grypen', cursive;
+  font-size: 5rem;
+  margin: 0;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Junaed Mustofa Chowhdury</h1>
+    <p>Frontend Developer || HTML, CSS, JavaScript</p>
+  </header>
+  <main>
+<div class="container">
+  <div class="item"><h2>Web Development</h2><br><span>click for details</span></div>
+  <div class="item"><h2>Wedpage Design</h2></div>
+  <div class="item"><h2>Resposive Website</h2><br><span>click for details</span></div>
+  <div class="item"><h2>Website Optimization</h2><br><span>click for details</span></div>
+  <div class="item"><h2>Website SEO</h2><br><span>click for details</span></div>
+  <div class="item"><h2>Website Animation</h2><br><span>click for details</span></div>
+</div>
+<iframe src="https://www.fiverr.com/gig_widgets?id=U2FsdGVkX18XT9O5Oa/IMOJ2q8qNqUsBEOpB9BJ8Wij+YzwiRigE/0v+7MlCjmbgxGMZAOAN4meuDBWJFr/R1cRC7Gl9CiUKo48WMD9G/YjG4Z/jXvyTKZv/SivJmwmjqXtgvsGZ7qrjlGoPGY1eN0C7gaslgx7rZHxxLywGSDzHcqNvq2pwhqLF/e9rb39ZFE7BgwUo/gl3h4I9KtveVH7OFvjaBta9aX7wK2yhxpLyjOJ4hBEzft66+SFe8YH9dKV2FgPzvsfvdMIyI5ChSjQpkPQmKQ5BpdPNok2+7MTyw8oVEKyQlZQ95G3WXxwdh+yDnwCp/+n6tJcwMlRn9UIYgsf0Eudb0rSp60vp5OUBsS0KFv4dsa7q0/L98J8roJn+dqr/PRNia3VHBQWSSPtzxmBSohMOgCaF13rUM01nZ8G4H+tqLK/uAGkrtthZC/kusRJzCNrZG4g/XMSqXsxIowMCiPMjLbKLPEg2XCAaHKJurdUoH1KINcYY3H/cFOmFJzOC/lO2WVoHrD7srizuXQuZlTBnxbf/WSCcyzKDPcy+pwN9AVawzcZLQRQy&affiliate_id=898859&strip_google_tagmanager=true" loading="lazy" data-with-title="true" class="fiverr_nga_frame" frameborder="0" height="350" width="100%" referrerpolicy="no-referrer-when-downgrade" data-mode="random_gigs" onload=" var frame = this; var script = document.createElement('script'); script.addEventListener('load', function() { window.FW_SDK.register(frame); }); script.setAttribute('src', 'https://www.fiverr.com/gig_widgets/sdk'); document.body.appendChild(script); " ></iframe>
+</main>
+  <footer>
+    <p>&copy; 2025 Junaed Mustofa Chowdhury</p>
+  </footer>
+  <script>
+     const services = [{ 
       title: "Webpage Development",
       description: "We will take care of your website while you busy in business. Build your website from scratch with HTML, CSS and JavaScript",
       icon: `<i class="fa-solid fa-code"></i>`,
@@ -222,11 +133,17 @@
       icon: `<i class="fa-solid fa-icons"></i>`,
       price: 20
     }];
-
-    services.forEach(({title , description , icon , price}) => {
-    offer.innerHTML += `<div id="display"><h3 id="serviceHeadings">${title}</h3><hr><p class="details">${description}</p><hr></div>`;
-        });
-        </script>
-        </main>
-    </body>
-</htm>
+   const items = document.querySelectorAll('.item');
+    items.forEach((item, index) => {
+      item.style.color = "white";
+      item.style.cursor = 'pointer';
+      item.style.backgroundColor = 'var(--white)';
+      item.addEventListener('click', () => {
+        item.innerHTML = `<h3>${services[index].icon} ${services[index].title}</h3>
+                          <p>${services[index].description}</p>
+                          <p>Price: $${services[index].price}</p>`;
+      });
+    }); 
+  </script>
+</body>
+</html>
