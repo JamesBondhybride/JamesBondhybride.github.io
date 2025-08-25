@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>CSS Grid, and How Does It Differ from Flexbox</title>
+  <title>Junaed Mustofa Chowdhury || HTML, CSS, JavaScript</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,8 +16,8 @@
   <meta property="og:image:height" content="1024">
   <style>
     :root {
-        --main-color: #7F4A84;
-        --color1 : #9A7E9D;
+        --main-color: #4b105177;
+        --color1 : #151927e3;
         --color2: #987F9E;
         --color3: #5D1F6E;
         --color4: #49025D;
@@ -49,7 +49,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
-  background-color: transparent;
+  background-color: var(--color1);
   padding: 20px;
 }
 
@@ -59,20 +59,35 @@
   padding: 20px;
   text-align: center;
   border: 1px solid #ccc;
+  border-radius: 5%;
+}
+.item:hover {
+  background-color: var(--color3);
+  color: white;
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
 }
 
-.item:nth-of-type(1):hover, .item:nth-of-type(3):hover, .item:nth-of-type(5):hover {
-    background-image: linear-gradient(to right, var(--color1), var(--color3), var(--color5));
-    color: var(--white);
-}
-.item:nth-of-type(2):hover, .item:nth-of-type(4):hover, .item:nth-of-type(6):hover {
-    background-image: linear-gradient(to right, var(--color2), var(--color4), var(--color6));
-    color: var(--white);
-}
 h1 {
   font-family: 'Qwitcher Grypen', cursive;
   font-size: 5rem;
   margin: 0;
+}
+.expended {
+  grid-column: span 3;
+  background-color: var(--color2);
+  color: white;
+  transition: transform 0.3s ease;
+  padding: 30px;
+  font-size: 1.2rem;
+}
+.expanded:hover {
+  background-color: var(--color5);  
+  color: white;
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
 }
 
   </style>
@@ -84,12 +99,12 @@ h1 {
   </header>
   <main>
 <div class="container">
-  <div class="item"><h2>Web Development</h2><br><span>click for details</span></div>
-  <div class="item"><h2>Wedpage Design</h2></div>
-  <div class="item"><h2>Resposive Website</h2><br><span>click for details</span></div>
-  <div class="item"><h2>Website Optimization</h2><br><span>click for details</span></div>
-  <div class="item"><h2>Website SEO</h2><br><span>click for details</span></div>
-  <div class="item"><h2>Website Animation</h2><br><span>click for details</span></div>
+  <div class="item"></div>
+  <div class="item"></div>
+  <div class="item"></div>
+  <div class="item"></div>
+  <div class="item"></div>
+  <div class="item"></div>
 </div>
 <iframe src="https://www.fiverr.com/gig_widgets?id=U2FsdGVkX18XT9O5Oa/IMOJ2q8qNqUsBEOpB9BJ8Wij+YzwiRigE/0v+7MlCjmbgxGMZAOAN4meuDBWJFr/R1cRC7Gl9CiUKo48WMD9G/YjG4Z/jXvyTKZv/SivJmwmjqXtgvsGZ7qrjlGoPGY1eN0C7gaslgx7rZHxxLywGSDzHcqNvq2pwhqLF/e9rb39ZFE7BgwUo/gl3h4I9KtveVH7OFvjaBta9aX7wK2yhxpLyjOJ4hBEzft66+SFe8YH9dKV2FgPzvsfvdMIyI5ChSjQpkPQmKQ5BpdPNok2+7MTyw8oVEKyQlZQ95G3WXxwdh+yDnwCp/+n6tJcwMlRn9UIYgsf0Eudb0rSp60vp5OUBsS0KFv4dsa7q0/L98J8roJn+dqr/PRNia3VHBQWSSPtzxmBSohMOgCaF13rUM01nZ8G4H+tqLK/uAGkrtthZC/kusRJzCNrZG4g/XMSqXsxIowMCiPMjLbKLPEg2XCAaHKJurdUoH1KINcYY3H/cFOmFJzOC/lO2WVoHrD7srizuXQuZlTBnxbf/WSCcyzKDPcy+pwN9AVawzcZLQRQy&affiliate_id=898859&strip_google_tagmanager=true" loading="lazy" data-with-title="true" class="fiverr_nga_frame" frameborder="0" height="350" width="100%" referrerpolicy="no-referrer-when-downgrade" data-mode="random_gigs" onload=" var frame = this; var script = document.createElement('script'); script.addEventListener('load', function() { window.FW_SDK.register(frame); }); script.setAttribute('src', 'https://www.fiverr.com/gig_widgets/sdk'); document.body.appendChild(script); " ></iframe>
 </main>
@@ -100,36 +115,83 @@ h1 {
      const services = [{ 
       title: "Webpage Development",
       description: "We will take care of your website while you busy in business. Build your website from scratch with HTML, CSS and JavaScript",
+      description2: `🧑‍💻 We Take Care of Your Website While You Focus on Your Business. As a business owner, your time is best spent growing your brand—not worrying about code. That's why I offer end-to-end website development services, so you can stay focused on what matters most. I build websites from scratch using HTML, CSS, and JavaScript, ensuring they're clean, responsive, and tailored to your goals. Whether you need a landing page, a portfolio, or a full business site, I'll deliver a solution that's:<br>
+      ✅ Custom-coded - No templates, just clean and maintainable code<br>
+      📱 Responsive - Fits perfectly on mobile, tablet, and desktop<br>
+      🎨 Visually - Engaging Designed to attract and retain visitors<br>
+      ⚡ Optimized - Fast loading, smooth performance<br>
+      🔍 SEO-Ready - Built with visibility in mind<br>
+      🧩 Interactive - Featuring animations and dynamic elements`,
       icon: `<i class="fa-solid fa-code"></i>`,
       price: 50
     },
     { 
       title: "Webpage Design",
       description: "We have an eye for creative design to make your website user-friendly, aesthetically pleasent for visitor engagement and interectiveness.",
+      description2: `🎨 Creative Designs That Captivate and Engage. First impressions matter, especially online. A well-designed website not only attracts visitors but keeps them engaged and encourages them to explore further. With my webpage design services, I focus on creating visually stunning and user-friendly designs that reflect your brand identity and resonate with your target audience. My design process includes:<br>
+      ✅ Custom Layouts - Tailored to your content and goals<br>
+      🎨 Color Schemes - Harmonious palettes that evoke the right emotions<br>
+      🖋️ Typography - Readable fonts that enhance the user experience<br>
+      🖼️ Imagery - High-quality visuals that tell your story<br>
+      🧩 Interactivity - Engaging elements that encourage exploration<br>
+      📱 Mobile-First - Designs that look great on all devices<br>
+      🚀 Fast Loading - Optimized for performance without sacrificing aesthetics`,
       icon: `<i class="fa-solid fa-file-code"></i>`,
       price: 50
     },
     {
       title: "Resposive Website",
       description: "Make your website fully responsive, fits to any devices, user-friendly, attract more visitors and increase engagement.",
+      description2: `📱 Make Your Website Fully Responsive and User-Friendly on Any Device. In today's mobile-first world, having a responsive website is essential for reaching and engaging your audience. A responsive design ensures that your site looks great and functions seamlessly across all devices—whether it's a desktop, tablet, or smartphone. With my responsive website services, I focus on:<br>
+      ✅ Fluid Grids - Flexible layouts that adapt to any screen size<br>
+      📱 Mobile Optimization - Ensuring fast load times and usability on mobile devices<br>
+      🎨 Consistent Design - Maintaining your brand identity across all platforms<br>
+      🧩 Touch-Friendly Elements - Making navigation easy on touchscreens<br>
+      🔍 SEO Benefits - Improving your search engine rankings with mobile-friendly design<br>
+      🚀 Performance - Optimizing images and code for faster loading<br>
+      🛠️ Cross-Browser Compatibility - Ensuring your site works well on all major browsers`,
       icon: `<i class="fa-solid fa-laptop-code"></i>`,
       price: 20
     },
      { 
       title: "Website Optimization",
       description: "Websites requires updates and maintenance to ensure it continue to perform well.",
+      description2: `⚡ Keep Your Website Running Smoothly with Regular Updates and Maintenance. A well-maintained website is crucial for delivering a positive user experience, improving search engine rankings, and ensuring security. I offer comprehensive website optimization services to keep your site performing at its best. My maintenance services include:<br>
+      ✅ Regular Updates - Keeping your CMS, plugins, and themes up to date<br>
+      🛡️ Security Checks - Implementing best practices to protect against threats<br>
+      ⚡ Performance Optimization - Enhancing load times and overall speed<br>
+      🔍 SEO Improvements - Ongoing optimization to boost visibility<br>
+      🧹 Content Updates - Adding new content and refreshing existing pages<br>
+      📊 Analytics Monitoring - Tracking performance and user behavior<br>
+      🐞 Bug Fixes - Identifying and resolving issues promptly`,
       icon: `<i class="fa-solid fa-bug-slash"></i>`,
       price: 30
       },
       { 
       title: "Website SEO",
       description: "Boost your Website's performace and Visibility, SEO best practices to improve the website visibility on search engines and social media sites from the root files like HTML/CSS codes, no extra cost and high-performance.",
+      description2: `🚀 Boost Your Website's Performance and Visibility with Expert SEO Services. In today's competitive online landscape, having a well-optimized website is essential for attracting organic traffic and reaching your target audience. I specialize in implementing SEO best practices directly into your website's root files, such as HTML and CSS, ensuring that your site is primed for search engines without the need for additional plugins or tools. My SEO services include:<br>
+      ✅ On-Page SEO - Optimizing meta tags, headings, and content structure<br>
+      🔍 Keyword Integration - Strategically placing relevant keywords for better ranking<br>
+      📈 Performance Optimization - Enhancing site speed and user experience<br>
+      🧩 Mobile SEO - Ensuring your site is fully responsive and mobile-friendly<br>
+      🌐 Schema Markup - Implementing structured data for rich search results<br>
+      📊 Analytics Setup - Integrating tools to monitor traffic and performance<br>
+      🛠️ Technical SEO - Addressing crawl errors, broken links, and site architecture`,
       icon: `<i class="fa-solid fa-code-fork"></i>`,
       price: 50
     },
     {
       title: "Website Animation",
       description: "Design customize website visually appealing but also feature animations and interactivity to engage your visitors.",
+      description2: `✨ Enhance Your Website with Engaging Animations and Interactivity. In today's digital landscape, a visually appealing website is essential for capturing and retaining visitor attention. By incorporating animations and interactive elements, you can create a dynamic user experience that encourages exploration and engagement. My website animation services include:<br>
+      ✅ Custom Animations - Tailored to your brand and message<br>
+      🎨 Visual Effects - Enhancing the aesthetic appeal of your site<br>
+      🧩 Interactive Elements - Buttons, hover effects, and more to engage users<br>
+      📱 Responsive Animations - Ensuring smooth performance across all devices<br>
+      ⚡ Performance Optimization - Keeping animations lightweight for fast loading<br>
+      🔍 SEO Considerations - Implementing animations without compromising SEO<br>
+      🛠️ Cross-Browser Compatibility - Ensuring animations work well on all major browsers`,
       icon: `<i class="fa-solid fa-icons"></i>`,
       price: 20
     }];
@@ -138,12 +200,31 @@ h1 {
       item.style.color = "white";
       item.style.cursor = 'pointer';
       item.style.backgroundColor = 'var(--white)';
+      item.innerHTML = `<h3>${services[index].icon} ${services[index].title}</h3>
+                          <p>${services[index].description}</p>
+                          <p>Price: $${services[index].price}</p>
+                          <p>Contact me on <a href="https://www.fiverr.com/junaedchowdhury" target="_blank" style="color: yellow; text-decoration: underline;">Fiverr</a> to get started!</p>`;
       item.addEventListener('click', () => {
+        item.classList.toggle('expanded');
         item.innerHTML = `<h3>${services[index].icon} ${services[index].title}</h3>
                           <p>${services[index].description}</p>
-                          <p>Price: $${services[index].price}</p>`;
-      });
-    }); 
+                          <p>Price: $${services[index].price}</p>
+                          <p>Contact me on <a href="https://www.fiverr.com/junaedchowdhury" target="_blank" style="color: yellow; text-decoration: underline;">Fiverr</a> to get started!</p>`;
+        if (item.classList.contains('expanded')) {   
+          item.style.gridColumn = 'span 3';
+          item.style.backgroundColor = 'var(--color1)';
+          item.style.borderRadius = '10px';
+          item.innerHTML = `<h3>${services[index].icon} ${services[index].title}</h3>
+                          <p>${services[index].description2}</p>
+                          <p>Price: $${services[index].price}</p>
+                          <p>Contact me on <a href="https://www.fiverr.com/junaedchowdhury" target="_blank" style="color: yellow; text-decoration: underline;">Fiverr</a> to get started!</p>`;
+           
+        } else {
+          item.style.gridColumn = 'span 1';
+        }
+    });
+
+    });
   </script>
 </body>
 </html>
