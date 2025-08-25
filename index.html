@@ -14,7 +14,7 @@
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1024">
   <meta property="og:image:height" content="1024">
-  <meta property="og:image:position:cover">
+  <meta property="og:image:secure_url" content="https://jamesbondhybride.github.io/Copilot_20250825_180337.png">
   <meta property="og:image:alt" content="Junaed Mustofa Chowdhury">
   <meta property="og:title" content="Junaed Mustofa Chowdhury || HTML, CSS, JavaScript">
   <meta property="og:description" content="Frontend Developer || HTML, CSS, JavaScript">
@@ -34,17 +34,23 @@
   <meta name="yandex" content="index, follow">
   <meta name="msnbot" content="index, follow">
   <style>
-    :root {
+:root {
         --main-color: #4b105177;
-        --color1 : #151927e3;
+        --color1 : #151927c9;
         --color2: #987F9E;
         --color3: #5D1F6E;
         --color4: #49025D;
         --color5: #5D1F6E;
         --color6: #5D1F6E;
-
-    }
-    body {
+        --white: #ffffff;
+        --black: #000000;
+        --gray: #808080;
+        --light-gray: #d3d3d3;
+        --dark-gray: #a9a9a9;
+        --font-family: 'Arial', sans-serif;
+  }
+  
+body {
       background-image: url(https://jamesbondhybride.github.io/mypicture.jpg);
       background-size: cover;
       margin: 0;
@@ -53,13 +59,13 @@
       grid-template-rows: auto 1fr auto;
       min-height: 100vh;
     }
-    header, footer {
+header, footer {
       background: #333;
       color: white;
       padding: 1rem;
       text-align: center;
     }
-    main {
+ main {
       padding: 2rem;
     }
 
@@ -71,7 +77,6 @@
   background-color: var(--color1);
   padding: 20px;
 }
-
 .item {
   color: var(--color4);
   background-color: var(--color1);
@@ -87,7 +92,6 @@
   transform: scale(1.05);
   transition: transform 0.3s ease;
 }
-
 h1 {
   font-family: 'Qwitcher Grypen', cursive;
   font-size: 5rem;
@@ -108,8 +112,7 @@ h1 {
   transform: scale(1.05);
   transition: transform 0.3s ease;
 }
-
-  </style>
+</style>
 </head>
 <body>
   <header>
@@ -128,6 +131,10 @@ h1 {
 <iframe src="https://www.fiverr.com/gig_widgets?id=U2FsdGVkX18XT9O5Oa/IMOJ2q8qNqUsBEOpB9BJ8Wij+YzwiRigE/0v+7MlCjmbgxGMZAOAN4meuDBWJFr/R1cRC7Gl9CiUKo48WMD9G/YjG4Z/jXvyTKZv/SivJmwmjqXtgvsGZ7qrjlGoPGY1eN0C7gaslgx7rZHxxLywGSDzHcqNvq2pwhqLF/e9rb39ZFE7BgwUo/gl3h4I9KtveVH7OFvjaBta9aX7wK2yhxpLyjOJ4hBEzft66+SFe8YH9dKV2FgPzvsfvdMIyI5ChSjQpkPQmKQ5BpdPNok2+7MTyw8oVEKyQlZQ95G3WXxwdh+yDnwCp/+n6tJcwMlRn9UIYgsf0Eudb0rSp60vp5OUBsS0KFv4dsa7q0/L98J8roJn+dqr/PRNia3VHBQWSSPtzxmBSohMOgCaF13rUM01nZ8G4H+tqLK/uAGkrtthZC/kusRJzCNrZG4g/XMSqXsxIowMCiPMjLbKLPEg2XCAaHKJurdUoH1KINcYY3H/cFOmFJzOC/lO2WVoHrD7srizuXQuZlTBnxbf/WSCcyzKDPcy+pwN9AVawzcZLQRQy&affiliate_id=898859&strip_google_tagmanager=true" loading="lazy" data-with-title="true" class="fiverr_nga_frame" frameborder="0" height="350" width="100%" referrerpolicy="no-referrer-when-downgrade" data-mode="random_gigs" onload=" var frame = this; var script = document.createElement('script'); script.addEventListener('load', function() { window.FW_SDK.register(frame); }); script.setAttribute('src', 'https://www.fiverr.com/gig_widgets/sdk'); document.body.appendChild(script); " ></iframe>
 </main>
   <footer>
+  <div class="social-media" style="text-align: center; margin: 20px 0;">
+  <a href="https://www.facebook.com/junaedchowdhury" target="_blank" style="margin: 0 10px; color: #3b5998; font-size: 2rem;"><i class="fab fa-facebook"></i></a>
+  <a href="https://www.linkedin.com/in/junaedchowdhury/" target="_blank" style="margin: 0 10px; color: #0077b5; font-size: 2rem;"><i class="fab fa-linkedin"></i></a>
+</div>
     <p>&copy; 2025 Junaed Mustofa Chowdhury</p>
   </footer>
   <script>
@@ -218,7 +225,7 @@ h1 {
     items.forEach((item, index) => {
       item.style.color = "white";
       item.style.cursor = 'pointer';
-      item.style.backgroundColor = 'var(--white)';
+      item.style.backgroundColor = 'var(--color1)';
       item.innerHTML = `<h3>${services[index].icon} ${services[index].title}</h3>
                           <p>${services[index].description}</p>
                           <p>Price: $${services[index].price}</p>
