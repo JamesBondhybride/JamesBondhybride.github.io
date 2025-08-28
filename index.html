@@ -88,15 +88,28 @@ body {
   transform: scale(1.05);
   transition: transform 0.3s ease;
 }
-header, footer {
+footer {
   background-color: var(--color1);
   color: white;
   text-align: center;
   width: 100%;
 }
+header {
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 40px;
+}
 h1 {
+  color: var(--white);
   font-family: 'Qwitcher Grypen', cursive;
   font-size: 5rem;
+  position: absolute;
+  top: -20px;
+  left: 25%;
+}
+header > p {
+  margin-top: 50px;
 }
 .expended {
   grid-column: span 3;
@@ -105,6 +118,7 @@ h1 {
   transition: transform 0.3s ease;
   padding: 30px;
   font-size: 1.2rem;
+  position: absolute;
 }
 .expanded:hover {
   background-color: var(--color5);  
