@@ -1,232 +1,327 @@
 <!DOCTYPE html>
-<htm lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Junaed Mustofa Chowdhury -Frontend Developer</title>
-        <!--Link is for social media integration--> 
-        <meta property="og:image" content="https://live.staticflickr.com/65535/53444655740_97c99e4aba_b.jpg">
-        <meta property="og:image:type" content="image/png">
-        <meta property="og:image:width" content="1024">
-        <meta property="og:image:height" content="1024">
-        <style>
-            @font-face {
-                font-family: myfont;
-                src: url(https://www.fontpair.co/pairings/rosaline-satoshi);
-                font-style: italic;
-            }
-            .details {
-                overflow-y: hidden;
-            }
-            header {
-            text-align: center;
-            color: white;
-            background-color: rgba(2, 11, 27, 0.648);
-            padding: 20px;
-            margin-bottom: 5vh;
-            border-top-left-radius: 50px;
-            border-bottom-right-radius: 50px;
-           }
-            h1 {
-                font-family: myfont;
-                margin: 1vh;
-            }
-            h2 {
-                text-align: center;
-                background-color: rgba(146, 171, 215, 0.445);
-            }
-            h3 {
-                transition-duration: 1s;
-                padding: 1vh;
-            }
-            sub {
-                font-size: large;
-                color: rgb(201, 126, 196);
-                padding: 5vh;
-            }
-           
-            body {
-                background-image: url(https://jamesbondhybride.github.io/mypicture.jpg);
-                background-size: 100vw;
-                background-repeat: no-repeat;
-                background-position-y: top;
-                
-            }
-            #display {
-                display: inline-flex;
-                justify-content: space-evenly;
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-                width: 40vh;
-                height: 40vh;
-                border: 1px solid rgba(56, 23, 23, 0.53);
-                border-radius: 15%;
-                color: rgb(0, 0, 0);
-                padding: 3vw;
-                background-color: rgba(146, 171, 215, 0.845);
-                transition-duration: 1s;
-                transform: skewY(5deg);
-                filter: hue-rotate(45deg);
-            }
-            #display:nth-child(2) {
-                background-color: hsla(120, 58%, 14%, 0.5);
-                color: white;
-            }
-            #display:nth-child(4) {
-                background-color: hsla(120, 58%, 14%, 0.5);
-                color: white;
-            }
-            #display:nth-child(6) {
-                background-color: hsla(120, 58%, 14%, 0.5);
-                color: white;
-            }
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Junaed Mustofa Chowdhury || HTML, CSS, JavaScript</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&display=swap" rel="stylesheet">
+  <meta property="og:image" content="https://jamesbondhybride.github.io/Copilot_20250825_180337.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1024">
+  <meta property="og:image:height" content="1024">
+  <meta property="og:image:secure_url" content="https://jamesbondhybride.github.io/Copilot_20250825_180337.png">
+  <meta property="og:image:alt" content="Junaed Mustofa Chowdhury">
+  <meta property="og:title" content="Junaed Mustofa Chowdhury || HTML, CSS, JavaScript">
+  <meta property="og:description" content="Frontend Developer || HTML, CSS, JavaScript">
+  <meta property="og:url" content="https://jamesbondhybride.github.io/Copilot_20250825_180337.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Junaed Mustofa Chowdhury || HTML, CSS, JavaScript">
+  <meta name="twitter:description" content="Frontend Developer || HTML, CSS, JavaScript">
+  <meta name="twitter:image" content="https://jamesbondhybride.github.io/Copilot_20250825_180337.png">
+  <meta name="twitter:creator" content="@junaedchowdhury">
+  <meta name="twitter:site" content="@junaedchowdhury">
+  <meta name="description" content="Frontend Developer || HTML, CSS, JavaScript"> 
+  <meta name="keywords" content="HTML, CSS, JavaScript, Frontend Developer, Web Development, Responsive Design, SEO, Website Optimization, Web Design, Animation">
+  <meta name="author" content="Junaed Mustofa Chowdhury">
+  <meta name="robots" content="index, follow">
+  <meta name="googlebot" content="index, follow">
+  <meta name="bingbot" content="index, follow">
+  <meta name="yandex" content="index, follow">
+  <meta name="msnbot" content="index, follow">
+  <style>
+:root {
+        --main-color: #4b105177;
+        --color1 : #151927c9;
+        --color2: #987F9E;
+        --color3: #5D1F6E;
+        --color4: #49025D;
+        --color5: #5D1F6E;
+        --color6: #5D1F6E;
+        --white: #ffffff;
+        --black: #000000;
+        --gray: #808080;
+        --light-gray: #d3d3d3;
+        --dark-gray: #a9a9a9;
+        --font-family: 'Arial', sans-serif;
+  }
+  
+body {
+      background-image: url(https://jamesbondhybride.github.io/mypicture.jpg);
+      background-size: cover;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      min-height: 100vh;
+    }
+ main {
+      padding: 2rem;
+    }
 
-            #display:hover {
-                transform: none;
-                width: 45vh;
-                height: 45vh;
-                background-color: rgba(17, 39, 77, 0.648);
-                color: whitesmoke;
-            }
-            #contacts {
-                color: white;
-                text-align: center;
-                background-color: linear-gradient(to right, blue, green, blue);
-                border-top-left-radius: 25%;
-                border-bottom-right-radius: 25%;
-                padding: 3vh;
-            }
-            a {
-                text-decoration: none;
-                display: inline-block;
-                color: rgb(244, 209, 241);
-                background-color: rgba(2, 14, 36, 0.648);
-                padding: 3vh;
-                border-radius: 15px;
-                margin-left: 2rem;
-                margin-top: 1rem;
-            }
-            a:hover {
-                background-color: rgba(2, 14, 36, 0.897);
-            }
-            a:active {
-                background-color: red;
-            }
-            #serviceOfferings {
-                margin: 3vw 0 3vw 10vw;
-            }
-            hr {
-                width: 50px;
-            }
-            #headHr {
-                width: 50rem;
-            }
-            
-            @media (max-width: 1000px) {
-                #display {
-                    display: inline-flex;
-                    justify-content: space-between;
-                    margin: 5vw 0 0 5vw;
-                    font-size: xx-small;
-                    width: 25vw;
-                    height: 25vh;
-                    border-radius: 5vw;
-                }
-                p {
-                    font-size: smaller;
-                }
-                #display:hover {
-                    transform: none;
-                    font-size: xx-small;
-                    width: 25vw;
-                    height: 25vh;
-                }
+/* experiment starts here */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  background-color: var(--color1);
+  padding: 20px;
+  border-radius: 10px;
+}
+.item {
+  color: var(--color4);
+  background-color: var(--color1);
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 5%;
+  position: relative;
+}
+.item:hover {
+  background-color: var(--color3);
+  color: white;
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+footer {
+  background-color: var(--color1);
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+header {
+  color: white;
+  text-align: center;
+}
+h1 {
+  color: var(--white);
+  font-family: 'Qwitcher Grypen', cursive;
+  font-size: 5rem;
+}
 
-                a {
-                    display: inline-flex;
-                    width: 30px;
-                    height: 30px;
-                    font-size: smaller;
-                    padding: 4vw;
-                }
-                body {
-                background-image: url(https://jamesbondhybride.github.io/mypicture.jpg);
-                background-size: 100vw 200vh;
-                background-repeat: no-repeat;
-                background-position-y: top;
-                
-            }
-            }
-        </style>    
-    </head>
-    <body>
-        <header>
-            <h1>Junaed Mustofa Chowdhury</h1>
-            <sub>Frontend Developer || HTML, CSS, JavaScript || Bootstrap, jQuery, SASS, React, Redux</sub>
-            <div>
-                <nav>
-                    <a href="#about">About Me</a>
-                    <a href="#portfolio">Project Portfolio</a>
-                    <a href="#serviesIoffer">Services I offer</a>
-                    <a href="#contact">Contact Me</a>
-                </nav>
-            </div>
-        </header>
-        <main>
-            <div id="services" class="division"><h2>Services:</h2>
-            <div id="serviceOfferings"></div>
-            </div>
-            <div id="portfolio" class="division">
-                <h2>Portfolio:</h2>
-            </div>
-            <div id="contacts" class="division">
-                <h2>Junaed Mustofa Chowdhury</h2>
-                <p type="email" href="mailto:">junaed_chowdhury@hotmail.com</p>
-            </div>
-            <script>
-    const offer = document.getElementById("serviceOfferings");
-    const services = [{ 
+.expended {
+  grid-column: span 3;
+  background-color: var(--color2);
+  color: white;
+  transition: transform 0.3s ease;
+  padding: 30px;
+  font-size: 1.2rem;
+  position: absolute;
+}
+.expanded:hover {
+  background-color: var(--color5);  
+  color: white;
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  background-color: var(--color1);
+  width: 100px;
+  top: -30px;
+  position: relative;
+  left: 50px;
+  border-radius: 5px;
+}
+.hamburger-btn {
+  display: flex;
+  font-size: 2rem;
+  color: white;
+  background-color: var(--color1);
+  z-index: 1000;
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+  .item {
+    grid-column: span 1 !important;
+  }
+  .expanded {
+    grid-column: span 1 !important;
+  }
+  nav a {
+    display: block;
+    margin: 10px 0;
+    width: auto;
+    position: static;
+    left: 0;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  
+}
+</style>
+</head>
+<body>
+    <div>
+      <button aria-label="Toggle menu" class="hamburger-btn">☰</button>
+    <nav hidden>
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+      <a href="https://www.fiverr.com/junaedchowdhury" target="_blank">Hire Me</a> 
+    </nav>
+    </div>
+  <header>
+    <h1>Junaed Mustofa Chowhdury</h1>
+    <sub>Frontend Developer || HTML, CSS, JavaScript</sub>
+  </header>
+  <main>
+<div class="container">
+  <div class="item"></div>
+  <div class="item"></div>
+  <div class="item"></div>
+  <div class="item"></div>
+  <div class="item"></div>
+  <div class="item"></div>
+</div>
+<iframe src="https://www.fiverr.com/gig_widgets?id=U2FsdGVkX18XT9O5Oa/IMOJ2q8qNqUsBEOpB9BJ8Wij+YzwiRigE/0v+7MlCjmbgxGMZAOAN4meuDBWJFr/R1cRC7Gl9CiUKo48WMD9G/YjG4Z/jXvyTKZv/SivJmwmjqXtgvsGZ7qrjlGoPGY1eN0C7gaslgx7rZHxxLywGSDzHcqNvq2pwhqLF/e9rb39ZFE7BgwUo/gl3h4I9KtveVH7OFvjaBta9aX7wK2yhxpLyjOJ4hBEzft66+SFe8YH9dKV2FgPzvsfvdMIyI5ChSjQpkPQmKQ5BpdPNok2+7MTyw8oVEKyQlZQ95G3WXxwdh+yDnwCp/+n6tJcwMlRn9UIYgsf0Eudb0rSp60vp5OUBsS0KFv4dsa7q0/L98J8roJn+dqr/PRNia3VHBQWSSPtzxmBSohMOgCaF13rUM01nZ8G4H+tqLK/uAGkrtthZC/kusRJzCNrZG4g/XMSqXsxIowMCiPMjLbKLPEg2XCAaHKJurdUoH1KINcYY3H/cFOmFJzOC/lO2WVoHrD7srizuXQuZlTBnxbf/WSCcyzKDPcy+pwN9AVawzcZLQRQy&affiliate_id=898859&strip_google_tagmanager=true" loading="lazy" data-with-title="true" class="fiverr_nga_frame" frameborder="0" height="350" width="100%" referrerpolicy="no-referrer-when-downgrade" data-mode="random_gigs" onload=" var frame = this; var script = document.createElement('script'); script.addEventListener('load', function() { window.FW_SDK.register(frame); }); script.setAttribute('src', 'https://www.fiverr.com/gig_widgets/sdk'); document.body.appendChild(script); " ></iframe>
+</main>
+  <footer>
+  <div class="social-media" style="text-align: center; margin: 20px 0;">
+  <p>Connect with me:</p>
+  <a href="https://www.facebook.com/junaedchowdhury" target="_blank" style="margin: 0 10px; color: #3b5998; font-size: 2rem;"><i class="fab fa-facebook"></i></a>
+  <a href="https://www.linkedin.com/in/junaedchowdhury/" target="_blank" style="margin: 0 10px; color: #0077b5; font-size: 2rem;"><i class="fab fa-linkedin"></i></a>
+</div>
+    <p>&copy; 2025 Junaed Mustofa Chowdhury</p>
+  </footer>
+  <script>
+     const services = [{ 
       title: "Webpage Development",
       description: "We will take care of your website while you busy in business. Build your website from scratch with HTML, CSS and JavaScript",
+      description2: `🧑‍💻 We Take Care of Your Website While You Focus on Your Business. As a business owner, your time is best spent growing your brand—not worrying about code. That's why I offer end-to-end website development services, so you can stay focused on what matters most. I build websites from scratch using HTML, CSS, and JavaScript, ensuring they're clean, responsive, and tailored to your goals. Whether you need a landing page, a portfolio, or a full business site, I'll deliver a solution that's:<br>
+      ✅ Custom-coded - No templates, just clean and maintainable code<br>
+      📱 Responsive - Fits perfectly on mobile, tablet, and desktop<br>
+      🎨 Visually - Engaging Designed to attract and retain visitors<br>
+      ⚡ Optimized - Fast loading, smooth performance<br>
+      🔍 SEO-Ready - Built with visibility in mind<br>
+      🧩 Interactive - Featuring animations and dynamic elements`,
       icon: `<i class="fa-solid fa-code"></i>`,
       price: 50
     },
     { 
       title: "Webpage Design",
       description: "We have an eye for creative design to make your website user-friendly, aesthetically pleasent for visitor engagement and interectiveness.",
+      description2: `🎨 Creative Designs That Captivate and Engage. First impressions matter, especially online. A well-designed website not only attracts visitors but keeps them engaged and encourages them to explore further. With my webpage design services, I focus on creating visually stunning and user-friendly designs that reflect your brand identity and resonate with your target audience. My design process includes:<br>
+      ✅ Custom Layouts - Tailored to your content and goals<br>
+      🎨 Color Schemes - Harmonious palettes that evoke the right emotions<br>
+      🖋️ Typography - Readable fonts that enhance the user experience<br>
+      🖼️ Imagery - High-quality visuals that tell your story<br>
+      🧩 Interactivity - Engaging elements that encourage exploration<br>
+      📱 Mobile-First - Designs that look great on all devices<br>
+      🚀 Fast Loading - Optimized for performance without sacrificing aesthetics`,
       icon: `<i class="fa-solid fa-file-code"></i>`,
       price: 50
     },
     {
       title: "Resposive Website",
       description: "Make your website fully responsive, fits to any devices, user-friendly, attract more visitors and increase engagement.",
+      description2: `📱 Make Your Website Fully Responsive and User-Friendly on Any Device. In today's mobile-first world, having a responsive website is essential for reaching and engaging your audience. A responsive design ensures that your site looks great and functions seamlessly across all devices—whether it's a desktop, tablet, or smartphone. With my responsive website services, I focus on:<br>
+      ✅ Fluid Grids - Flexible layouts that adapt to any screen size<br>
+      📱 Mobile Optimization - Ensuring fast load times and usability on mobile devices<br>
+      🎨 Consistent Design - Maintaining your brand identity across all platforms<br>
+      🧩 Touch-Friendly Elements - Making navigation easy on touchscreens<br>
+      🔍 SEO Benefits - Improving your search engine rankings with mobile-friendly design<br>
+      🚀 Performance - Optimizing images and code for faster loading<br>
+      🛠️ Cross-Browser Compatibility - Ensuring your site works well on all major browsers`,
       icon: `<i class="fa-solid fa-laptop-code"></i>`,
       price: 20
     },
      { 
       title: "Website Optimization",
       description: "Websites requires updates and maintenance to ensure it continue to perform well.",
+      description2: `⚡ Keep Your Website Running Smoothly with Regular Updates and Maintenance. A well-maintained website is crucial for delivering a positive user experience, improving search engine rankings, and ensuring security. I offer comprehensive website optimization services to keep your site performing at its best. My maintenance services include:<br>
+      ✅ Regular Updates - Keeping your CMS, plugins, and themes up to date<br>
+      🛡️ Security Checks - Implementing best practices to protect against threats<br>
+      ⚡ Performance Optimization - Enhancing load times and overall speed<br>
+      🔍 SEO Improvements - Ongoing optimization to boost visibility<br>
+      🧹 Content Updates - Adding new content and refreshing existing pages<br>
+      📊 Analytics Monitoring - Tracking performance and user behavior<br>
+      🐞 Bug Fixes - Identifying and resolving issues promptly`,
       icon: `<i class="fa-solid fa-bug-slash"></i>`,
       price: 30
       },
       { 
       title: "Website SEO",
       description: "Boost your Website's performace and Visibility, SEO best practices to improve the website visibility on search engines and social media sites from the root files like HTML/CSS codes, no extra cost and high-performance.",
+      description2: `🚀 Boost Your Website's Performance and Visibility with Expert SEO Services. In today's competitive online landscape, having a well-optimized website is essential for attracting organic traffic and reaching your target audience. I specialize in implementing SEO best practices directly into your website's root files, such as HTML and CSS, ensuring that your site is primed for search engines without the need for additional plugins or tools. My SEO services include:<br>
+      ✅ On-Page SEO - Optimizing meta tags, headings, and content structure<br>
+      🔍 Keyword Integration - Strategically placing relevant keywords for better ranking<br>
+      📈 Performance Optimization - Enhancing site speed and user experience<br>
+      🧩 Mobile SEO - Ensuring your site is fully responsive and mobile-friendly<br>
+      🌐 Schema Markup - Implementing structured data for rich search results<br>
+      📊 Analytics Setup - Integrating tools to monitor traffic and performance<br>
+      🛠️ Technical SEO - Addressing crawl errors, broken links, and site architecture`,
       icon: `<i class="fa-solid fa-code-fork"></i>`,
       price: 50
     },
     {
       title: "Website Animation",
       description: "Design customize website visually appealing but also feature animations and interactivity to engage your visitors.",
+      description2: `✨ Enhance Your Website with Engaging Animations and Interactivity. In today's digital landscape, a visually appealing website is essential for capturing and retaining visitor attention. By incorporating animations and interactive elements, you can create a dynamic user experience that encourages exploration and engagement. My website animation services include:<br>
+      ✅ Custom Animations - Tailored to your brand and message<br>
+      🎨 Visual Effects - Enhancing the aesthetic appeal of your site<br>
+      🧩 Interactive Elements - Buttons, hover effects, and more to engage users<br>
+      📱 Responsive Animations - Ensuring smooth performance across all devices<br>
+      ⚡ Performance Optimization - Keeping animations lightweight for fast loading<br>
+      🔍 SEO Considerations - Implementing animations without compromising SEO<br>
+      🛠️ Cross-Browser Compatibility - Ensuring animations work well on all major browsers`,
       icon: `<i class="fa-solid fa-icons"></i>`,
       price: 20
     }];
+   const items = document.querySelectorAll('.item');
+    items.forEach((item, index) => {
+      item.style.color = "white";
+      item.style.cursor = 'pointer';
+      item.style.backgroundColor = 'var(--color1)';
+      item.innerHTML = `<h3>${services[index].icon} ${services[index].title}</h3>
+                          <p>${services[index].description}</p>
+                          <p>Price: $${services[index].price}</p>
+                          <p>Contact me on <a href="https://www.fiverr.com/junaedchowdhury" target="_blank" style="color: yellow; text-decoration: underline;">Fiverr</a> to get started!</p>`;
+      item.addEventListener('click', () => {
+        item.classList.toggle('expanded');
+        item.innerHTML = `<h3>${services[index].icon} ${services[index].title}</h3>
+                          <p>${services[index].description}</p>
+                          <p>Price: $${services[index].price}</p>
+                          <p>Contact me on <a href="https://www.fiverr.com/junaedchowdhury" target="_blank" style="color: yellow; text-decoration: underline;">Fiverr</a> to get started!</p>`;
+        if (item.classList.contains('expanded')) {   
+          item.style.gridColumn = 'span 3';
+          item.style.backgroundColor = 'var(--color1)';
+          item.style.borderRadius = '10px';
+          item.innerHTML = `<h3>${services[index].icon} ${services[index].title}</h3>
+                          <p>${services[index].description2}</p>
+                          <p>Price: $${services[index].price}</p>
+                          <p>Contact me on <a href="https://www.fiverr.com/junaedchowdhury" target="_blank" style="color: yellow; text-decoration: underline;">Fiverr</a> to get started!</p>`;
+           
+        } else {
+          item.style.gridColumn = 'span 1';
+        }
+    });
 
-    services.forEach(({title , description , icon , price}) => {
-    offer.innerHTML += `<div id="display"><h3 id="serviceHeadings">${title}</h3><hr><p class="details">${description}</p><hr></div>`;
-        });
-        </script>
-        </main>
-    </body>
-</htm>
+    });
+
+    const hamburgerBtn = document.querySelector('.hamburger-btn');
+    const navMenu = document.querySelector('nav');
+    hamburgerBtn.addEventListener('click', () => {
+      const isHidden = navMenu.hasAttribute('hidden');
+      if (isHidden) {
+        navMenu.removeAttribute('hidden');
+      } else {
+        navMenu.setAttribute('hidden', '');
+      }
+    });
+  </script>
+</body>
+</html>
