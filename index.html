@@ -96,21 +96,14 @@ footer {
 }
 header {
   color: white;
-  padding: 20px;
   text-align: center;
-  margin-bottom: 40px;
 }
 h1 {
   color: var(--white);
   font-family: 'Qwitcher Grypen', cursive;
   font-size: 5rem;
-  position: absolute;
-  top: -20px;
-  left: 25%;
 }
-header > p {
-  margin-top: 50px;
-}
+
 .expended {
   grid-column: span 3;
   background-color: var(--color2);
@@ -146,17 +139,28 @@ nav a {
   z-index: 1000;
   cursor: pointer;
 }
-
-@media only screen and (max-width: 850px) {
+@media screen and (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+  .item {
+    grid-column: span 1 !important;
+  }
+  .expanded {
+    grid-column: span 1 !important;
+  }
+  nav a {
+    display: block;
+    margin: 10px 0;
+    width: auto;
+    position: static;
+    left: 0;
+  }
   h1 {
-    align-self: center;
-    top: 0;
-    left: 20%;
     font-size: 3rem;
   }
+  
 }
-
-
 </style>
 </head>
 <body>
@@ -172,7 +176,7 @@ nav a {
     </div>
   <header>
     <h1>Junaed Mustofa Chowhdury</h1>
-    <p>Frontend Developer || HTML, CSS, JavaScript</p>
+    <sub>Frontend Developer || HTML, CSS, JavaScript</sub>
   </header>
   <main>
 <div class="container">
