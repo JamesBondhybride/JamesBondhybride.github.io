@@ -51,8 +51,8 @@
   }
   
 body {
-      background-image: url(https://jamesbondhybride.github.io/mypicture.jpg);
-      background-size: cover;
+      background-image: linear-gradient(to bottom, var(--color1, 0.8), var(--color4, 0.8)), url('https://jamesbondhybride.github.io/mypicture.jpg');
+      background-size: contain;
       margin: 0;
       font-family: Arial, sans-serif;
       display: grid;
@@ -108,17 +108,14 @@ h1 {
   grid-column: span 3;
   background-color: var(--color2);
   color: white;
-  transition: transform 0.3s ease;
   padding: 30px;
   font-size: 1.2rem;
-  position: absolute;
 }
 .expanded:hover {
   background-color: var(--color5);  
   color: white;
   cursor: pointer;
   transform: scale(1.05);
-  transition: transform 0.3s ease;
 }
 nav a {
   color: white;
@@ -148,6 +145,7 @@ nav a {
   }
   .expanded {
     grid-column: span 1 !important;
+    position: static;
   }
   nav a {
     display: block;
@@ -160,6 +158,21 @@ nav a {
     font-size: 3rem;
   }
   
+}
+#hero-slider {
+  display: flex;
+  justify-self: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  place-items: center;
+  color: white;
+  padding: 30px;
+  width: 100%;
+  height: 300px;
+  background-image: linear-gradient(to bottom, var(--color2, 0.8), var(--color1, 0.8));
+  border-radius: 10px;
+  margin-bottom: 20px;
 }
 </style>
 </head>
@@ -175,8 +188,12 @@ nav a {
     </nav>
     </div>
   <header>
-    <h1>Junaed Mustofa Chowhdury</h1>
-    <sub>Frontend Developer || HTML, CSS, JavaScript</sub>
+    <div id="hero-slider">
+    <h1>Junaed Mustofa Chowdhury</h1>
+    <p style="background-color: darkorange; padding: 5px;">Frontend Developer || HTML, CSS, JavaScript</p>
+      <imgae src="https://jamesbondhybride.github.io/hero-image.jpg" alt="Hero Image" style="width:100%; height:100%; object-fit: cover; border-radius: 10px;">
+    <p style="color: var(--color2); max-width: 600px; margin: 0 auto; padding: 5px;">Explore the range of services I offer to help you build and optimize your online presence. From custom web development to SEO optimization, I have the skills and experience to bring your vision to life.</p>
+    </div>
   </header>
   <main>
 <div class="container">
