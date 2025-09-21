@@ -1,344 +1,662 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Junaed Mustofa Chowdhury || HTML, CSS, JavaScript</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&display=swap" rel="stylesheet">
-  <meta property="og:image" content="https://jamesbondhybride.github.io/Copilot_20250825_180337.png">
-  <meta property="og:image:type" content="image/png">
-  <meta property="og:image:width" content="1024">
-  <meta property="og:image:height" content="1024">
-  <meta property="og:image:secure_url" content="https://jamesbondhybride.github.io/Copilot_20250825_180337.png">
-  <meta property="og:image:alt" content="Junaed Mustofa Chowdhury">
-  <meta property="og:title" content="Junaed Mustofa Chowdhury || HTML, CSS, JavaScript">
-  <meta property="og:description" content="Frontend Developer || HTML, CSS, JavaScript">
-  <meta property="og:url" content="https://jamesbondhybride.github.io/Copilot_20250825_180337.png">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Junaed Mustofa Chowdhury || HTML, CSS, JavaScript">
-  <meta name="twitter:description" content="Frontend Developer || HTML, CSS, JavaScript">
-  <meta name="twitter:image" content="https://jamesbondhybride.github.io/Copilot_20250825_180337.png">
-  <meta name="twitter:creator" content="@junaedchowdhury">
-  <meta name="twitter:site" content="@junaedchowdhury">
-  <meta name="description" content="Frontend Developer || HTML, CSS, JavaScript"> 
-  <meta name="keywords" content="HTML, CSS, JavaScript, Frontend Developer, Web Development, Responsive Design, SEO, Website Optimization, Web Design, Animation">
-  <meta name="author" content="Junaed Mustofa Chowdhury">
-  <meta name="robots" content="index, follow">
-  <meta name="googlebot" content="index, follow">
-  <meta name="bingbot" content="index, follow">
-  <meta name="yandex" content="index, follow">
-  <meta name="msnbot" content="index, follow">
-  <style>
-:root {
-        --main-color: #4b105177;
-        --color1 : #151927c9;
-        --color2: #987F9E;
-        --color3: #5D1F6E;
-        --color4: #49025D;
-        --color5: #5D1F6E;
-        --color6: #5D1F6E;
-        --white: #ffffff;
-        --black: #000000;
-        --gray: #808080;
-        --light-gray: #d3d3d3;
-        --dark-gray: #a9a9a9;
-        --font-family: 'Arial', sans-serif;
-  }
-  
-body {
-      background-image: linear-gradient(to bottom, var(--color1, 0.8), var(--color4, 0.8)), url('https://jamesbondhybride.github.io/mypicture.jpg');
-      background-size: contain;
-      margin: 0;
-      font-family: Arial, sans-serif;
-      display: grid;
-      grid-template-rows: auto 1fr auto;
-      min-height: 100vh;
-    }
- main {
-      padding: 2rem;
-    }
-
-/* experiment starts here */
-.container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px;
-  background-color: var(--color1);
-  padding: 20px;
-  border-radius: 10px;
-}
-.item {
-  color: var(--color4);
-  background-color: var(--color1);
-  padding: 20px;
-  text-align: center;
-  border: 1px solid #ccc;
-  border-radius: 5%;
-  position: relative;
-}
-.item:hover {
-  background-color: var(--color3);
-  color: white;
-  cursor: pointer;
-  transform: scale(1.05);
-  transition: transform 0.3s ease;
-}
-footer {
-  background-color: var(--color1);
-  color: white;
-  text-align: center;
-  width: 100%;
-}
-header {
-  color: white;
-  text-align: center;
-}
-h1 {
-  color: var(--white);
-  font-family: 'Qwitcher Grypen', cursive;
-  font-size: 5rem;
-}
-
-.expended {
-  grid-column: span 3;
-  background-color: var(--color2);
-  color: white;
-  padding: 30px;
-  font-size: 1.2rem;
-}
-.expanded:hover {
-  background-color: var(--color5);  
-  color: white;
-  cursor: pointer;
-  transform: scale(1.05);
-}
-nav a {
-  color: white;
-  text-decoration: none;
-  padding: 10px;
-  background-color: var(--color1);
-  width: 100px;
-  top: -30px;
-  position: relative;
-  left: 50px;
-  border-radius: 5px;
-}
-.hamburger-btn {
-  display: flex;
-  font-size: 2rem;
-  color: white;
-  background-color: var(--color1);
-  z-index: 1000;
-  cursor: pointer;
-}
-@media screen and (max-width: 768px) {
-  .container {
-    grid-template-columns: 1fr;
-  }
-  .item {
-    grid-column: span 1 !important;
-  }
-  .expanded {
-    grid-column: span 1 !important;
-    position: static;
-  }
-  nav a {
-    display: block;
-    margin: 10px 0;
-    width: auto;
-    position: static;
-    left: 0;
-  }
-  h1 {
-    font-size: 3rem;
-  }
-  
-}
-#hero-slider {
-  display: flex;
-  justify-self: center;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  place-items: center;
-  color: white;
-  padding: 30px;
-  width: 100%;
-  height: 300px;
-  background-image: linear-gradient(to bottom, var(--color2, 0.8), var(--color1, 0.8));
-  border-radius: 10px;
-  margin-bottom: 20px;
-}
-</style>
-</head>
-<body>
-    <div>
-      <button aria-label="Toggle menu" class="hamburger-btn">☰</button>
-    <nav hidden>
-      <a href="#home">Home</a>
-      <a href="#services">Services</a>
-      <a href="#contact">Contact</a>
-      <a href="#about">About</a>
-      <a href="https://www.fiverr.com/junaedchowdhury" target="_blank">Hire Me</a> 
-    </nav>
-    </div>
-  <header>
-    <div id="hero-slider">
-    <h1>Junaed Mustofa Chowdhury</h1>
-    <p style="background-color: darkorange; padding: 5px;">Frontend Developer || HTML, CSS, JavaScript</p>
-      <imgae src="https://jamesbondhybride.github.io/hero-image.jpg" alt="Hero Image" style="width:100%; height:100%; object-fit: cover; border-radius: 10px;">
-    <p style="color: var(--color2); max-width: 600px; margin: 0 auto; padding: 5px;">Explore the range of services I offer to help you build and optimize your online presence. From custom web development to SEO optimization, I have the skills and experience to bring your vision to life.</p>
-    </div>
-  </header>
-  <main>
-<div class="container">
-  <div class="item"></div>
-  <div class="item"></div>
-  <div class="item"></div>
-  <div class="item"></div>
-  <div class="item"></div>
-  <div class="item"></div>
-</div>
-<iframe src="https://www.fiverr.com/gig_widgets?id=U2FsdGVkX18XT9O5Oa/IMOJ2q8qNqUsBEOpB9BJ8Wij+YzwiRigE/0v+7MlCjmbgxGMZAOAN4meuDBWJFr/R1cRC7Gl9CiUKo48WMD9G/YjG4Z/jXvyTKZv/SivJmwmjqXtgvsGZ7qrjlGoPGY1eN0C7gaslgx7rZHxxLywGSDzHcqNvq2pwhqLF/e9rb39ZFE7BgwUo/gl3h4I9KtveVH7OFvjaBta9aX7wK2yhxpLyjOJ4hBEzft66+SFe8YH9dKV2FgPzvsfvdMIyI5ChSjQpkPQmKQ5BpdPNok2+7MTyw8oVEKyQlZQ95G3WXxwdh+yDnwCp/+n6tJcwMlRn9UIYgsf0Eudb0rSp60vp5OUBsS0KFv4dsa7q0/L98J8roJn+dqr/PRNia3VHBQWSSPtzxmBSohMOgCaF13rUM01nZ8G4H+tqLK/uAGkrtthZC/kusRJzCNrZG4g/XMSqXsxIowMCiPMjLbKLPEg2XCAaHKJurdUoH1KINcYY3H/cFOmFJzOC/lO2WVoHrD7srizuXQuZlTBnxbf/WSCcyzKDPcy+pwN9AVawzcZLQRQy&affiliate_id=898859&strip_google_tagmanager=true" loading="lazy" data-with-title="true" class="fiverr_nga_frame" frameborder="0" height="350" width="100%" referrerpolicy="no-referrer-when-downgrade" data-mode="random_gigs" onload=" var frame = this; var script = document.createElement('script'); script.addEventListener('load', function() { window.FW_SDK.register(frame); }); script.setAttribute('src', 'https://www.fiverr.com/gig_widgets/sdk'); document.body.appendChild(script); " ></iframe>
-</main>
-  <footer>
-  <div class="social-media" style="text-align: center; margin: 20px 0;">
-  <p>Connect with me:</p>
-  <a href="https://www.facebook.com/junaedchowdhury" target="_blank" style="margin: 0 10px; color: #3b5998; font-size: 2rem;"><i class="fab fa-facebook"></i></a>
-  <a href="https://www.linkedin.com/in/junaedchowdhury/" target="_blank" style="margin: 0 10px; color: #0077b5; font-size: 2rem;"><i class="fab fa-linkedin"></i></a>
-</div>
-    <p>&copy; 2025 Junaed Mustofa Chowdhury</p>
-  </footer>
-  <script>
-     const services = [{ 
-      title: "Webpage Development",
-      description: "We will take care of your website while you busy in business. Build your website from scratch with HTML, CSS and JavaScript",
-      description2: `🧑‍💻 We Take Care of Your Website While You Focus on Your Business. As a business owner, your time is best spent growing your brand—not worrying about code. That's why I offer end-to-end website development services, so you can stay focused on what matters most. I build websites from scratch using HTML, CSS, and JavaScript, ensuring they're clean, responsive, and tailored to your goals. Whether you need a landing page, a portfolio, or a full business site, I'll deliver a solution that's:<br>
-      ✅ Custom-coded - No templates, just clean and maintainable code<br>
-      📱 Responsive - Fits perfectly on mobile, tablet, and desktop<br>
-      🎨 Visually - Engaging Designed to attract and retain visitors<br>
-      ⚡ Optimized - Fast loading, smooth performance<br>
-      🔍 SEO-Ready - Built with visibility in mind<br>
-      🧩 Interactive - Featuring animations and dynamic elements`,
-      icon: `<i class="fa-solid fa-code"></i>`,
-      price: 50
-    },
-    { 
-      title: "Webpage Design",
-      description: "We have an eye for creative design to make your website user-friendly, aesthetically pleasent for visitor engagement and interectiveness.",
-      description2: `🎨 Creative Designs That Captivate and Engage. First impressions matter, especially online. A well-designed website not only attracts visitors but keeps them engaged and encourages them to explore further. With my webpage design services, I focus on creating visually stunning and user-friendly designs that reflect your brand identity and resonate with your target audience. My design process includes:<br>
-      ✅ Custom Layouts - Tailored to your content and goals<br>
-      🎨 Color Schemes - Harmonious palettes that evoke the right emotions<br>
-      🖋️ Typography - Readable fonts that enhance the user experience<br>
-      🖼️ Imagery - High-quality visuals that tell your story<br>
-      🧩 Interactivity - Engaging elements that encourage exploration<br>
-      📱 Mobile-First - Designs that look great on all devices<br>
-      🚀 Fast Loading - Optimized for performance without sacrificing aesthetics`,
-      icon: `<i class="fa-solid fa-file-code"></i>`,
-      price: 50
-    },
-    {
-      title: "Resposive Website",
-      description: "Make your website fully responsive, fits to any devices, user-friendly, attract more visitors and increase engagement.",
-      description2: `📱 Make Your Website Fully Responsive and User-Friendly on Any Device. In today's mobile-first world, having a responsive website is essential for reaching and engaging your audience. A responsive design ensures that your site looks great and functions seamlessly across all devices—whether it's a desktop, tablet, or smartphone. With my responsive website services, I focus on:<br>
-      ✅ Fluid Grids - Flexible layouts that adapt to any screen size<br>
-      📱 Mobile Optimization - Ensuring fast load times and usability on mobile devices<br>
-      🎨 Consistent Design - Maintaining your brand identity across all platforms<br>
-      🧩 Touch-Friendly Elements - Making navigation easy on touchscreens<br>
-      🔍 SEO Benefits - Improving your search engine rankings with mobile-friendly design<br>
-      🚀 Performance - Optimizing images and code for faster loading<br>
-      🛠️ Cross-Browser Compatibility - Ensuring your site works well on all major browsers`,
-      icon: `<i class="fa-solid fa-laptop-code"></i>`,
-      price: 20
-    },
-     { 
-      title: "Website Optimization",
-      description: "Websites requires updates and maintenance to ensure it continue to perform well.",
-      description2: `⚡ Keep Your Website Running Smoothly with Regular Updates and Maintenance. A well-maintained website is crucial for delivering a positive user experience, improving search engine rankings, and ensuring security. I offer comprehensive website optimization services to keep your site performing at its best. My maintenance services include:<br>
-      ✅ Regular Updates - Keeping your CMS, plugins, and themes up to date<br>
-      🛡️ Security Checks - Implementing best practices to protect against threats<br>
-      ⚡ Performance Optimization - Enhancing load times and overall speed<br>
-      🔍 SEO Improvements - Ongoing optimization to boost visibility<br>
-      🧹 Content Updates - Adding new content and refreshing existing pages<br>
-      📊 Analytics Monitoring - Tracking performance and user behavior<br>
-      🐞 Bug Fixes - Identifying and resolving issues promptly`,
-      icon: `<i class="fa-solid fa-bug-slash"></i>`,
-      price: 30
-      },
-      { 
-      title: "Website SEO",
-      description: "Boost your Website's performace and Visibility, SEO best practices to improve the website visibility on search engines and social media sites from the root files like HTML/CSS codes, no extra cost and high-performance.",
-      description2: `🚀 Boost Your Website's Performance and Visibility with Expert SEO Services. In today's competitive online landscape, having a well-optimized website is essential for attracting organic traffic and reaching your target audience. I specialize in implementing SEO best practices directly into your website's root files, such as HTML and CSS, ensuring that your site is primed for search engines without the need for additional plugins or tools. My SEO services include:<br>
-      ✅ On-Page SEO - Optimizing meta tags, headings, and content structure<br>
-      🔍 Keyword Integration - Strategically placing relevant keywords for better ranking<br>
-      📈 Performance Optimization - Enhancing site speed and user experience<br>
-      🧩 Mobile SEO - Ensuring your site is fully responsive and mobile-friendly<br>
-      🌐 Schema Markup - Implementing structured data for rich search results<br>
-      📊 Analytics Setup - Integrating tools to monitor traffic and performance<br>
-      🛠️ Technical SEO - Addressing crawl errors, broken links, and site architecture`,
-      icon: `<i class="fa-solid fa-code-fork"></i>`,
-      price: 50
-    },
-    {
-      title: "Website Animation",
-      description: "Design customize website visually appealing but also feature animations and interactivity to engage your visitors.",
-      description2: `✨ Enhance Your Website with Engaging Animations and Interactivity. In today's digital landscape, a visually appealing website is essential for capturing and retaining visitor attention. By incorporating animations and interactive elements, you can create a dynamic user experience that encourages exploration and engagement. My website animation services include:<br>
-      ✅ Custom Animations - Tailored to your brand and message<br>
-      🎨 Visual Effects - Enhancing the aesthetic appeal of your site<br>
-      🧩 Interactive Elements - Buttons, hover effects, and more to engage users<br>
-      📱 Responsive Animations - Ensuring smooth performance across all devices<br>
-      ⚡ Performance Optimization - Keeping animations lightweight for fast loading<br>
-      🔍 SEO Considerations - Implementing animations without compromising SEO<br>
-      🛠️ Cross-Browser Compatibility - Ensuring animations work well on all major browsers`,
-      icon: `<i class="fa-solid fa-icons"></i>`,
-      price: 20
-    }];
-   const items = document.querySelectorAll('.item');
-    items.forEach((item, index) => {
-      item.style.color = "white";
-      item.style.cursor = 'pointer';
-      item.style.backgroundColor = 'var(--color1)';
-      item.innerHTML = `<h3>${services[index].icon} ${services[index].title}</h3>
-                          <p>${services[index].description}</p>
-                          <p>Price: $${services[index].price}</p>
-                          <p>Contact me on <a href="https://www.fiverr.com/junaedchowdhury" target="_blank" style="color: yellow; text-decoration: underline;">Fiverr</a> to get started!</p>`;
-      item.addEventListener('click', () => {
-        item.classList.toggle('expanded');
-        item.innerHTML = `<h3>${services[index].icon} ${services[index].title}</h3>
-                          <p>${services[index].description}</p>
-                          <p>Price: $${services[index].price}</p>
-                          <p>Contact me on <a href="https://www.fiverr.com/junaedchowdhury" target="_blank" style="color: yellow; text-decoration: underline;">Fiverr</a> to get started!</p>`;
-        if (item.classList.contains('expanded')) {   
-          item.style.gridColumn = 'span 3';
-          item.style.backgroundColor = 'var(--color1)';
-          item.style.borderRadius = '10px';
-          item.innerHTML = `<h3>${services[index].icon} ${services[index].title}</h3>
-                          <p>${services[index].description2}</p>
-                          <p>Price: $${services[index].price}</p>
-                          <p>Contact me on <a href="https://www.fiverr.com/junaedchowdhury" target="_blank" style="color: yellow; text-decoration: underline;">Fiverr</a> to get started!</p>`;
-           
-        } else {
-          item.style.gridColumn = 'span 1';
-        }
-    });
-
-    });
-
-    const hamburgerBtn = document.querySelector('.hamburger-btn');
-    const navMenu = document.querySelector('nav');
-    hamburgerBtn.addEventListener('click', () => {
-      const isHidden = navMenu.hasAttribute('hidden');
-      if (isHidden) {
-        navMenu.removeAttribute('hidden');
-      } else {
-        navMenu.setAttribute('hidden', '');
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Junaed Mustofa Chowdhury - Frontend Developer</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
       }
-    });
-  </script>
-</body>
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+      }
+
+      .portfolio-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        background: white;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+        overflow: hidden;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+      }
+
+      .hero-section {
+        background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+        color: white;
+        padding: 4rem 2rem;
+        text-align: center;
+        position: relative;
+      }
+
+      .hero-section::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.1);
+      }
+
+      .hero-content {
+        position: relative;
+        z-index: 2;
+      }
+
+      .name {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      }
+
+      .headline {
+        font-size: 1.3rem;
+        margin-bottom: 2rem;
+        opacity: 0.9;
+      }
+
+      .location-availability {
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+        margin-bottom: 2rem;
+        flex-wrap: wrap;
+      }
+
+      .info-item {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .contact-info {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+        margin-top: 2rem;
+      }
+
+      .contact-item {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        background: rgba(255, 255, 255, 0.1);
+        padding: 0.5rem 1rem;
+        border-radius: 25px;
+        transition: all 0.3s ease;
+      }
+
+      .contact-item:hover {
+        background: rgba(255, 255, 255, 0.2);
+        transform: translateY(-2px);
+      }
+
+      .cv-button {
+        background: #e74c3c;
+        color: white;
+        padding: 1rem 2rem;
+        border: none;
+        border-radius: 50px;
+        font-size: 1.1rem;
+        font-weight: 600;
+        cursor: pointer;
+        margin-top: 2rem;
+        transition: all 0.3s ease;
+        box-shadow: 0 5px 15px rgba(231, 76, 60, 0.4);
+      }
+
+      .cv-button:hover {
+        background: #c0392b;
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(231, 76, 60, 0.6);
+      }
+
+      .content-section {
+        padding: 3rem 2rem;
+      }
+
+      .section {
+        margin-bottom: 4rem;
+      }
+
+      .section-title {
+        font-size: 2rem;
+        color: #2c3e50;
+        margin-bottom: 2rem;
+        position: relative;
+        padding-bottom: 0.5rem;
+      }
+
+      .section-title::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 60px;
+        height: 3px;
+        background: linear-gradient(135deg, #3498db, #e74c3c);
+        border-radius: 2px;
+      }
+
+      .summary-text {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        color: #555;
+        background: #f8f9fa;
+        padding: 2rem;
+        border-radius: 15px;
+        border-left: 4px solid #3498db;
+      }
+
+      .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+      }
+
+      .skill-category {
+        background: #f8f9fa;
+        padding: 2rem;
+        border-radius: 15px;
+        border: 1px solid #e9ecef;
+        transition: all 0.3s ease;
+      }
+
+      .skill-category:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      }
+
+      .skill-category h4 {
+        color: #2c3e50;
+        margin-bottom: 1rem;
+        font-size: 1.2rem;
+      }
+
+      .skill-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+      }
+
+      .skill-tag {
+        background: #3498db;
+        color: white;
+        padding: 0.3rem 0.8rem;
+        border-radius: 20px;
+        font-size: 0.9rem;
+        font-weight: 500;
+      }
+
+      .experience-item,
+      .education-item {
+        background: #f8f9fa;
+        padding: 2rem;
+        border-radius: 15px;
+        margin-bottom: 2rem;
+        border-left: 4px solid #e74c3c;
+        transition: all 0.3s ease;
+      }
+
+      .experience-item:hover,
+      .education-item:hover {
+        transform: translateX(5px);
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      .experience-title,
+      .education-title {
+        font-size: 1.3rem;
+        color: #2c3e50;
+        margin-bottom: 0.5rem;
+        font-weight: 600;
+      }
+
+      .experience-company,
+      .education-institution {
+        color: #e74c3c;
+        font-weight: 600;
+        margin-bottom: 1rem;
+      }
+
+      .experience-description,
+      .education-description {
+        color: #555;
+        line-height: 1.6;
+      }
+
+      .languages-section {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 2rem;
+      }
+
+      .language-item {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 2rem;
+        border-radius: 15px;
+        text-align: center;
+        transition: all 0.3s ease;
+      }
+
+      .language-item:hover {
+        transform: scale(1.05);
+      }
+
+      .language-name {
+        font-size: 1.3rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+      }
+
+      .strengths-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+      }
+
+      .strength-item {
+        background: #f8f9fa;
+        padding: 1.5rem;
+        border-radius: 15px;
+        border: 1px solid #e9ecef;
+        text-align: center;
+        transition: all 0.3s ease;
+      }
+
+      .strength-item:hover {
+        background: #3498db;
+        color: white;
+        transform: translateY(-5px);
+      }
+
+      .strength-icon {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        color: #3498db;
+      }
+
+      .strength-item:hover .strength-icon {
+        color: white;
+      }
+
+      @media (max-width: 768px) {
+        .name {
+          font-size: 2rem;
+        }
+
+        .headline {
+          font-size: 1.1rem;
+        }
+
+        .location-availability {
+          gap: 1rem;
+        }
+
+        .contact-info {
+          gap: 1rem;
+        }
+
+        .contact-item {
+          padding: 0.4rem 0.8rem;
+          font-size: 0.9rem;
+        }
+
+        .portfolio-container {
+          margin: 1rem;
+          border-radius: 15px;
+        }
+
+        .hero-section {
+          padding: 2rem 1rem;
+        }
+
+        .content-section {
+          padding: 2rem 1rem;
+        }
+
+        .skills-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .name {
+          font-size: 1.8rem;
+        }
+
+        .location-availability,
+        .contact-info {
+          flex-direction: column;
+          align-items: center;
+          gap: 0.8rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      const Portfolio = () => {
+        const handleCVDownload = () => {
+          alert("CV download feature will be available soon!");
+        };
+
+        return (
+          <div className="portfolio-container">
+            {/* Hero Section */}
+            <section className="hero-section">
+              <div className="hero-content">
+                <h1 className="name">Junaed Mustofa Chowdhury</h1>
+                <p className="headline">
+                  Frontend Developer | Accessibility Advocate | Freelance
+                  Strategist
+                </p>
+
+                <div className="location-availability">
+                  <div className="info-item">
+                    <i className="fas fa-map-marker-alt"></i>
+                    <span>Bangladesh, Sylhet</span>
+                  </div>
+                  <div className="info-item">
+                    <i className="fas fa-globe"></i>
+                    <span>Available Worldwide</span>
+                  </div>
+                </div>
+
+                <div className="contact-info">
+                  <div className="contact-item">
+                    <i className="fas fa-envelope"></i>
+                    <span>junaed_chowdury@hotmail.com</span>
+                  </div>
+                  <div className="contact-item">
+                    <i className="fas fa-phone"></i>
+                    <span>+8801772272803</span>
+                  </div>
+                  <div className="contact-item">
+                    <i className="fas fa-portfolio"></i>
+                    <span>jamesbondhybride.github.io</span>
+                  </div>
+                </div>
+
+                <button className="cv-button" onClick={handleCVDownload}>
+                  <i className="fas fa-download"></i> Download CV
+                </button>
+              </div>
+            </section>
+
+            <div className="content-section">
+              {/* Professional Summary */}
+              <section className="section">
+                <h2 className="section-title">Professional Summary</h2>
+                <div className="summary-text">
+                  Experienced Frontend Developer and Accessibility Advocate with
+                  a strong background in creating user-friendly, accessible web
+                  applications. Specializes in modern JavaScript frameworks,
+                  responsive design, and inclusive development practices. Proven
+                  track record working with leading financial institutions
+                  including HSBC and Standard Chartered Bank. Passionate about
+                  delivering high-quality digital experiences that serve all
+                  users, regardless of their abilities or circumstances.
+                </div>
+              </section>
+
+              {/* Technical Skills */}
+              <section className="section">
+                <h2 className="section-title">Technical Skills</h2>
+                <div className="skills-grid">
+                  <div className="skill-category">
+                    <h4>
+                      <i className="fas fa-code"></i> Frontend Development
+                    </h4>
+                    <div className="skill-list">
+                      <span className="skill-tag">React</span>
+                      <span className="skill-tag">JavaScript</span>
+                      <span className="skill-tag">TypeScript</span>
+                      <span className="skill-tag">HTML5</span>
+                      <span className="skill-tag">CSS3</span>
+                      <span className="skill-tag">SASS</span>
+                      <span className="skill-tag">Vue.js</span>
+                    </div>
+                  </div>
+                  <div className="skill-category">
+                    <h4>
+                      <i className="fas fa-universal-access"></i> Accessibility
+                    </h4>
+                    <div className="skill-list">
+                      <span className="skill-tag">WCAG 2.1</span>
+                      <span className="skill-tag">ARIA</span>
+                      <span className="skill-tag">Screen Readers</span>
+                      <span className="skill-tag">Keyboard Navigation</span>
+                      <span className="skill-tag">Color Contrast</span>
+                    </div>
+                  </div>
+                  <div className="skill-category">
+                    <h4>
+                      <i className="fas fa-tools"></i> Tools & Platforms
+                    </h4>
+                    <div className="skill-list">
+                      <span className="skill-tag">Git</span>
+                      <span className="skill-tag">Webpack</span>
+                      <span className="skill-tag">Node.js</span>
+                      <span className="skill-tag">Docker</span>
+                      <span className="skill-tag">AWS</span>
+                      <span className="skill-tag">Jenkins</span>
+                    </div>
+                  </div>
+                  <div className="skill-category">
+                    <h4>
+                      <i className="fas fa-palette"></i> Design & Branding
+                    </h4>
+                    <div className="skill-list">
+                      <span className="skill-tag">Figma</span>
+                      <span className="skill-tag">Adobe XD</span>
+                      <span className="skill-tag">Photoshop</span>
+                      <span className="skill-tag">UI/UX Design</span>
+                      <span className="skill-tag">Responsive Design</span>
+                    </div>
+                  </div>
+                  <div className="skill-category">
+                    <h4>
+                      <i className="fas fa-shield-alt"></i> Defensive Coding
+                    </h4>
+                    <div className="skill-list">
+                      <span className="skill-tag">Security Best Practices</span>
+                      <span className="skill-tag">Code Review</span>
+                      <span className="skill-tag">Testing</span>
+                      <span className="skill-tag">Error Handling</span>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              {/* Professional Experience */}
+              <section className="section">
+                <h2 className="section-title">Professional Experience</h2>
+
+                <div className="experience-item">
+                  <h3 className="experience-title">
+                    Frontend Developer & Freelance Consultant
+                  </h3>
+                  <p className="experience-company">Self-Employed</p>
+                  <p className="experience-description">
+                    Providing comprehensive frontend development services and
+                    strategic consulting to various clients. Specializing in
+                    accessible web applications, modern JavaScript frameworks,
+                    and responsive design. Focus on delivering inclusive digital
+                    experiences that meet international accessibility standards.
+                  </p>
+                </div>
+
+                <div className="experience-item">
+                  <h3 className="experience-title">Frontend Developer</h3>
+                  <p className="experience-company">HSBC</p>
+                  <p className="experience-description">
+                    Developed and maintained customer-facing web applications
+                    for one of the world's largest banking institutions.
+                    Implemented accessibility features ensuring compliance with
+                    banking industry standards. Collaborated with
+                    cross-functional teams to deliver secure, scalable financial
+                    services platforms.
+                  </p>
+                </div>
+
+                <div className="experience-item">
+                  <h3 className="experience-title">Frontend Developer</h3>
+                  <p className="experience-company">Standard Chartered Bank</p>
+                  <p className="experience-description">
+                    Built responsive web interfaces for banking applications
+                    serving millions of customers across Asia, Africa, and the
+                    Middle East. Focused on performance optimization,
+                    accessibility compliance, and cross-browser compatibility.
+                    Implemented modern frontend architectures and best
+                    practices.
+                  </p>
+                </div>
+              </section>
+
+              {/* Education & Training */}
+              <section className="section">
+                <h2 className="section-title">Education & Training</h2>
+
+                <div className="education-item">
+                  <h3 className="education-title">Higher Education</h3>
+                  <p className="education-company">Fontys University</p>
+                  <p className="education-description">
+                    Advanced studies in computer science and software
+                    engineering with focus on web technologies and user
+                    experience design.
+                  </p>
+                </div>
+
+                <div className="education-item">
+                  <h3 className="education-title">University Education</h3>
+                  <p className="education-company">Stamford University</p>
+                  <p className="education-description">
+                    Comprehensive undergraduate program covering fundamental
+                    computer science concepts, programming methodologies, and
+                    software development principles.
+                  </p>
+                </div>
+
+                <div className="education-item">
+                  <h3 className="education-title">
+                    Higher Secondary Education
+                  </h3>
+                  <p className="education-company">Brindaban Govt. College</p>
+                  <p className="education-description">
+                    Completed higher secondary education with focus on science
+                    and mathematics, building strong analytical and
+                    problem-solving foundations.
+                  </p>
+                </div>
+
+                <div className="education-item">
+                  <h3 className="education-title">Secondary Education</h3>
+                  <p className="education-company">Annada Govt. High School</p>
+                  <p className="education-description">
+                    Completed secondary education with excellent academic
+                    performance, developing strong fundamentals in mathematics
+                    and sciences.
+                  </p>
+                </div>
+              </section>
+
+              {/* Languages */}
+              <section className="section">
+                <h2 className="section-title">Languages</h2>
+                <div className="languages-section">
+                  <div className="language-item">
+                    <div className="language-name">Bangla</div>
+                    <p>Native Speaker</p>
+                  </div>
+                  <div className="language-item">
+                    <div className="language-name">English</div>
+                    <p>Professional Proficiency</p>
+                  </div>
+                </div>
+              </section>
+
+              {/* Additional Strengths */}
+              <section className="section">
+                <h2 className="section-title">Additional Strengths</h2>
+                <div className="strengths-grid">
+                  <div className="strength-item">
+                    <div className="strength-icon">
+                      <i className="fas fa-users"></i>
+                    </div>
+                    <h4>Team Collaboration</h4>
+                    <p>Excellent communication and teamwork skills</p>
+                  </div>
+                  <div className="strength-item">
+                    <div className="strength-icon">
+                      <i className="fas fa-lightbulb"></i>
+                    </div>
+                    <h4>Problem Solving</h4>
+                    <p>Creative approach to technical challenges</p>
+                  </div>
+                  <div className="strength-item">
+                    <div className="strength-icon">
+                      <i className="fas fa-rocket"></i>
+                    </div>
+                    <h4>Performance Optimization</h4>
+                    <p>Focus on fast, efficient web applications</p>
+                  </div>
+                  <div className="strength-item">
+                    <div className="strength-icon">
+                      <i className="fas fa-mobile-alt"></i>
+                    </div>
+                    <h4>Mobile-First Design</h4>
+                    <p>Expertise in responsive, mobile-optimized interfaces</p>
+                  </div>
+                  <div className="strength-item">
+                    <div className="strength-icon">
+                      <i className="fas fa-graduation-cap"></i>
+                    </div>
+                    <h4>Continuous Learning</h4>
+                    <p>
+                      Staying updated with latest technologies and best
+                      practices
+                    </p>
+                  </div>
+                  <div className="strength-item">
+                    <div className="strength-icon">
+                      <i className="fas fa-handshake"></i>
+                    </div>
+                    <h4>Client Relations</h4>
+                    <p>
+                      Strong client communication and project management skills
+                    </p>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        );
+      };
+
+      ReactDOM.render(<Portfolio />, document.getElementById("root"));
+    </script>
+  </body>
 </html>
