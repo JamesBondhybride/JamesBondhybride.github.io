@@ -41,7 +41,7 @@ export const About = () => {
             {/* Intro with Image */}
             <div className="flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-8 mb-8">
               <img
-                src="/junaed.JPEG"
+                src="/me.jpg"
                 alt="Junaed Mustofa Chowdhury"
                 className="w-40 m-auto h-40 sm:w-48 sm:h-48 md:w-64 md:h-64 rounded-xl object-cover shadow-lg border-4 border-blue-400"
               />
