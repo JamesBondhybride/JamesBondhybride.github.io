@@ -37,11 +37,11 @@ export const About = () => {
             About Me
           </h2>
 
-          <div className="rounded-xl p-8 border border-white/10 hover:-translate-y-1 transition-all">
+          <div className="rounded-xl p-8 border border-white/10 hover:-translate-y-1 transition-all hover:shadow-[0_0_15px_rgba(255,255,255,0.2)]">
             {/* Intro with Image */}
             <div className="flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-8 mb-8">
               <img
-                src="/me.jpg"
+                src="/me.jpg  "
                 alt="Junaed Mustofa Chowdhury"
                 className="w-40 m-auto h-40 sm:w-48 sm:h-48 md:w-64 md:h-64 rounded-xl object-cover shadow-lg border-4 border-blue-400"
               />

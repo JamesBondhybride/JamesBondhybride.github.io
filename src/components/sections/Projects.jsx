@@ -14,7 +14,7 @@ export const Projects = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* EverGreen Clinic */}
-            <div className="glass p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow transition-all">
+            <div className="rounded-xl p-8 border border-white/10 hover:-translate-y-1 transition-all hover:shadow-[0_0_15px_rgba(255,255,255,0.2)]">
               <h3 className="text-xl font-bold mb-2">EverGreen Clinic</h3>
               <p className="text-gray-400 mb-4">
                 Healthcare management platform with patient booking, doctor
@@ -79,7 +79,7 @@ export const Projects = () => {
             </div>
 
             {/* GearGrid */}
-            <div className="glass p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow transition-all">
+            <div className="glass rounded-xl p-8 border border-white/10 hover:-translate-y-1 transition-all hover:shadow-[0_0_15px_rgba(255,255,255,0.2)]">
               <h3 className="text-xl font-bold mb-2">GearGrid</h3>
               <p className="text-gray-400 mb-4">
                 Full-stack e-commerce app with product grids, secure
@@ -137,7 +137,7 @@ export const Projects = () => {
             </div>
 
             {/* Food Delivery Platform */}
-            <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow transition-all">
+            <div className="rounded-xl p-8 border border-white/10 hover:-translate-y-1 transition-all hover:shadow-[0_0_15px_rgba(255,255,255,0.2)]">
               <h3 className="text-xl font-bold mb-2">Food Delivery Platform</h3>
               <p className="text-gray-400 mb-4">
                 Complete food delivery solution with responsive frontend, secure

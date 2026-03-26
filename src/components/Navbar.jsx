@@ -1,7 +1,9 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import logo from "../assets/logo.png";
 
 export const Navbar = ({ menuOpen, setMenuOpen }) => {
+
+
   useEffect(() => {
     document.body.style.overflow = menuOpen ? "hidden" : "";
   }, [menuOpen]);
